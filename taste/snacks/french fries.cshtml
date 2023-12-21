@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -french fries Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        font-weight:bold;
+            }
+
+        li {
+            color: #ADFF2F;
+        }
+
+        h3, p {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our snack is <span style="color:blue">French Fries</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">French Fries</h2>
+
+        <img style="padding-left:250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC-3ONEAPxYTA2Ktid6hBnBMG0ps2J3slc0w&usqp=CAU" alt="French Fries">
+        <div id="en">
+            <h3>Ingredients:</h3>
+
+            <ul>
+                <li>Potatoes</li>
+                <li>Vegetable oil(adequate amount to submerge fries)</li>
+                <li>Salt (Adequate)</li>
+                <li>Optional seasonings (like red chilli powder,garlic powder, black pepper)</li>
+            </ul>
+
+            <h3>Process:</h3>
+            <ul>
+                <li>Wash and peel the potatoes.</li>
+                <li>Cut the potatoes into uniform, thin strips.</li>
+                <li>Soak them in cold water for at least 30 minutes.</li>
+                <li>After soaking, drain the fries and pat them dry with a kitchen towel.</li>
+                <li>Heat vegetable oil in a deep pot or a deep fryer,until you see many small bubbles forming around it.</li>
+                <li>Carefully add a small batch of the dried potato strips to the hot oil. Do not to overcrowd the pot.</li>
+                <li>Fry the potatoes until they turn light golden. Remove with a slotted spoon and place them on a plate lined with paper towels to drain excess oil.</li>
+                <li>Repeat this process with the remaining batches of potato strips.</li>
+                <li><b>(optional) </b>For extra crispy French fries, you can do a double fry. After the first fry, allow the fries to cool for a few minutes and again fry them,and again fry them until they become golden brown.</li>
+                <li>While the fries are hot, season them with salt and any other seasonings as above mentioned in ingredients. Toss the fries to evenly coat them with the seasonings.</li>
+                <li>Serve the homemade French fries immediately while they're still hot and crispy. You can enjoy them with ketchup, mayonnaise, or your favorite dipping sauces.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;Enjoy your homemade french fries :)</p>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+                <li>బంగాళదుంపలు</li>
+                <li>నూనె(ఫ్రైస్‌ మునిగిపోవడానికి తగిన మొత్తం)</li>
+                <li>ఉప్పు (తగినంత)</li>
+                <li>ఐచ్ఛిక మసాలాలు ( కారం , వెల్లుల్లి పొడి,  మిరియాలు వంటివి)</li>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li>బంగాళాదుంపలను ని బాగా కడిగి తొక్క తియ్యాలి.</li>
+                <li>బంగాళాదుంపలను  ఏకరీతిగా , పొడవుగా కట్ చేసుకోవాలి.</li>
+                <li>వాటిని కనీసం 30 నిమిషాలు చల్లటి నీటిలో నానబెట్టండి.</li>
+                <li>నానబెట్టిన తర్వాత,  కిచెన్ టవల్ ఉపయోగించి వాటిని ఆరనివ్వండి.</li>
+                <li>లోతైన కుండలో లేదా లోతైన ఫ్రయ్యర్‌లో కూరగాయల నూనెను వేడి చేయండి, దాని చుట్టూ అనేక చిన్న బుడగలు ఏర్పడటం మీరు చూసే వరకు.</li>
+                <li>వేడి నూనెలో ఎండిన బంగాళాదుంప స్ట్రిప్స్ కొద్ది కొద్దిగా వెయ్యండి. బంగాళాదుంపలను కుండలో అధికంగా నింపవద్దు.</li>
+                <li>బంగాళదుంపలు లేత బంగారు రంగులోకి వచ్చే వరకు వేయించాలి. స్లాట్డ్ చెంచాతో తీసివేసి, అదనపు నూనెను హరించడానికి కాగితపు తువ్వాళ్లతో కప్పబడిన ప్లేట్‌లో వాటిని ఉంచండి.</li>
+                <li>మిగిలిన బంగాళాదుంప స్ట్రిప్స్‌తో ఈ విధానాన్ని పునరావృతం చేయండి.</li>
+                <li>(ఐచ్ఛికం) అదనపు క్రిస్పీ ఫ్రెంచ్ ఫ్రైస్ కోసం, మీరు డబుల్ ఫ్రై చేయవచ్చు. మొదటి ఫ్రై తరువాత, ఫ్రైస్ కొన్ని నిమిషాలు చల్లబరచడానికి అనుమతించండి మరియు మళ్లీ బంగారు గోధుమ రంగు వచ్చేవరకు వేయించాలి.</li>
+                <li>ముక్కలు వేడిగా ఉన్నప్పుడు, వాటిని ఉప్పు మరియు పదార్థాలలో పేర్కొన్న ఇతర మసాలాలతో సీజన్ చేయండి.</li>
+                <li>ఇంట్లో తయారుచేసిన ఫ్రెంచ్ ఫ్రైస్ వేడిగా మరియు క్రిస్పీగా ఉన్నప్పుడే వెంటనే సర్వ్ చేయండి. మీరు వాటిని కెచప్, మయోన్నైస్ లేదా మీకు ఇష్టమైన డిప్పింగ్ సాస్‌లతో ఆస్వాదించవచ్చు.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;మీ ఇంట్లో తయారుచేసిన ఫ్రెంచ్ ఫ్రైస్‌ని ఆస్వాదించండి   :)</p>
+
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <li>आलू</li>
+                <li>तेल (फ्राइज़ को डुबाने के लिए पर्याप्त)</li>
+                <li>नमक (पर्याप्त)</li>
+                <li>वैकल्पिक मसाले (जैसे लाल मिर्च पाउडर, लहसुन पाउडर, काली मिर्च)</li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li>బంగాళాదుంపలను ని బాగా కడిగి తొక్క తియ్యాలి.</li>
+                <li>आलू को बराबर और लम्बाई में काट लीजिये.</li>
+                <li>इन्हें कम से कम 30 मिनट के लिए ठंडे पानी में भिगो दें।</li>
+                <li>भीगने के बाद इन्हें किचन टॉवल से थपथपाकर सुखा लें।</li>
+                <li>एक गहरे बर्तन या डीप फ्रायर में वनस्पति तेल को तब तक गर्म करें जब तक आप उसके चारों ओर कई छोटे बुलबुले बनते न देख लें।</li>
+                <li>गरम तेल में सूखे आलू के टुकड़े थोड़े-थोड़े करके डालिये. बर्तन में आलू ज्यादा न रखें|</li>
+                <li>आलू को हल्का सुनहरा होने तक भून लीजिए. एक स्लेटेड चम्मच से निकालें और अतिरिक्त तेल निकालने के लिए कागज़ के तौलिये से ढकी एक प्लेट पर रखें।</li>
+                <li>इस प्रक्रिया को बचे हुए आलू के टुकड़ों के साथ दोहराएँ।</li>
+                <li>(वैकल्पिक) अधिक कुरकुरे फ्रेंच फ्राइज़ के लिए, आप डबल फ्राई कर सकते हैं। पहली बार फ्राई करने के बाद, फ्राई को कुछ मिनट के लिए ठंडा होने दें और फिर से सुनहरा भूरा होने तक फ्राई करें।</li>
+                <li>जब टुकड़े गर्म हो जाएं, तो उन पर नमक और सामग्री में बताए गए अन्य मसाले डालें।</li>
+                <li>तुरंत परोसें, जबकि घर पर बने फ्रेंच फ्राइज़ अभी भी गर्म और कुरकुरे हैं। आप इनका आनंद केचप, मेयोनेज़ या अपनी पसंदीदा डिपिंग सॉस के साथ ले सकते हैं।</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;अपने घर में बने फ्रेंच फ्राइज़ का आनंद लें  :)</p>
+        </div>
+    </section>
+</body>
+</html>

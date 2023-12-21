@@ -1,0 +1,18 @@
+﻿@using WebMatrix.Data;
+@{ 
+    Database db = Database.Open("hellodatabase");
+    var r=db.Query("select * from hellotable");
+    WebGrid w = new WebGrid(r);
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Hello Welcome to my World!</h1>
+    </body>
+</html>
+@w.GetHtml(columns: w.Columns(w.Column("name")))

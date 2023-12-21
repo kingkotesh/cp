@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Chapati</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #FFFFCC;
+        }
+
+        h3 {
+            color: #ce85f2;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue"> Chapati</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+
+        <div id="en">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">Chapati</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://img.freepik.com/premium-photo/chapati-tava-roti-also-known-as-indian-bread-fulka-phulka-main-ingredient-lunch-dinner-india-pakistan-selective-focus_466689-32579.jpg?w=360" alt="chapati">
+            <h3>Ingredients:</h3>
+
+            <ul>
+                <li>You'll need whole wheat flour (atta) and water.</li>
+            </ul>
+
+            <h3>Process:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Knead Dough:</li></b>
+                <br />
+                <li>Mix the flour with water to form a soft, pliable dough. Let it rest for 15-20 minutes.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Divide into Balls: :</li></b>
+                <br />
+                <li>Take a small portion of the dough and roll it into a ball about the size of a golf ball.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Roll Out:</li></b>
+                <br />
+                <li>Roll the dough ball into a thin, round chapati using a rolling pin.</li>
+
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Cook on a Griddle:</li></b>
+                <br />
+                <li>Heat a griddle or flat pan over medium-high heat. Place the chapati on the hot griddle.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Cook and Flip::</li></b>
+                <br />
+                <li>Cook for about 30 seconds until you see bubbles, then flip it.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Cook the Other Side: </li></b>
+                <br />
+                <li>Cook the other side for about 30 seconds, or until it puffs up and gets golden brown spots.</li>
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Serve: </li></b>
+                <br />
+                <li>Remove from the griddle, brush with ghee or butter if desired, and serve hot.</li>
+                <h3>Enjoy your homemade chapati!</h3>
+            </ul>
+        </div>
+        <div id="tel">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">చపాతీ</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://img.freepik.com/premium-photo/chapati-tava-roti-also-known-as-indian-bread-fulka-phulka-main-ingredient-lunch-dinner-india-pakistan-selective-focus_466689-32579.jpg?w=360" alt="chapati">
+
+            <h3>పదార్థాలు:</h3>
+
+            <ul>
+                <li>మీకు మొత్తం గోధుమ పిండి (అట్టా) మరియు నీరు అవసరం. </li>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">పిండిని పిసికి కలుపు: </li></b>
+                <br />
+                <li>మెత్తగా, తేలికగా ఉండే పిండిని ఏర్పరచడానికి నీటితో పిండిని కలపండి. 15-20 నిమిషాలు విశ్రాంతి తీసుకోండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">బంతులుగా విభజించండి: </li></b>
+                <br />
+                <li> పిండిలో కొంత భాగాన్ని తీసుకొని గోల్ఫ్ బాల్ పరిమాణంలో బంతిగా చుట్టండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">రోల్ అవుట్: </li></b>
+                <br />
+                <li>డౌ బాల్‌ను రోలింగ్ పిన్‌ని ఉపయోగించి సన్నని, గుండ్రని చపాతీలా రోల్ చేయండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">గ్రిడ్‌పై ఉడికించాలి: </li></b>
+                <br />
+                <li>మీడియం-అధిక వేడి మీద గ్రిడ్ లేదా ఫ్లాట్ పాన్‌ను వేడి చేయండి. చపాతీని వేడి గ్రిడ్‌పై ఉంచండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">కుక్ మరియు ఫ్లిప్: </li></b>
+                <br />
+                <li> మీరు బుడగలు కనిపించే వరకు సుమారు 30 సెకన్ల పాటు ఉడికించి, ఆపై దాన్ని తిప్పండి.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">అవతలి వైపు ఉడికించాలి: </li></b>
+                <br />
+                <li> మరో వైపు సుమారు 30 సెకన్ల పాటు ఉడికించాలి లేదా అది ఉబ్బి బంగారు గోధుమ రంగు మచ్చలు వచ్చే వరకు ఉడికించాలి.</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">సర్వ్:  </li></b>
+                <br />
+                <li>గ్రిడ్ నుండి తీసివేసి, కావాలనుకుంటే నెయ్యి లేదా వెన్నతో బ్రష్ చేసి, వేడిగా సర్వ్ చేయండి.</li>
+
+                <h3>మీ ఇంట్లో తయారుచేసిన చపాతీని ఆస్వాదించండి!</h3>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">चपाती</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://img.freepik.com/premium-photo/chapati-tava-roti-also-known-as-indian-bread-fulka-phulka-main-ingredient-lunch-dinner-india-pakistan-selective-focus_466689-32579.jpg?w=360" alt="chapati">
+
+            <h3>सामग्री:</h3>
+            <ul>
+                <li>आपको साबुत गेहूं का आटा (आटा) और पानी की आवश्यकता होगी।</li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">आटा गूंधें:  </li></b>
+                <br />
+                <li>आटे को पानी के साथ मिलाकर नरम, लचीला आटा गूंथ लें। इसे 15-20 मिनट तक ऐसे ही रहने दें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">बॉल्स में विभाजित करें: </li></b>
+                <br />
+                <li> आटे का एक छोटा सा हिस्सा लें और इसे गोल्फ बॉल के आकार की बॉल में रोल करें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">बेलें: </li></b>
+                <br />
+                <li> आटे की लोई को बेलन की सहायता से पतली, गोल चपाती के आकार में बेल लें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">तवे पर पकाएं:</li></b>
+                <br />
+                <li>एक तवे या फ्लैट पैन को मध्यम-तेज़ आंच पर गर्म करें। - रोटी को गर्म तवे पर रखें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">पकाएँ और पलटें:</li></b>
+                <br />
+                <li>बुलबुले दिखने तक लगभग 30 सेकंड तक पकाएँ, फिर पलटें।</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">दूसरी तरफ पकाएं: </li></b>
+                <br />
+                <li>दूसरी तरफ भी लगभग 30 सेकंड तक पकाएं, या जब तक यह फूल न जाए और सुनहरे भूरे रंग के धब्बे न बन जाए।</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">परोसें: </li></b>
+                <br />
+                <li>గतवे से उतारें, चाहें तो घी या मक्खन लगाएं और गरमागरम परोसें।</li>
+
+                <h3>अपनी घर की बनी चपाती का आनंद लें!</h3>
+
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -onion samosa Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #ADFF2F;
+        }
+
+        h3, p {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and out snack is <span style="color:blue">Veg Samosa</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Veg Samosa</h2>
+
+        <img style="padding-left:250px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmRSSvFxJNgZpSLWROtd2Qc0ZGd1lJa_Hpg&usqp=CAU" alt="Onion Samosa">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li style="text-decoration: underline;color:cyan;">
+                    For the Outer layer:
+                </li>
+                <ul style="list-style-type:circle">
+                    <li>2 cups of all-purpose flour-175 grams</li>
+                    <li>1 and 1/2 Spoons of Heated oil</li>
+                    <li>Salt (Adjust to taste) </li>
+                    <li>Water</li>
+                </ul>
+
+                <li style="text-decoration: underline;color:cyan;">For the Stuffing:</li>
+                <ul style="list-style-type:circle">
+                    <li>2 large finely chopped onions(vertically)</li>
+                    <li>3-4 green chilies, finely chopped (adjust to taste)</li>
+                    <li>1/2 teaspoon ginger garlic paste</li>
+                    <li>1/2 teaspoon red chili powder (adjust to taste)</li>
+                    <li>1/2 coriander powder</li>
+                    <li>1 teaspoon garam masala</li>
+                    <li>A pinch of Turmeric</li>
+                    <li>2 tablespoons oil</li>
+                    <li>Salt to taste</li>
+                </ul>
+
+
+
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:cyan">Outer Layer:</li></b>
+                <li>Take a bowl, combine the all-purpose flour, 1 and 1/2 spoon of heated oil and adequate salt. Mix it well.</li>
+                <li>Gradually add water and knead the mixture into a soft dough. Cover the dough with a damp cloth and keep it aside for about 30 minutes.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:cyan">For Stuffing:</li></b>
+                <li>Heat 2 tablespoons of oil in a pan, Add the finely chopped onions.</li>
+                <li>Add red chili powder, garam masala, turmeric pwder, coriander powder and salt.</li>
+                <li>Add green chillies at last saute it for a few minutes until onions turn into light gold colour and the mixture is dry.</li>
+                <li>Divide the dough into small, equal-sized balls.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:cyan">Samosa making:</li></b>
+                <li>Roll out each ball into a thin oval or round shape</li>
+                <li>Cut them into rectangles with high length and short width</li>
+                <li>Take one recatangle, fold it in half to form a cone, and seal the edge with oil to make a triangular pocket.</li>
+                <li>Fill the pocket with the prepared onion mixture. Seal the open edge by pressing it firmly with your fingers.</li>
+                <li>Heat oil in a deep frying pan or kadai over medium heat.</li>
+                <li>Carefully slide the prepared samosas into the hot oil. Fry them until they are golden brown and crispy.</li>
+                <li>Remove the samosas with a slotted spoon and place them on a plate lined with paper towels to drain excess oil.</li>
+                <li>Serve your homemade onion samosas </li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;Enjoy your homemade onion samosa :)</p>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+                <li style="text-decoration: underline;color:cyan;">బయటి పొర కోసం:</li>
+                <ul style="list-style-type:circle">
+                    <li>2 కప్పుల మైదా- 175 గ్రాములు</li>
+                    <li>వేడిచేసిన నూనె ఒకటిన్నర స్పూన్లు</li>
+                    <li>ఉప్పు (తగినంత)</li>
+                    <li>నీళ్లు</li>
+                </ul>
+
+                <li style="text-decoration: underline;color:cyan;">కూరటానికి:</li>
+                <ul style="list-style-type:circle">
+                    <li>రెండు బారుగా తరిగిన ఉల్లిపాయలు</li>
+                    <li>3-4 పచ్చి మిరపకాయలు, సన్నగా తరిగినవి (రుచికి తగ్గట్టుగా)</li>
+                    <li>1/2 టీస్పూన్ అల్లం వెల్లుల్లి పేస్ట్</li>
+                    <li>1/2 టీస్పూన్  కారం (రుచికి అనుకూలంగా)</li>
+                    <li>1/2 ధనియాల పొడి</li>
+                    <li>1 టీస్పూన్ గరం మసాలా</li>
+                    <li>చిటికెడు పసుపు</li>
+                    <li>2 టేబుల్ స్పూన్లు నూనె</li>
+                    <li>ఉప్పు(రుచికి తగ్గట్టుగా)</li>
+                </ul>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">బయటి పొర తయారీ:</li></b>
+                <li>ఒక గిన్నె తీసుకుని, మైదా, ఒకటిన్నర చెంచా వేడిచేసిన నూనె మరియు తగినంత ఉప్పు వేసి బాగా కలపాలి.</li>
+                <li>క్రమంగా నీరు పోసి, మిశ్రమాన్ని మెత్తగా పిండిలా చేయాలి. పిండిని తడి గుడ్డతో కప్పి సుమారు 30 నిమిషాలు పక్కన పెట్టండి.</li>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">కూరటానికి:</li></b>
+                <li>బాణలిలో 2 టేబుల్ స్పూన్ల నూనె వేడి చేయండి. సన్నగా తరిగిన ఉల్లిపాయలను  వేసుకోండి.</li>
+                <li> కారం, గరం మసాలా, పసుపు పొడి, ధనియాల పొడి మరియు ఉప్పు  వేసుకోండి.</li>
+                <li>ఆఖరికి పచ్చిమిర్చి వేసి ఉల్లిపాయలు లేత బంగారు రంగులోకి మారే వరకు మరియు మిశ్రమం ఆరిపోయే వరకు కొన్ని నిమిషాలు వేయించాలి.</li>
+                <li>పిండిని చిన్న, సమాన-పరిమాణ ఉండలుగా విభజించండి.</li>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">సమోసా తయారీ:</li></b>
+                <li>ప్రతి ఉండని సన్నని ఓవల్ లేదా గుండ్రని ఆకారంలో వేయండి.</li>
+                <li>అధిక పొడవు మరియు చిన్న వెడల్పుతో దీర్ఘచతురస్రాల్లో వాటిని కత్తిరించండి.</li>
+                <li>ఒకదానిని తీసుకుని, సగానికి మడిచి కోన్‌ను ఏర్పరుచుకోండి మరియు త్రిభుజాకార జేబును తయారు చేయడానికి అంచుని నూనెతో మూసివేయండి.</li>
+                <li>తయారు చేసిన ఉల్లిపాయ మిశ్రమంతో జేబు నింపండి. మీ వేళ్లతో గట్టిగా నొక్కడం ద్వారా ఓపెన్ అంచుని మూసివేయండి.</li>
+                <li>మీడియం వేడి మీద డీప్ ఫ్రైయింగ్ పాన్ లేదా కడాయిలో నూనె వేడి చేయండి.</li>
+                <li>వేడి నూనెలో సిద్ధం చేసిన సమోసాలను జాగ్రత్తగా జవెయ్యండి. వాటిని బంగారు గోధుమ రంగు మరియు క్రిస్పీగా ఉండే వరకు వేయించాలి.</li>
+                <li>స్లాట్డ్ చెంచాతో సమోసాలను తీసివేసి, అదనపు నూనె పోయేలా పేపర్ టవల్‌తో కప్పబడిన ప్లేట్‌లో ఉంచండి.</li>
+                <li>మీ ఇంట్లో తయారుచేసిన ఉల్లిపాయ సమోసాలను సర్వ్చేస్కోండి.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;మీ ఇంట్లో తయారుచేసిన ఉల్లిపాయ సమోసాను ఆస్వాదించండి   :)</p>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <li style="text-decoration: underline;color:cyan;">बाहरी परत के लिए:</li>
+                <ul style="list-style-type:circle">
+                    <li>2 कप मैदा 175 ग्राम</li>
+                    <li>डेढ़ चम्मच गर्म तेल</li>
+                    <li>नमक (पर्याप्त)</li>
+                    <li>पानी</li>
+                </ul>
+
+                <li style="text-decoration: underline;color:cyan;">स्टफिंग के लिए:</li>
+                <ul style="list-style-type:circle">
+                    <li>दो बारीक कटे प्याज</li>
+                    <li>3-4 हरी मिर्च, बारीक कटी हुई (स्वादानुसार)</li>
+                    <li>1/2 चम्मच अदरक लहसुन का पेस्ट</li>
+                    <li>1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                    <li>1/2 धनिया पाउडर</li>
+                    <li>1 चम्मच गरम मसाला</li>
+                    <li>एक चुटकी हल्दी</li>
+                    <li>2 बड़े चम्मच तेल</li>
+                    <li>नमक-स्वादनुसार</li>
+                </ul>
+
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">बाहरी परत  बनाना:</li></b>
+                <li>एक कटोरा लें, उसमें मैदा,डेढ़ चम्मच गर्म तेल और पर्याप्त नमक मिलाएं। इसे अच्छे से मिला लें|</li>
+                <li>धीरे-धीरे पानी डालें और मिश्रण को नरम आटा गूंथ लें। - आटे को गीले कपड़े से ढककर करीब 30 मिनट के लिए अलग रख दें|</li>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">स्टफिंग बनाना:</li></b>
+                <li>एक पैन में 2 बड़े चम्मच तेल गर्म करें.,बारीक कटा हुआ प्याज डालें|</li>
+                <li>लाल मिर्च पाउडर, गरम मसाला, हल्दी पाउडर, धनिया पाउडर और नमक डालें।</li>
+                <li>अंत में हरी मिर्च डालें और कुछ मिनट तक भूनें जब तक कि प्याज हल्के सुनहरे रंग का न हो जाए और मिश्रण सूख न जाए।</li>
+                <li>आटे को छोटे, समान आकार के गोले में बाँट लें।</li>
+                <b>
+                <li style="text-decoration: underline;color:cyan; list-style-type: none">समोसा बनाना:</li></b>
+                <li>प्रत्येक गोले को पतले अंडाकार या गोल आकार में बेल ले|</li>
+                <li>इन्हें अधिक लंबाई और कम चौड़ाई वाले आयतों में काटें</li>
+                <li>एक रिकाटैंगल लें, इसे आधा मोड़कर एक शंकु बनाएं और एक त्रिकोणीय पॉकेट बनाने के लिए किनारे को तेल से सील कर दें।</li>
+                <li>तैयार प्याज के मिश्रण से जेब भरें. खुले किनारे को अपनी उंगलियों से मजबूती से दबाकर सील कर दें।</li>
+                <li>एक गहरे फ्राइंग पैन या कढ़ाई में मध्यम आंच पर तेल गरम करें।</li>
+                <li>तैयार समोसे को सावधानी से गरम तेल में डालिये. इन्हें सुनहरा भूरा और कुरकुरा होने तक तलें|</li>
+                <li>समोसे को एक स्लेटेड चम्मच से निकालें और अतिरिक्त तेल निकालने के लिए कागज़ के तौलिये से ढकी एक प्लेट पर रखें।</li>
+                <li>अपने घर का बना प्याज समोसा परोसें।</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;अपने घर पर बने प्याज समोसे का आनंद लें  :)</p>
+        </div>
+    </section>
+</body>
+</html>

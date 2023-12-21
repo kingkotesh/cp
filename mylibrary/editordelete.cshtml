@@ -1,0 +1,44 @@
+﻿@using WebMatrix.Data
+@{ 
+    Database db = Database.Open("mylibrarydb");
+    var q = "select * from books where Id=" + Int32.Parse(Request.QueryString["Id"]);
+    var row = db.QuerySingle(q);
+    if(IsPost && Request.Form["eb"] != null){
+        var eq = "update books set title=@0,author=@1,price=@2 where Id=@3";
+        db.Execute(eq, Request.Form["ttb"], Request.Form["atb"], Request.Form["ptb"], Int32.Parse(Request.QueryString["Id"]));
+        Response.Redirect("~/default.cshtml");
+    }
+    if(IsPost && Request.Form["dbt"] != null){  
+        var de = "delete from books where Id=@0";
+        db.Execute(de, Int32.Parse(Request.QueryString["Id"]));
+        Response.Redirect("~/default.cshtml");
+    }
+}
+<form method="post" action="">
+    <table>
+        <tr>
+            <td>Id:</td>
+            <td><input type="text" name="idtb" id="idtb" value="@row.Id" /></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" name="ttb" id="ttb" value="@row.title" /></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><input type="text" name="atb" id="atb" value="@row.author" /></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" name="ptb" id="ptb" value="@row.price" /></td>
+        </tr>
+        <tr>
+            <td>Edit:</td>
+            <td><input type="submit" name="eb" id="eb" value="Edit" /></td>
+        </tr>
+        <tr>
+            <td>Delete:</td>
+            <td><input type="submit" name="dbt" id="dbt" value="Delete" /></td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Gulab Jamun Sweet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+            font-weight: bold;
+        }
+
+        li {
+            color: #ADFF2F
+        }
+
+        ul {
+            color: cyan;
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our sweet is <span style="color:blue">Gulab Jamun</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Gulab Jamun</h2>
+
+        <img style="padding-left:250px" height="200px" width="300px" src="https://media.istockphoto.com/id/521803129/photo/gulab-jamun-11.jpg?s=612x612&w=0&k=20&c=wyJaXY7Uu0hMBCXkcTDRaujSKN6Rp9roJeKDvF6CfHI=" alt="Gulab Jamun">
+        <div id="en">
+
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    For the sweet balls:
+                    <li>1 cup of milk powder</li>
+                    <li>2 tablespoons of flour</li>
+                    <li>A pinch of baking soda</li>
+                    <li>A few drops of rosewater (if you like)</li>
+                </ul>
+                <ul>
+                    For the sweet syrup:
+                    <li> 2 cups of sugar</li>
+                    <li> 1 cup of water</li>
+                    <li> 1/2 teaspoon of cardamom powder</li>
+                    <li>A pinch of saffron (optional)</li>
+                </ul>
+            </ul>
+            <h3>Process:</h3>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. Making the Sweet Syrup:
+                <li>In a big pot, mix sugar and water.</li>
+                <li>Heat it until it becomes a slightly thick and sticky syrup (around 5-7 minutes).</li>
+                <li>Add saffron and cardamom for flavor.</li>
+                <li>Set it aside.</li>
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. Making the Sweet Balls:
+
+                <li>In a bowl, combine milk powder,flour,and a pinch of baking soda.</li>
+                <li> If you like, add a few drops of rosewater. Mix until you have a soft dough.</li>
+                <li>If it's too dry, add a little milk.Shape the dough into small,smooth balls of equal size.</li>
+                <li> Heat some oil in a pan over medium flame.(5 - 10 minutes)</li>
+                <li> Carefully put the dough balls into the hot oil. Don't overcrowd the pan. Fry them until they turn golden brown.</li>
+                <li> Take out the fried balls and drain the oil.</li>
+
+
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3.Soaking the Sweet Balls:
+                <li>Put the fried balls into the warm sugar syrup right away.</li>
+                <li> Let them soak for 1-2 hours until they become soft and spongy, absorbing the syrup</li>
+                <li>You can add chopped nuts like almonds or pistachios on top if you like.</li>
+
+                
+            </ul>
+
+            <b>
+                <p style="color:#22facb">Gulab Jamun is ready to be enjoyed! It's a sweet, syrupy dessert which likes everyone.</p>
+            </b>
+            
+        </div>
+
+        <div id="tel">
+            <h3>కావలసిన  పదార్థాలు:</h3>
+            <ul>
+                <ul>తీపి బంతుల కోసం:</ul>
+                <li>1 కప్పు పాల పొడి</li>
+                <li>2 టేబుల్ స్పూన్లు పిండి</li>
+                <li> ఒక చిటికెడు బేకింగ్ సోడా</li>
+                <li>కొన్ని చుక్కల రోజ్ వాటర్ (మీకు కావాలంటే)</li>
+                <ul>తీపి సిరప్ కోసం:</ul>
+                <li> 2 కప్పుల చక్కెర</li>
+                <li>1 కప్పు నీరు</li>
+                <li>1/2 టీస్పూన్ యాలకుల పొడి</li>
+                <li> చిటికెడు కుంకుమపువ్వు (ఐచ్ఛికం)</li>
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. స్వీట్ సిరప్ తయారు చేయడం:
+
+                <li>ఒక పెద్ద కుండలో, చక్కెర మరియు నీరు కలపండి.</li>
+                <li>ఇది కొద్దిగా మందపాటి మరియు జిగట సిరప్ (సుమారు 5-7 నిమిషాలు) అయ్యే వరకు వేడి చేయండి.</li>
+                <li> రుచి కోసం కుంకుమపువ్వు మరియు ఏలకులు జోడించండి.</li>
+                <li> పక్కన పెట్టండి.</li>
+                
+            </ul>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. . స్వీట్ బాల్స్ తయారు చేయడం:
+                <li>ఒక గిన్నెలో, పాల పొడి, పిండి మరియు చిటికెడు బేకింగ్ సోడా కలపండి..</li>
+                <li>మీకు కావాలంటే, కొన్ని చుక్కల రోజ్ వాటర్ జోడించండి. మీకు మృదువైన పిండి వచ్చేవరకు కలపండి..</li>
+                <li>ఇది చాలా పొడిగా ఉంటే, కొద్దిగా పాలు జోడించండి. పిండిని సమాన పరిమాణంలో చిన్న, మృదువైన బంతులుగా ఆకృతి చేయండి..</li>
+                <li>మీడియం మంట మీద పాన్‌లో కొంచెం నూనె వేడి చేయండి.(5 - 10 నిమిషాలు).</li>
+                <li>వేడి నూనెలో పిండి బాల్స్‌ను జాగ్రత్తగా ఉంచండి. పాన్‌లో రద్దీని పెంచవద్దు. వాటిని బంగారు గోధుమ రంగు వచ్చేవరకు వేయించాలి..</li>
+                <li> వేయించిన బాల్స్‌ను తీసి నూనె వేయండి..</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. తీపి బంతులను నానబెట్టడం:
+
+                <li>వేయించిన బంతులను వెంటనే వెచ్చని చక్కెర సిరప్‌లో ఉంచండి.</li>
+                <li> అవి మెత్తగా మరియు మెత్తగా మారే వరకు 1-2 గంటలు నానబెట్టి, సిరప్‌ను పీల్చుకోండి.</li>
+                <li> మీకు కావాలంటే పైన బాదం లేదా పిస్తా వంటి తరిగిన గింజలను జోడించవచ్చు.</li>
+
+                </li>
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4.బంతుల్లో ఆకారం:
+
+                <li> మిశ్రమం తాకేంత చల్లారిన తర్వాత.</li>
+                <li>మీ అరచేతుల మధ్య తిప్పడం ద్వారా చిన్న గుండ్రని బంతులు (లడ్డూలు)గా రూపొందించండి.</li>
+
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. అలంకరించు:
+
+                <li>మీకు కావాలంటే, ప్రతి లడ్డూ పైన తరిగిన గింజ (జీడిపప్పు లేదా బాదం వంటివి) ఉంచండి.</li>
+
+              
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. కూల్ అండ్ స్టోర్:
+
+                <li>లడ్డూలను గాలి చొరబడని కంటైనర్‌లో నిల్వ చేయడానికి ముందు వాటిని పూర్తిగా చల్లబరచండి.</li>
+
+                
+            </ul>
+            <b>
+                <p style="color:#22facb">గులాబ్ జామూన్ ఆనందించడానికి సిద్ధంగా ఉంది! ఇది ప్రతి ఒక్కరూ ఇష్టపడే తీపి, సిరప్ డెజర్ట్.</p>
+            </b>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <ul>मीठी गेंदों के लिए:</ul>
+                <li>1 कप मिल्क पाउडर</li>
+                <li>2 बड़े चम्मच आटा</li>
+                <li>एक चुटकी बेकिंग सोडा</li>
+                <li> गुलाब जल की कुछ बूँदें (यदि आप चाहें)</li>
+                <ul>मीठी चाशनी के लिए:</ul>
+
+                <li>2 कप चीनी</li>
+                <li>1 कप पानी</li>
+                <li>1/2 चम्मच इलायची पाउडर</li>
+                <li>एक चुटकी केसर (वैकल्पिक)</li>
+            </ul>
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. मीठी चाशनी बनाना:
+
+                <li>एक बड़े बर्तन में चीनी और पानी डालकर मिला लें.</li>
+                <li> इसे तब तक गर्म करें जब तक यह थोड़ी गाढ़ी और चिपचिपी चाशनी न बन जाए (करीब 5-7 मिनट)।</li>
+                <li> स्वाद के लिए केसर और इलायची डालें.</li>
+                <li> इसे एक तरफ रख दें.</li>
+                </ul>
+
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. मीठी बॉल्स बनाना:
+
+                <li> एक कटोरे में दूध पाउडर, आटा और एक चुटकी बेकिंग सोडा मिलाएं।</li>
+                <li> अगर आप चाहें तो इसमें गुलाब जल की कुछ बूंदें मिला लें। नरम आटा बनने तक मिलाएँ।</li>
+                <li> अगर यह ज्यादा सूखा है तो इसमें थोड़ा सा दूध मिलाएं. आटे को बराबर आकार की छोटी, चिकनी लोइयां बना लें.</li>
+                <li> मध्यम आंच पर एक पैन में थोड़ा सा तेल गर्म करें. (5 - 10 मिनट)</li>
+                <li>आटे की लोइयां सावधानी से गरम तेल में डालें. तवे पर जरूरत से ज्यादा भीड़ न रखें. इन्हें सुनहरा भूरा होने तक तलें.</li>
+                <li>तले हुए बॉल्स को निकाल कर तेल निथार लें.</li>
+
+                </ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. मीठी बॉल्स को भिगोना:
+                <li>तले हुए बॉल्स को तुरंत गर्म चाशनी में डाल दीजिए.</li>
+                <li>इन्हें 1-2 घंटे तक भीगने दें जब तक कि ये चाशनी को सोखकर नरम और स्पंजी न हो जाएं.</li>
+                <li> आप चाहें तो ऊपर से कटे हुए मेवे जैसे बादाम या पिस्ता भी डाल सकते हैं.</li>
+                </ul>
+                <b> <p style="color:#22facb">गुलाब जामुन आनंद लेने के लिए तैयार है! यह एक मीठी, चाशनी वाली मिठाई है जो हर किसी को पसंद आती है।</p></b>
+
+        </div>
+    </section>
+</body>
+</html>
+
+

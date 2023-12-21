@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> with a new recepie <span style="color:blue">Aloo Gobi</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Aloo Gobi</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://static.toiimg.com/thumb/54693711.cms?imgsize=230683&width=800&height=800" alt="Aloo Gobi">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+
+            <p style="color:#22facb;font-size:20px"> For the Aloo Gobi:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 cups cauliflower florets (about half a medium-sized cauliflower)</li>
+                <li> 2 medium-sized potatoes, peeled and diced into cubes</li>
+                <li> 2 tablespoons cooking oil</li>
+                <li> 1 teaspoon cumin seeds</li>
+                <li> 1 onion, finely chopped</li>
+                <li> 1 tomato, finely chopped</li>
+                <li> 1-2 green chilies, slit (adjust to taste)</li>
+                <li> 1 teaspoon ginger-garlic paste</li>
+                <li> 1/2 teaspoon turmeric powder</li>
+                <li> 1 teaspoon cumin powder</li>
+                <li> 1 teaspoon coriander powder</li>
+                <li> 1/2 teaspoon red chili powder (adjust to taste)</li>
+                <li> Salt to taste</li>
+                <li> Fresh coriander leaves for garnish</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Prep the Vegetables:</li><ul>
+                <li> Clean the cauliflower and cut it into small florets.</li>
+                <li> Peel and dice the potatoes into cubes. </li>
+                <li> Rinse them under cold water to remove excess starch.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Sauté the Vegetables:</li><ul>
+                <li> Heat oil in a large pan or skillet over medium heat.</li>
+                <li> Add cumin seeds and let them splutter.</li>
+                <li> Add finely chopped onions and green chilies. </li>
+                <li> Sauté until the onions become translucent.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Add Ginger-Garlic Paste and Spices:</li><ul>
+                <li> Add ginger-garlic paste and sauté for a couple of minutes until the raw smell disappears.</li>
+                <li> Add turmeric powder, cumin powder, coriander powder, and red chili powder.</li>
+                <li> Stir well and cook for a few minutes until the spices are fragrant.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add Tomatoes:</li><ul>
+                <li> Add the finely chopped tomatoes and cook until they become soft and the oil starts to separate from the mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Potatoes and Cauliflower:</li><ul>
+                <li> Add the diced potatoes and cauliflower florets to the pan.</li>
+                <li> Mix them with the onion-tomato mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Cook the Aloo Gobi:</li><ul>
+                <li> Season with salt to taste and stir to coat the vegetables with the spices.</li>
+                <li> Cover the pan and let the Aloo Gobi cook over low to medium heat. </li>
+                <li> Stir occasionally to ensure even cooking.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Check Doneness:</li><ul>
+                <li> Cook until the potatoes and cauliflower are tender but not mushy. This may take about 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Garnish and Serve:</li><ul>
+                <li> Once the Aloo Gobi is cooked, garnish with fresh coriander leaves.</li>
+                <li> Serve hot with roti, naan, or steamed rice.</li>
+
+            </ul><p style="color:orange;font-size:20px">Enjoy your homemade Aloo Gobi, a delicious and comforting vegetarian dish!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px"> ఆలూ గోబీ కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 కప్పులు కాలీఫ్లవర్ పుష్పాలు (సుమారు సగం మధ్య తరహా కాలీఫ్లవర్)</li>
+                <li> 2 మధ్య తరహా బంగాళాదుంపలు, ఒలిచిన మరియు ఘనాలగా కట్ చేయాలి</li>
+                <li> 2 టేబుల్ స్పూన్లు వంట నూనె</li>
+                <li> 1 టీస్పూన్ జీలకర్ర</li>
+                <li> 1 ఉల్లిపాయ, సన్నగా తరిగిన</li>
+                <li> 1 టమోటా, సన్నగా తరిగిన</li>
+                <li> 1-2 పచ్చి మిరపకాయలు, చీలిక (రుచికి తగ్గట్టుగా)</li>
+                <li> 1 టీస్పూన్ అల్లం-వెల్లుల్లి పేస్ట్</li>
+                <li> 1/2 టీస్పూన్ పసుపు పొడి</li>
+                <li> 1 టీస్పూన్ జీలకర్ర పొడి</li>
+                <li> 1 టీస్పూన్ కొత్తిమీర పొడి</li>
+                <li> 1/2 టీస్పూన్ ఎర్ర మిరప పొడి (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> రుచికి ఉప్పు</li>
+                <li> అలంకరించు కోసం తాజా కొత్తిమీర ఆకులు</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. కూరగాయలను సిద్ధం చేయండి:</li><ul>
+                <li> కాలీఫ్లవర్‌ను శుభ్రం చేసి చిన్న చిన్న పువ్వులుగా కట్ చేసుకోవాలి.</li>
+                <li> బంగాళాదుంపలను పీల్ చేసి ఘనాలగా కట్ చేసుకోండి.</li>
+                <li> అదనపు పిండిని తొలగించడానికి వాటిని చల్లటి నీటితో శుభ్రం చేసుకోండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. కూరగాయలు వేగించండి:</li><ul>
+                <li> మీడియం వేడి మీద పెద్ద పాన్ లేదా స్కిల్లెట్‌లో నూనె వేడి చేయండి.</li>
+                <li> జీలకర్ర వేసి చిలకరించాలి.</li>
+                <li> సన్నగా తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి.</li>
+                <li> ఉల్లిపాయలు పారదర్శకంగా మారే వరకు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. అల్లం-వెల్లుల్లి పేస్ట్ మరియు మసాలా దినుసులు జోడించండి:</li><ul>
+                <li> పచ్చి వాసన పోయే వరకు అల్లం-వెల్లుల్లి పేస్ట్ వేసి రెండు నిమిషాలు వేయించాలి.</li>
+                <li> పసుపు పొడి, జీలకర్ర పొడి, ధనియాల పొడి, మరియు ఎర్ర మిరప పొడి జోడించండి.</li>
+                <li> బాగా కదిలించు మరియు సుగంధ ద్రవ్యాలు సువాసన వచ్చే వరకు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. టమోటాలు జోడించండి:</li><ul>
+                <li> సన్నగా తరిగిన టొమాటోలను వేసి అవి మెత్తబడే వరకు ఉడికించాలి మరియు </li>
+                &nbsp;  మిశ్రమం నుండి నూనె వేరుచేయడం ప్రారంభమవుతుంది.
+                <br />
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. బంగాళదుంపలు మరియు కాలీఫ్లవర్ జోడించండి:</li><ul>
+                <li> పాన్‌లో ముక్కలు చేసిన బంగాళాదుంపలు మరియు కాలీఫ్లవర్ పుష్పాలను జోడించండి. </li>
+                <li> వాటిని ఉల్లిపాయ-టమోటా మిశ్రమంతో కలపండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. ఆలూ గోబీని ఉడికించాలి:</li><ul>
+                <li> రుచికి ఉప్పుతో సీజన్ మరియు కూరగాయలను సుగంధ ద్రవ్యాలతో కోట్ చేయడానికి కదిలించు.</li>
+                <li> పాన్‌ను కవర్ చేసి, ఆలూ గోబీని తక్కువ నుండి మీడియం వేడి మీద ఉడికించాలి. </li>
+                <li> వంట సమానంగా ఉండేలా అప్పుడప్పుడు కదిలించు.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. పనిని తనిఖీ చేయండి:</li><ul>
+                <li> బంగాళదుంపలు మరియు కాలీఫ్లవర్ మెత్తగా కాకుండా మెత్తబడే వరకు ఉడికించాలి. </li>
+                <li> దీనికి దాదాపు 15-20 నిమిషాలు పట్టవచ్చు.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. గార్నిష్ చేసి సర్వ్ చేయండి:</li><ul>
+                <li> ఆలూ గోబీ ఉడికిన తర్వాత, తాజా కొత్తిమీర ఆకులతో అలంకరించండి.</li>
+                <li> రోటీ, నాన్ లేదా ఉడికించిన అన్నంతో వేడిగా వడ్డించండి.</li>
+
+            </ul><p style="color:orange;font-size:20px">రుచికరమైన మరియు ఓదార్పునిచ్చే శాకాహార వంటకం అయిన మీ ఇంట్లో తయారుచేసిన ఆలూ గోబీని ఆస్వాదించండి!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> सामग्री:</p>
+
+
+            <p style="color:#22facb;font-size:20px"> आलू गोभी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 कप फूलगोभी के फूल (लगभग आधा मध्यम आकार की फूलगोभी)</li>
+                <li> 2 मध्यम आकार के आलू, छीलकर क्यूब्स में काट लें</li>
+                <li> 2 बड़े चम्मच खाना पकाने का तेल</li>
+                <li> 1 चम्मच जीरा</li>
+                <li> 1 प्याज, बारीक कटा हुआ</li>
+                <li> 1 टमाटर, बारीक कटा हुआ</li>
+                <li> 1-2 हरी मिर्च, कटी हुई (स्वादानुसार)</li>
+                <li> 1 चम्मच अदरक-लहसुन का पेस्ट</li>
+                <li> 1/2 चम्मच हल्दी पाउडर</li>
+                <li> 1 चम्मच जीरा पाउडर</li>
+                <li> 1 चम्मच धनिया पाउडर</li>
+                <li> 1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                <li> नमक स्वाद अनुसार</li>
+                <li> गार्निश के लिए ताजा हरा धनिया</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. सब्जियाँ तैयार करें:</li><ul>
+                <li> फूलगोभी को साफ करके छोटे-छोटे टुकड़ों में काट लीजिए.</li>
+                <li> आलू को छीलकर क्यूब्स में काट लें. अतिरिक्त स्टार्च हटाने के लिए उन्हें ठंडे पानी से धो लें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. सब्जियाँ भून लें:</li><ul>
+                <li> एक बड़े पैन या कड़ाही में मध्यम आंच पर तेल गर्म करें.</li>
+                <li> जीरा डालें और तड़कने दें.</li>
+                <li> इसमें बारीक कटा प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. अदरक-लहसुन का पेस्ट और मसाले डालें:</li><ul>
+                <li> अदरक-लहसुन का पेस्ट डालें और कुछ मिनट तक भूनें जब तक कि कच्ची महक खत्म न हो जाए.</li>
+                <li> हल्दी पाउडर, जीरा पाउडर, धनिया पाउडर और लाल मिर्च पाउडर डालें.</li>
+                <li>अच्छी तरह हिलाएं और कुछ मिनट तक पकाएं जब तक कि मसालों से खुशबू न आने लगे।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. टमाटर डालें:</li><ul>
+                <li> बारीक कटे टमाटर डालकर तब तक पकाएं जब तक वे नरम न हो जाएं और मिश्रण से तेल अलग न होने लगे.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. आलू और फूलगोभी डालें:</li><ul>
+                <li> पैन में कटे हुए आलू और फूलगोभी के फूल डालें.</li>
+                <li> इन्हें प्याज-टमाटर के मिश्रण के साथ मिला लें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. आलू गोभी पकाएं:</li><ul>
+                <li> स्वादानुसार नमक डालें और सब्जियों को मसाले से ढकने के लिए हिलाएँ।</li>
+                &nbsp;- पैन को ढक दें और आलू गोभी को धीमी से मध्यम आंच पर पकने दें.
+                <br />
+                <li> समान रूप से पकना सुनिश्चित करने के लिए बीच-बीच में हिलाते रहें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. तैयार होने की जांच करें:</li><ul>
+                <li> आलू और फूलगोभी नरम होने तक पकाएं, लेकिन गूदेदार न हों। इसमें लगभग 15-20 मिनट का समय लग सकता है.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. सजाकर परोसें:</li><ul>
+                <li> जब आलू गोभी पक जाए तो इसे ताजी हरी धनिया से गार्निश करें.</li>
+                <li> रोटी, नान या उबले चावल के साथ गरमागरम परोसें।</li>
+
+            </ul> <p style="color:orange;font-size:20px">अपने घर में बने आलू गोभी का आनंद लें, यह एक स्वादिष्ट और आरामदायक शाकाहारी व्यंजन है!</p>
+
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@using WebMatrix.Data
+@{ 
+    Layout = "~/shared/layout.cshtml";
+    Database db = Database.Open("mylibrarydb");
+    var q = "select * from books";
+    var st = "";
+    if(IsPost && Request.Form["sb"] != null){
+        st = "%" + Request.Form["stb"] + "%";
+        q = "select * from books where title like @0";
+    }
+    var r = db.Query(q, st);
+    WebGrid w = new WebGrid(r);
+    var an = Request.Form["atb"];
+    var tn = Request.Form["ttb"];
+    var pr = Request.Form["ptb"];
+    if(IsPost && Request.Form["ab"] != null){
+        Validation.RequireField("ttb","enter title");
+        Validation.RequireField("atb", "enter author");
+        Validation.RequireField("ptb", "enter price");
+        if (Validation.IsValid()){
+            var i = "insert into books(title,author,price) values('"+tn+"','"+an+"',"+pr+")";
+            db.Execute(i);
+            Response.Redirect("~/default.cshtml");
+        }
+    }
+}
+<form method="post" action="">
+    <fieldset>
+        <legend>search</legend>
+        Enter the search title:<input type="text" name="stb" id="stb"/>
+        <input type="submit" name="sb" value="search"/>
+    </fieldset>
+    <fieldset>
+        <legend>add book</legend>
+        Enter title:<input type="text" name="ttb" id="ttb" />
+        Enter author:<input type="text" name="atb" id="atb" />
+        Enter price:<input type="text" name="ptb" id="ptb" />
+        <input type="submit" name="ab" value="add book"/>
+    </fieldset>
+</form>
+@w.GetHtml(
+        columns:w.Columns(w.Column("id"),w.Column("title"),w.Column("author"),w.Column("price"),
+        w.Column(format:@<a href="~/editordelete?id=@item.Id">Edit/Delete</a>)))

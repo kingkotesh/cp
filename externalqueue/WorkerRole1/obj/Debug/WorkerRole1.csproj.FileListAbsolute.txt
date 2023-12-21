@@ -1,0 +1,14 @@
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\MonAgentListener.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\Microsoft.Data.Edm.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\bin\Debug\Microsoft.Data.OData.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\obj\Debug\WorkerRole1.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\obj\Debug\WorkerRole1.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\obj\Debug\WorkerRole1.csproj.CopyComplete
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\ROMAN REIGNS\CP\externalqueue\WorkerRole1\obj\Debug\WorkerRole1.pdb

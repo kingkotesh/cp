@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> with a new recepie <span style="color:blue">MushRoom Curry</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Mushroom Curry</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://media.istockphoto.com/id/1147258041/photo/mushroom-curry-with-spinach-and-chickpeas-close-up-in-a-pan-on-the-table-vertical-top-view.jpg?s=612x612&w=0&k=20&c=uBEs_kmS_faJE--HwoT2nMa6xNWQerw9vHlcABuUOX0=" alt="Mushroom Curry">
+
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px">  For the Mushroom Marinade:</p>
+            <ul style="list-style-type:circle">
+                <li> 250g mushrooms, cleaned and sliced</li>
+                <li> 1/2 teaspoon turmeric powder</li>
+                <li> Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">  For the Curry:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 tablespoons vegetable oil</li>
+                <li> 1 large onion and 2 tomatoes, finely chopped</li>
+                <li> 2 green chilies, slit</li>
+                <li> 1 teaspoon cumin seeds, 1 teaspoon ginger-garlic paste</li>
+                <li> 1 teaspoon coriander powder,1/2 teaspoon cumin powder</li>
+                <li> 1/2 teaspoon red chili powder,1/2 teaspoon garam masala powder </li>
+                <li> 1/2 cup fresh cream,1/2 cup water </li>
+                <li> Fresh coriander leaves for garnish</li>
+                <li> Salt to taste</li>
+            </ul>
+
+
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Marinate the Mushrooms:</li><ul>
+                <li> In a bowl, combine the cleaned and sliced mushrooms with turmeric powder and salt.</li>
+                <li> Allow them to marinate for about 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Sauté the Mushrooms:</li><ul>
+                <li> Heat 1 tablespoon of oil in a pan over medium-high heat.</li>
+                <li> Add the marinated mushrooms and sauté until they release their moisture and turn golden brown.</li>
+                <li> Remove them from the pan and set aside.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Prepare the Curry:</li><ul>
+                <li> In the same pan, add the remaining 1 tablespoon of oil.</li>
+                <li> Add cumin seeds and let them splutter. </li>
+                <li> Add finely chopped onions and green chilies. Sauté until the onions become translucent.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add Ginger-Garlic Paste and Spices:</li><ul>
+                <li> Add ginger-garlic paste and sauté for a couple of minutes until the raw smell disappears.</li>
+                <li> Add coriander powder, cumin powder, red chili powder, and salt.</li>
+                <li> Stir well and cook for a few minutes until the spices are well incorporated.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Tomatoes:</li><ul>
+                <li> Add the finely chopped tomatoes and cook until they become soft and the oil starts to separate from the mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Add Sautéed Mushrooms:</li><ul>
+                <li> Return the sautéed mushrooms to the pan and mix them with the onion-tomato mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Pour in Cream:</li><ul>
+                <li> Add fresh cream (or coconut milk for a vegan version) and stir well.</li>
+                <li> This gives the curry a rich and creamy texture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Add Water:</li><ul>
+                <li> Pour in water to achieve your desired curry consistency. Adjust the amount of water as needed.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. Simmer and Garnish:</li><ul>
+                <li> Allow the Mushroom Curry to simmer over low heat for about 5-7 minutes to let the flavors meld.</li>
+                <li> Sprinkle garam masala powder and garnish with fresh coriander leaves.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">10. Serve:</li><ul>
+                <li> Serve the Mushroom Curry hot with steamed rice, naan, roti, or bread of your choice.</li>
+            </ul><p style="color:orange;font-size:20px"> Enjoy your homemade Mushroom Curry, which is both creamy and full of flavor!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px"> మష్రూమ్ మెరినేడ్ కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 250 గ్రా పుట్టగొడుగులు, శుభ్రం చేసి ముక్కలుగా చేసి</li>
+                <li> 1/2 టీస్పూన్ పసుపు పొడి</li>
+                <li> రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px"> కూర కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 టేబుల్ స్పూన్లు కూరగాయల నూనె</li>
+                <li> 1 పెద్ద ఉల్లిపాయ, సన్నగా తరిగిన</li>
+                <li> 2 టమోటాలు, సన్నగా తరిగినవి</li>
+                <li> 2 పచ్చి మిరపకాయలు, చీలిక (రుచికి తగ్గట్టుగా)</li>
+                <li> 1 టీస్పూన్ అల్లం-వెల్లుల్లి పేస్ట్</li>
+                <li> 1 టీస్పూన్ జీలకర్ర</li>
+                <li> 1 టీస్పూన్ కొత్తిమీర పొడి,1/2 టీస్పూన్ జీలకర్ర పొడి</li>
+                <li> 1/2 టీస్పూన్ ఎర్ర మిరప పొడి (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> 1/2 టీస్పూన్ గరం మసాలా పొడి</li>
+                <li> 1/2 కప్పు తాజా క్రీమ్ (లేదా శాకాహారి వెర్షన్ కోసం కొబ్బరి పాలతో ప్రత్యామ్నాయం)</li>
+                <li> 1/2 కప్పు నీరు (కావలసిన స్థిరత్వం కోసం సర్దుబాటు చేయండి)</li>
+                <li> రుచికి ఉప్పు</li>
+                <li> అలంకరించు కోసం తాజా కొత్తిమీర ఆకులు</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. పుట్టగొడుగులను మెరినేట్ చేయండి:</li><ul>
+                <li> ఒక గిన్నెలో, శుభ్రం చేసి, ముక్కలు చేసిన పుట్టగొడుగులను పసుపు పొడి మరియు ఉప్పుతో కలపండి. </li>
+                <li> వాటిని సుమారు 15-20 నిమిషాలు మెరినేట్ చేయడానికి అనుమతించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. పుట్టగొడుగులను వేయండి:</li><ul>
+                <li> మీడియం-అధిక వేడి మీద పాన్‌లో 1 టేబుల్ స్పూన్ నూనె వేడి చేయండి.</li>
+                <li> మెరినేట్ చేసిన పుట్టగొడుగులను వేసి, తేమను విడుదల చేసి బంగారు గోధుమ రంగులోకి వచ్చే వరకు వేయించాలి.</li>
+                <li> పాన్ నుండి వాటిని తీసివేసి పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. కూర సిద్ధం:</li><ul>
+                <li> అదే బాణలిలో, మిగిలిన 1 టేబుల్ స్పూన్ నూనె వేయండి.</li>
+                <li> జీలకర్ర వేసి చిలకరించాలి.</li>
+                <li> సన్నగా తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి.</li>
+                <li> ఉల్లిపాయలు పారదర్శకంగా మారే వరకు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. అల్లం-వెల్లుల్లి పేస్ట్ మరియు మసాలా దినుసులు జోడించండి:</li><ul>
+                <li> పచ్చి వాసన పోయే వరకు అల్లం-వెల్లుల్లి పేస్ట్ వేసి రెండు నిమిషాలు వేయించాలి.</li>
+                <li> ధనియాల పొడి, జీలకర్ర పొడి, ఎర్ర కారం మరియు ఉప్పు జోడించండి.</li>
+                <li> బాగా కదిలించు మరియు సుగంధ ద్రవ్యాలు బాగా కలుపబడే వరకు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. టమోటాలు జోడించండి:</li><ul>
+                <li> సన్నగా తరిగిన టొమాటోలను వేసి అవి మెత్తబడే వరకు ఉడికించాలి మరియు </li>
+                &nbsp;  మిశ్రమం నుండి నూనె వేరుచేయడం ప్రారంభమవుతుంది.
+                <br />
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. వేయించిన పుట్టగొడుగులను జోడించండి:</li><ul>
+                <li> వేయించిన పుట్టగొడుగులను తిరిగి పాన్‌లో వేసి ఉల్లిపాయ-టమోటా మిశ్రమంతో కలపండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. క్రీమ్ (లేదా కొబ్బరి పాలు) లో పోయాలి:</li><ul>
+                <li> తాజా క్రీమ్ (లేదా శాకాహారి వెర్షన్ కోసం కొబ్బరి పాలు) వేసి బాగా కదిలించు. </li>
+                <li> ఇది కూరకు గొప్ప మరియు క్రీము ఆకృతిని ఇస్తుంది.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. నీరు కలపండి:</li><ul>
+                <li> మీరు కోరుకున్న కూర స్థిరత్వాన్ని సాధించడానికి నీటిలో పోయాలి. </li>
+                <li> అవసరమైన నీటి మొత్తాన్ని సర్దుబాటు చేయండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. ఉడకబెట్టడం మరియు అలంకరించు:</li><ul>
+                <li> మష్రూమ్ కర్రీని తక్కువ వేడి మీద 5-7 నిమిషాల పాటు ఉడకనివ్వండి.</li>
+                <li> గరం మసాలా పొడిని చల్లి తాజా కొత్తిమీర ఆకులతో అలంకరించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">10. అందజేయడం:</li><ul>
+                <li> మష్రూమ్ కర్రీని మీకు నచ్చిన అన్నం, నాన్, రోటీ లేదా బ్రెడ్‌తో వేడిగా వడ్డించండి.</li>
+
+            </ul><p style="color:orange;font-size:20px"> మీ ఇంట్లో తయారుచేసిన మష్రూమ్ కర్రీని ఆస్వాదించండి, ఇది క్రీము మరియు పూర్తి రుచితో ఉంటుంది!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">सामग्री:</p>
+
+            <p style="color:#22facb;font-size:20px"> मशरूम मैरिनेड के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 250 ग्राम मशरूम, साफ और कटे हुए</li>
+                <li> 1/2 चम्मच हल्दी पाउडर</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px"> करी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 बड़े चम्मच वनस्पति तेल</li>
+                <li> 1 बड़ा प्याज, बारीक कटा हुआ</li>
+                <li> 2 टमाटर, बारीक कटे हुए</li>
+                <li> 2 हरी मिर्च, कटी हुई (स्वादानुसार)</li>
+                <li> 1 चम्मच अदरक-लहसुन का पेस्ट</li>
+                <li> 1 चम्मच जीरा</li>
+                <li> 1 चम्मच धनिया पाउडर,1/2 चम्मच जीरा पाउडर</li>
+                <li> 1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                <li> 1/2 चम्मच गरम मसाला पाउडर</li>
+                <li> 1/2 कप ताजी क्रीम (या शाकाहारी संस्करण के लिए नारियल के दूध का उपयोग करें)</li>
+                <li> 1/2 कप पानी (वांछित स्थिरता के अनुसार समायोजित करें)</li>
+                <li> नमक स्वाद अनुसार</li>
+                <li> गार्निश के लिए ताजा हरा धनिया</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. मशरूम को मैरीनेट करें:</li><ul>
+                <li> एक कटोरे में साफ और कटे हुए मशरूम को हल्दी पाउडर और नमक के साथ मिलाएं. </li>
+                <li> इन्हें लगभग 15-20 मिनट तक मैरिनेट होने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. मशरूम को भून लें:</li><ul>
+                <li> मध्यम-तेज आंच पर एक पैन में 1 बड़ा चम्मच तेल गर्म करें.</li>
+                <li> मैरीनेट किए हुए मशरूम डालें और तब तक भूनें जब </li>
+                &nbsp;  वे अपनी नमी न छोड़ दें और सुनहरे भूरे रंग के न हो जाएं।
+                <br />
+                <li> इन्हें पैन से निकालें और एक तरफ रख दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. करी तैयार करें:</li><ul>
+                <li> उसी पैन में बचा हुआ 1 बड़ा चम्मच तेल डालें.</li>
+                <li> जीरा डालें और तड़कने दें.</li>
+                <li> इसमें बारीक कटा प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. अदरक-लहसुन का पेस्ट और मसाले डालें:</li><ul>
+                <li> अदरक-लहसुन का पेस्ट डालें और कुछ मिनट तक भूनें जब तक कि कच्ची महक खत्म न हो जाए.</li>
+                <li> धनिया पाउडर, जीरा पाउडर, लाल मिर्च पाउडर और नमक डालें. अच्छी तरह हिलाएँ और </li>
+                <li> कुछ मिनटों तक पकाएँ जब तक कि मसाले अच्छी तरह से मिल न जाएँ।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. टमाटर डालें:</li><ul>
+                <li> बारीक कटे टमाटर डालकर तब तक पकाएं जब तक वे नरम न हो जाएं और मिश्रण से तेल अलग न होने लगे.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. भुने हुए मशरूम डालें:</li><ul>
+                <li> भुने हुए मशरूम को पैन में लौटा दें और उन्हें प्याज-टमाटर के मिश्रण के साथ मिलाएं।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. क्रीम (या नारियल का दूध) डालें:</li><ul>
+                <li> ताज़ी क्रीम (या शाकाहारी संस्करण के लिए नारियल का दूध) डालें और अच्छी तरह हिलाएँ। </li>
+                <li> यह करी को एक समृद्ध और मलाईदार बनावट देता है।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. पानी डालिये:</li><ul>
+                <li> अपनी वांछित करी स्थिरता प्राप्त करने के लिए पानी डालें।</li>
+                <li> आवश्यकतानुसार पानी की मात्रा समायोजित करें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. उबालें और गार्निश करें:</li><ul>
+                <li> मशरूम करी को धीमी आंच पर लगभग 5-7 मिनट तक उबलने दें ताकि इसका स्वाद मिल जाए।</li>
+                <li> गरम मसाला पाउडर छिड़कें और ताजी हरी धनिया से गार्निश करें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">10. सेवा करना:</li><ul>
+                <li> मशरूम करी को उबले हुए चावल, नान, रोटी या अपनी पसंद की ब्रेड के साथ गर्मागर्म परोसें।</li>
+
+            </ul>  <p style="color:orange;font-size:20px"> अपनी घर पर बनी मशरूम करी का आनंद लें, जो मलाईदार और स्वाद से भरपूर है!</p>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

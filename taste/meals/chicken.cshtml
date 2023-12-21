@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> with a new recepie <span style="color:blue">Chicken Curry</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Chicken Curry</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://www.funfoodfrolic.com/wp-content/uploads/2020/09/Chicken-Curry-Thumbnail.jpg" alt="Chicken Curry">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+
+
+
+            <p style="color:#22facb;font-size:20px">For Marinating the Chicken:</p>
+            <ul style="list-style-type:circle">
+                <li> 500g chicken pieces (bone-in or boneless)</li>
+                <li> 1 teaspoon turmeric powder</li>
+                <li> Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">For the Curry:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 tablespoons cooking oil</li>
+                <li> 1 large onion, finely chopped</li>
+                <li> 2 tomatoes, finely chopped</li>
+                <li> 2-3 green chilies, slit (adjust to taste)</li>
+                <li> 1 teaspoon ginger-garlic paste</li>
+                <li> 1 teaspoon cumin seeds</li>
+                <li> 1 teaspoon coriander powder</li>
+                <li> 1/2 teaspoon cumin powder</li>
+                <li> 1/2 teaspoon red chili powder (adjust to taste)</li>
+                <li> 1/2 teaspoon garam masala powder</li>
+                <li> 1/2 cup yogurt</li>
+                <li> 1/2 cup water (adjust for desired consistency)</li>
+                <li> Salt to taste</li>
+                <li> Fresh coriander leaves for garnish (optional)</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Marinate the Chicken:</li><ul>
+                <li> In a bowl, combine the chicken pieces with turmeric powder and salt. </li>
+                <li> Allow them to marinate for about 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Sauté the Chicken:</li><ul>
+                <li> Heat oil in a large pan or skillet over medium-high heat.</li>
+                <li> Add the marinated chicken pieces and sauté until they turn golden brown.</li>
+                <li> Remove them from the pan and set aside.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Prepare the Curry:</li><ul>
+                <li> In the same pan, add more oil if needed.</li>
+                <li> Add cumin seeds and let them splutter.</li>
+                <li> Add finely chopped onions and green chilies. </li>
+                <li> Sauté until the onions become translucent.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add Ginger-Garlic Paste and Spices:</li><ul>
+                <li> Add ginger-garlic paste and sauté for a couple of minutes until the raw smell disappears.</li>
+                <li> Add coriander powder, cumin powder, red chili powder, and salt. </li>
+                <li> Stir well and cook for a few minutes until the spices are well incorporated.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Tomatoes:</li><ul>
+                <li> Add the finely chopped tomatoes and cook until they become soft and the oil starts to separate from the mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Add Yogurt:</li><ul>
+                <li> Reduce the heat to low and add yogurt. Mix well and cook for a few minutes until</li>
+                <li> the yogurt is well incorporated and the oil starts to separate again.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Add Water and Chicken:</li><ul>
+                <li> Pour in water to achieve your desired curry consistency.</li>
+                <li> Return the sautéed chicken to the pan and mix it with the onion-tomato mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Simmer and Garnish:</li><ul>
+                <li> Allow the Chicken Curry to simmer over low heat for about 15-20 minutes,</li>
+                <li> or until the chicken is fully cooked and tender.</li>
+                <li> Sprinkle garam masala powder and garnish with fresh coriander leaves (if desired).</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. Serve:</li><ul>
+                <li> Serve your Chicken Curry hot with steamed rice, naan, or roti.</li>
+
+            </ul><p style="color:orange;font-size:20px">Enjoy your homemade Chicken Curry, rich in flavor and spices! </p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px">కోడిని మెరినేట్ చేయడానికి:</p>
+            <ul style="list-style-type:circle">
+                <li> 500 గ్రా చికెన్ ముక్కలు (ఎముకలు లేదా ఎముకలు లేనివి)</li>
+                <li> 1 టీస్పూన్ పసుపు పొడి</li>
+                <li> రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">కూర కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 టేబుల్ స్పూన్లు వంట నూనె</li>
+                <li> 1 పెద్ద ఉల్లిపాయ, సన్నగా తరిగిన</li>
+                <li> 2 టమోటాలు, సన్నగా తరిగినవి</li>
+                <li> 2-3 పచ్చి మిరపకాయలు, చీలిక (రుచికి తగ్గట్టుగా)</li>
+                <li> 1 టీస్పూన్ అల్లం-వెల్లుల్లి పేస్ట్</li>
+                <li> 1 టీస్పూన్ జీలకర్ర</li>
+                <li> 1 టీస్పూన్ కొత్తిమీర పొడి</li>
+                <li> 1/2 టీస్పూన్ జీలకర్ర పొడి</li>
+                <li> 1/2 టీస్పూన్ ఎర్ర మిరప పొడి (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> 1/2 టీస్పూన్ గరం మసాలా పొడి</li>
+                <li> 1/2 కప్పు పెరుగు</li>
+                <li> 1/2 కప్పు నీరు (కావలసిన స్థిరత్వం కోసం సర్దుబాటు చేయండి)</li>
+                <li> రుచికి ఉప్పు</li>
+                <li> అలంకరించు కోసం తాజా కొత్తిమీర ఆకులు (ఐచ్ఛికం)</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. చికెన్‌ని మెరినేట్ చేయండి:</li><ul>
+                <li> ఒక గిన్నెలో చికెన్ ముక్కలను పసుపు, ఉప్పు వేసి కలపాలి.</li>
+                <li> వాటిని సుమారు 15-20 నిమిషాలు మెరినేట్ చేయడానికి అనుమతించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. చికెన్ వేగించండి:</li><ul>
+                <li> మీడియం-అధిక వేడి మీద పెద్ద పాన్ లేదా స్కిల్లెట్‌లో నూనె వేడి చేయండి.</li>
+                <li> మ్యారినేట్ చేసిన చికెన్ ముక్కలను వేసి బంగారు గోధుమ రంగు వచ్చేవరకు వేయించాలి. </li>
+                <li> పాన్ నుండి వాటిని తీసివేసి పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. కూర సిద్ధం:</li><ul>
+                <li> అదే పాన్‌లో, అవసరమైతే మరింత నూనె వేయండి.</li>
+                <li> జీలకర్ర వేసి చిలకరించాలి.</li>
+                <li> సన్నగా తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి. </li>
+                <li> ఉల్లిపాయలు పారదర్శకంగా మారే వరకు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. అల్లం-వెల్లుల్లి పేస్ట్ మరియు మసాలా దినుసులు జోడించండి:</li><ul>
+                <li> పచ్చి వాసన పోయే వరకు అల్లం-వెల్లుల్లి పేస్ట్ వేసి రెండు నిమిషాలు వేయించాలి.</li>
+                <li> ధనియాల పొడి, జీలకర్ర పొడి, ఎర్ర కారం మరియు ఉప్పు జోడించండి. </li>
+                <li> బాగా కదిలించు మరియు సుగంధ ద్రవ్యాలు బాగా కలుపబడే వరకు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. టమోటాలు జోడించండి:</li><ul>
+                <li> సన్నగా తరిగిన టొమాటోలను వేసి అవి మెత్తబడే వరకు ఉడికించాలి మరియు </li>
+                <li> మిశ్రమం నుండి నూనె వేరుచేయడం ప్రారంభమవుతుంది.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. పెరుగు జోడించండి:</li><ul>
+                <li> మంట తగ్గించి పెరుగు వేయాలి. బాగా కలపండి మరియు పెరుగు బాగా కలుపబడే వరకు మరియు</li>
+                <li> నూనె మళ్లీ వేరు చేయడం ప్రారంభించే వరకు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+                <br />
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. నీరు మరియు చికెన్ జోడించండి:</li><ul>
+                <li> మీరు కోరుకున్న కూర స్థిరత్వాన్ని సాధించడానికి నీటిలో పోయాలి.</li>
+                <li> వేయించిన చికెన్‌ను తిరిగి పాన్‌లో వేసి ఉల్లిపాయ-టమోటో మిశ్రమంతో కలపండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. ఉడకబెట్టడం మరియు అలంకరించు:</li><ul>
+                <li> చికెన్ కర్రీని దాదాపు 15-20 నిమిషాలు తక్కువ వేడి మీద ఉడకనివ్వండి లేదా చికెన్ పూర్తిగా ఉడికినంత వరకు</li>
+                &nbsp;  మరియు మృదువుగా ఉంటుంది.
+                <br />
+                <li> గరం మసాలా పొడిని చల్లి, తాజా కొత్తిమీర ఆకులతో (కావాలనుకుంటే) గార్నిష్ చేయండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. అందజేయడం:</li><ul>
+                <li> ఉడికించిన అన్నం, నాన్ లేదా రోటీతో మీ చికెన్ కర్రీని వేడిగా వడ్డించండి.</li>
+
+            </ul><p style="color:orange">రుచి మరియు సుగంధ ద్రవ్యాలతో కూడిన మీ ఇంట్లో తయారుచేసిన చికెన్ కర్రీని ఆస్వాదించండి!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> सामग्री:</p>
+
+
+            <p style="color:#22facb;font-size:20px">चिकन को मैरीनेट करने के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 500 ग्राम चिकन के टुकड़े (हड्डी वाले या बिना हड्डी वाले)</li>
+                <li> 1 चम्मच हल्दी पाउडर</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">करी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 बड़े चम्मच खाना पकाने का तेल</li>
+                <li> 1 बड़ा प्याज, बारीक कटा हुआ</li>
+                <li> 2 टमाटर, बारीक कटे हुए</li>
+                <li> 2-3 हरी मिर्च, कटी हुई (स्वादानुसार)</li>
+                <li> 1 चम्मच अदरक-लहसुन का पेस्ट</li>
+                <li> 1 चम्मच जीरा</li>
+                <li> 1 चम्मच धनिया पाउडर</li>
+                <li> 1/2 चम्मच जीरा पाउडर</li>
+                <li> 1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                <li> 1/2 चम्मच गरम मसाला पाउडर</li>
+                <li> 1/2 कप दही</li>
+                <li> 1/2 कप पानी (वांछित स्थिरता के अनुसार समायोजित करें)</li>
+                <li> नमक स्वाद अनुसार</li>
+                <li> सजावट के लिए ताज़ा हरा धनिया (वैकल्पिक)</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. चिकन को मैरीनेट करें:</li><ul>
+                <li> एक बाउल में चिकन के टुकड़ों को हल्दी पाउडर और नमक के साथ मिलाएं.</li>
+                <li> इन्हें लगभग 15-20 मिनट तक मैरिनेट होने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. चिकन को भून लें:</li><ul>
+                <li> एक बड़े पैन या कड़ाही में मध्यम-तेज़ आंच पर तेल गरम करें.</li>
+                <li> इसमें मैरीनेट किए हुए चिकन के टुकड़े डालें और सुनहरा भूरा होने तक भूनें. </li>
+                <li> इन्हें पैन से निकालें और एक तरफ रख दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. करी तैयार करें:</li><ul>
+                <li> उसी पैन में अगर जरूरत हो तो और तेल डालें.</li>
+                <li> जीरा डालें और तड़कने दें.</li>
+                <li> इसमें बारीक कटा प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. अदरक-लहसुन का पेस्ट और मसाले डालें:</li><ul>
+                <li> अदरक-लहसुन का पेस्ट डालें और कुछ मिनट तक भूनें जब तक कि कच्ची महक खत्म न हो जाए.</li>
+                <li> धनिया पाउडर, जीरा पाउडर, लाल मिर्च पाउडर और नमक डालें. </li>
+                <li> अच्छी तरह हिलाएँ और कुछ मिनटों तक पकाएँ जब तक कि मसाले अच्छी तरह से मिल न जाएँ।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. टमाटर डालें:</li><ul>
+                <li> बारीक कटे टमाटर डालकर तब तक पकाएं जब तक वे नरम न हो जाएं और मिश्रण से तेल अलग न होने लगे.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. दही डालें:</li><ul>
+                <li> आंच धीमी कर दें और दही डालें. अच्छी तरह मिलाएं और कुछ मिनट तक पकाएं जब तक कि </li>
+                <li> दही अच्छी तरह से मिल न जाए और तेल फिर से अलग न होने लगे।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. पानी और चिकन डालें:</li><ul>
+                <li> अपनी वांछित करी स्थिरता प्राप्त करने के लिए पानी डालें।</li>
+                <li> भुने हुए चिकन को वापस पैन में डालें और प्याज-टमाटर के मिश्रण के साथ मिला दें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. उबालें और गार्निश करें:</li><ul>
+                <li> चिकन करी को धीमी आंच पर लगभग 15-20 मिनट तक या चिकन के पूरी तरह से पकने और नरम होने तक उबलने दें।</li>
+                <li> गरम मसाला पाउडर छिड़कें और ताजी धनिया पत्ती (अगर चाहें तो) से गार्निश करें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. सेवा करना:</li><ul>
+                <li> अपनी चिकन करी को उबले हुए चावल, नान या रोटी के साथ गर्मागर्म परोसें।</li>
+
+            </ul><p style="color:orange;font-size:20px">स्वाद और मसालों से भरपूर, अपनी घर पर बनी चिकन करी का आनंद लें!</p>
+
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

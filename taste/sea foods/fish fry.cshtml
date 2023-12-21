@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our dish is <span style="color:blue">Lemon Pepper Fish Fry</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Lemon Pepper Fish Fry</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://content.osgnetworks.tv/gameandfishing/content/photos/grilled-lemon-pepper-trout-770x513.jpg" alt="Lemon Pepper Fish Fry">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px"> For the Curry:</p>
+            <ul style="list-style-type:circle">
+                <li> 4 fish fillets (such as tilapia, cod, or halibut)</li>
+                <li> 2 lemons</li>
+                <li> 2 tablespoons olive oil</li>
+                <li> 2 teaspoons black pepper</li>
+                <li> 1 teaspoon salt</li>
+                <li> 1 teaspoon garlic powder</li>
+                <li> 1 teaspoon onion powder</li>
+                <li> 1 teaspoon dried thyme</li>
+                <li> Fresh parsley for garnish</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 1. Prepare the Marinade:</li><ul>
+                <li> In a bowl, combine the juice of one lemon, olive oil, black pepper, salt, garlic powder, onion powder.</li>
+                <li>Mix these ingredients well to create a flavorful marinade.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Marinate the Fish:</li><ul>
+                <li> Place the fish fillets in a shallow dish or a resealable plastic bag.</li>
+                <li> Pour the marinade over the fish, ensuring it's well-coated. Seal the bag or cover the dish.</li>
+                <li> Refrigerate for at least 30 minutes. This allows the flavors to infuse into the fish.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Preheat and Prepare Grill or Pan:</li><ul>
+                <li> Preheat your grill to medium-high heat. </li>
+                <li> If using a stovetop pan, heat it over medium-high heat and add a little oil to prevent sticking.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Cook the Fish:</li><ul>
+                <li> Place the marinated fish fillets on the grill or in the pan.</li>
+                <li> Grill each side for about 3-4 minutes, or until the fish flakes easily with a fork and has a nice golden-brown color.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Lemon Squeeze:</li><ul>
+                <li> While the fish is cooking, cut the remaining lemon into wedges.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Garnish and Serve:</li><ul>
+                <li> Once the fish is cooked, remove it from the grill or pan.</li>
+                <li> Squeeze fresh lemon juice over the cooked fish fillets for a burst of citrus flavor. </li>
+                <li> Garnish with fresh parsley if desired.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Serve:</li><ul>
+                <li> Serve your Lemon Pepper Fish hot, accompanied by your choice of side dishes like steamed vegetables, rice, or a fresh salad.</li>
+
+            </ul><p style="color:orange">Enjoy your zesty and flavorful Lemon Pepper Fish Fry!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+            <ul style="list-style-type:circle">
+                <li> 4 చేప ఫిల్లెట్లు (తిలాపియా, కాడ్ లేదా హాలిబట్ వంటివి)</li>
+                <li> 2 నిమ్మకాయలు</li>
+                <li> 2 టేబుల్ స్పూన్లు ఆలివ్ నూనె</li>
+                <li> 2 టీస్పూన్లు నల్ల మిరియాలు</li>
+                <li> 1 టీస్పూన్ ఉప్పు</li>
+                <li> 1 టీస్పూన్ వెల్లుల్లి పొడి</li>
+                <li> 1 టీస్పూన్ ఉల్లిపాయ పొడి</li>
+                <li> 1 టీస్పూన్ ఎండిన థైమ్</li>
+                <li> అలంకరించు కోసం తాజా పార్స్లీ</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. మెరినేట్ విధానం:</li><ul>
+                <li> ఒక గిన్నెలో, ఒక నిమ్మరసం, ఆలివ్ నూనె, నల్ల మిరియాలు, ఉప్పు, వెల్లుల్లి పొడి, ఉల్లిపాయల పొడిని కలపండి.</li>
+                <li> రుచికరమైన మెరినేడ్ సృష్టించడానికి ఈ పదార్థాలను బాగా కలపండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. చేపల మెరినేట్ విధానం:</li><ul>
+                <li> ఫిష్ ఫిల్లెట్‌లను నిస్సారమైన డిష్ లేదా రీసీలబుల్ ప్లాస్టిక్ బ్యాగ్‌లో ఉంచండి.</li>
+                <li> చేపపై మెరినేడ్ పోయాలి, అది బాగా మునిగినట్లు ఉందని నిర్ధారించుకోండి. బ్యాగ్‌ను మూసివేయండి లేదా డిష్‌ను కవర్ చేయండి.</li>
+                <li> కనీసం 30 నిమిషాలు ఫ్రిజ్‌లో ఉంచండి. ఇది చేపలలో రుచులను చొప్పించడానికి అనుమతిస్తుంది.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. ముందుగా వేడి చేసి, గ్రిల్ లేదా పాన్ సిద్ధం చేయు విధానం:</li><ul>
+                <li>  మీ గ్రిల్‌ను మీడియం-అధిక వేడికి ముందుగా వేడి చేయండి. </li>
+                <li>  స్టవ్‌టాప్ పాన్ ఉపయోగిస్తుంటే, మీడియం-అధిక వేడి మీద వేడి చేసి, అంటుకోకుండా ఉండటానికి కొద్దిగా నూనె జోడించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. చేపలను ఉడికించు విధానం:</li><ul>
+                <li> మ్యారినేట్ చేసిన ఫిష్ ఫిల్లెట్‌లను గ్రిల్‌పై లేదా పాన్‌లో ఉంచండి.</li>
+                <li> దాదాపు 3-4 నిమిషాల పాటు ప్రతి వైపు గ్రిల్ చేయండి లేదా చేపలు ఫోర్క్‌తో సులభంగా ఫ్లేక్స్ అయ్యే వరకు మరియు చక్కటి బంగారు గోధుమ రంగు వచ్చే వరకు.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. నిమ్మకాయ స్క్వీజ్ విధానం:</li><ul>
+                <li> చేపలు ఉడుకుతున్నప్పుడు, మిగిలిన నిమ్మకాయను ముక్కలుగా కట్ చేసుకోండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. గార్నిష్ చేసి సర్వ్ చేయు విధానం:</li><ul>
+                <li>  చేపలు ఉడికిన తర్వాత, దానిని గ్రిల్ లేదా పాన్ నుండి తీసివేయండి.</li>
+                <li> సిట్రస్ ఫ్లేవర్ కోసం వండిన ఫిష్ ఫిల్లెట్లపై తాజా నిమ్మరసం పిండండి.</li>
+                <li> కావాలనుకుంటే తాజా పార్స్లీతో అలంకరించండి.</li>
+
+
+                <li>  ఉడికించిన కూరగాయలు, అన్నం లేదా తాజా సలాడ్ వంటి మీరు ఎంచుకున్న సైడ్ డిష్‌లతో పాటు మీ లెమన్ పెప్పర్ ఫిష్‌ను వేడిగా వడ్డించండి.</li>
+
+
+            </ul><p style="color:#22facb">మీ అభిరుచి మరియు సువాసనగల లెమన్ పెప్పర్ ఫిష్ ఫ్రైని ఆస్వాదించండి!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">सामग्री:</p>
+            <ul style="list-style-type:circle">
+                <li> 4 मछली फ़िललेट्स (जैसे तिलापिया, कॉड, या हलिबूट)</li>
+                <li> 2 नींबू</li>
+                <li> 2 बड़े चम्मच जैतून का तेल</li>
+                <li> 2 चम्मच काली मिर्च</li>
+                <li> 1 चम्मच नमक</li>
+                <li> 1 चम्मच लहसुन पाउडर,1 चम्मच प्याज पाउडर</li>
+                <li> 1 चम्मच सूखा अजवायन</li>
+                <li> गार्निश के लिए ताजा अजमोद</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. मैरिनेड तैयार करें:</li><ul>
+                <li> एक कटोरे में एक नींबू का रस, जैतून का तेल, काली मिर्च, नमक, लहसुन पाउडर, प्याज पाउडर मिलाएं।</li>
+                <li> एक स्वादिष्ट मैरिनेड बनाने के लिए इन सामग्रियों को अच्छी तरह मिलाएं।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. मछली को मैरीनेट करें:</li><ul>
+                <li>मछली के फ़िललेट्स को एक उथले बर्तन या दोबारा सील करने योग्य प्लास्टिक बैग में रखें।</li>
+                <li> मछली के ऊपर मैरिनेड डालें, सुनिश्चित करें कि यह अच्छी तरह से लेपित है। बैग को सील करें या डिश को ढक दें।</li>
+                <li> कम से कम 30 मिनट के लिए फ्रिज में रखें। यह स्वाद को मछली में प्रवेश करने की अनुमति देता है।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. पहले से गरम करें और ग्रिल या पैन तैयार करें:</li><ul>
+                <li> अपनी ग्रिल को मध्यम-तेज़ आंच पर पहले से गरम कर लें।</li>
+                <li> यदि स्टोवटॉप पैन का उपयोग कर रहे हैं, तो इसे मध्यम-तेज़ आंच पर गर्म करें और चिपकने से रोकने के लिए इसमें थोड़ा सा तेल डालें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. मछली पकाएं:</li><ul>
+                <li> मैरिनेटेड फिश फ़िललेट्स को ग्रिल पर या पैन में रखें.</li>
+                <li> हर तरफ लगभग 3-4 मिनट तक ग्रिल करें, या जब तक कि मछली कांटे से आसानी से छिल न जाए और उसका रंग अच्छा सुनहरा-भूरा न हो जाए।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. नींबू निचोड़:</li><ul>
+                <li> जब मछली पक रही हो तो बचे हुए नींबू को वेजेज में काट लें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6.  सजाकर परोसें:</li><ul>
+                <li> एक बार जब मछली पक जाए तो उसे ग्रिल या पैन से निकाल लें.</li>
+                <li> खट्टे स्वाद के लिए पकी हुई मछली के बुरादे के ऊपर ताजा नींबू का रस निचोड़ें।</li>
+                <li> चाहें तो ताजा अजमोद से गार्निश करें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. सेवा करना:</li><ul>
+                <li> अपनी लेमन पेपर फिश को अपनी पसंद के साइड डिश जैसे उबली हुई सब्जियां, चावल या ताजा सलाद के साथ गर्मागर्म परोसें।</li>
+            </ul><p style="color:orange">अपने जोशीले और स्वादिष्ट लेमन पेपर फिश फ्राई का आनंद लें!</p>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@using WebMatrix.Data;
+@{ 
+    Database db = Database.Open("mymoviesdb");
+    var q = "select * from movies where Id=" + Int32.Parse(Request.QueryString["Id"]);
+    var r=db.QuerySingle(q);
+    if(IsPost && Request.Form["etxt"] != null)
+    {
+        var u = "update movies set movie=@0,director=@1,hero=@2 where Id=@3";
+        db.Execute(u, Request.Form["idtxt"], Request.Form["mtxt"], Request.Form["htxt"], Int32.Parse(Request.QueryString["Id"]));
+        Response.Redirect("~/editdelete.cshtml");
+    }
+    if(IsPost && Request.Form["deltxt"] != null)
+    {
+        var d = "delete from movies where Id=@0";
+        db.Execute(d, Int32.Parse(Request.QueryString["Id"]));
+        Response.Redirect("~/editdelete.cshtml");
+    }
+}
+<form method="post" action="">
+    <table>
+        <tr>
+            <td>id</td>
+            <td><input type="text" name="idtxt" id="idtxt" value="@r.id" /></td>
+        </tr>
+        <tr>
+            <td>movie</td>
+            <td><input type="text" name="mtxt" id="mtxt" value="@r.movie" /></td>
+        </tr>
+        <tr>
+            <td>director</td>
+            <td><input type="text" name="dtxt" id="dtxt" value="@r.director" /></td>
+        </tr>
+        <tr>
+            <td>hero</td>
+            <td><input type="text" name="htxt" id="htxt" value="@r.hero" /></td>
+        </tr>
+        <tr>
+            <td>edit</td>
+            <td><input type="submit" name="etxt" id="etxt" value="edit" /></td>
+        </tr>
+        <tr>
+            <td>delete</td>
+            <td><input type="submit" name="deltxt" id="deltxt" value="delete" /></td>
+        </tr>
+    </table>
+</form>

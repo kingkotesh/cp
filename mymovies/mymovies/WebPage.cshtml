@@ -1,0 +1,40 @@
+﻿@using WebMatrix.Data
+@{ 
+    Database db = Database.Open("mymoviesdb");
+    var q = "select * from movies";
+    var st = "";
+    if(IsPost && Request.Form["sbtn"] != null)
+    {
+        st = "%" + Request.Form["txt"] +"%";
+        q = "select * from movies where movie like @0";
+
+    }
+    var moviename = Request.Form["mn"];
+    var directorname = Request.Form["dn"];
+    var heroname = Request.Form["hn"];
+    if (IsPost && Request.Form["abtn"] != null)
+    {
+        var i = "insert into movies(movie,director,hero) values('"+moviename+"','"+directorname+"','"+heroname+"')";
+        db.Execute(i);
+        Response.Redirect("~/WebPage.cshtml");
+    }
+    var r = db.Query(q,st);
+    WebGrid w = new WebGrid(r);
+}
+        <form action="" method="post">
+            <fieldset>
+                <legend>search</legend>
+                movie name:<input type="text" id="txt" name="txt"/>
+                <input type="submit" value="search" name="sbtn" id="sbtn" />
+            </fieldset>
+
+            <fieldset>
+                <legend>add</legend>
+                movie name:<input type="text" id="mn" name="mn" />
+                director name:<input type="text" id="dn" name="dn" />
+                hero name:<input type="text" id="hn" name="hn" />
+                <input type="submit" value="add" name="abtn" id="abtn" />
+          </fieldset>
+        </form>
+@w.GetHtml(
+    columns:w.Columns(w.Column("id"),w.Column("movie"),w.Column("director"),w.Column("hero")))

@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Masala Dosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #FFFFCC;
+        }
+
+        h3 {
+            color: #ce85f2;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0;height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue"> Masala Dosa</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+           <div id="en">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">Masala Dosa</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/e3/7a/93/e37a930a82579d1a012cf0b95d39d8f9.jpg" alt="masala dosa">
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    <li> Rice and urad dal (black gram) for batter  </li>
+                    <li>Potatoes, onions, and spices for the filling  </li>
+                    <li> Oil for cooking</li>
+                </ul>
+
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Soak:</li></b>
+                <br />
+                <li>Soak rice and urad dal separately for 4-6 hours.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Grind:</li></b>
+                <br />
+                <li>Grind rice and urad dal into a smooth batter separately.</li>
+                <li>Mix them together, add salt, and let it ferment overnight.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Prepare Filling:</li></b>
+                <br />
+                <li> Boil and mash potatoes.</li>
+                <li>Sauté onions and spices, then mix with the mashed potatoes.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Cook Dosa: </li></b>
+                <br />
+                <li> Heat a dosa griddle or non-stick pan.</li>
+                <li> Pour a ladle of batter and spread it in a circular motion to make a thin dosa.</li>
+                <li>Drizzle oil around the edges and cook until it turns crispy.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Add Filling:</li></b>
+                <br />
+                <li>Place a spoonful of the prepared potato filling on one side of the dosa.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Fold and Serve:</li></b>
+                <br />
+                <li>Fold the dosa over the filling to make a semi-circle or roll it.</li>
+                <li>Serve hot with coconut chutney and sambar.</li>
+
+                <h3>Enjoy your homemade masala dosa!</h3>
+            </ul>
+        </div>
+        <div id="tel">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">మసాలా దోస</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/e3/7a/93/e37a930a82579d1a012cf0b95d39d8f9.jpg" alt="masala dosa">
+
+            <h3>పదార్థాలు:</h3>
+            <ul>
+
+                <ul>
+                    <li>పిండి కోసం బియ్యం మరియు ఉరద్ పప్పు (నల్లపప్పు).  </li>
+                    <li>నింపడానికి బంగాళదుంపలు, ఉల్లిపాయలు మరియు సుగంధ ద్రవ్యాలు.  </li>
+                    <li> వంట కోసం నూనె  </li>
+
+                </ul>
+
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">నానబెట్టు: </li></b>
+                <br />
+                <li>బియ్యం మరియు పప్పును విడివిడిగా 4-6 గంటలు నానబెట్టండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">గ్రైండ్: </li></b>
+                <br />
+                <li> బియ్యం మరియు ఉరద్ పప్పును విడిగా మెత్తగా పిండిలో రుబ్బుకోవాలి.</li>
+                <li> వాటిని కలిపి, ఉప్పు వేసి, రాత్రంతా పులియనివ్వండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">ఫిల్లింగ్ సిద్ధం: </li></b>
+                <br />
+                <li>బంగాళదుంపలను ఉడకబెట్టి మెత్తగా చేయాలి.</li>
+                <li>ఉల్లిపాయలు మరియు సుగంధ ద్రవ్యాలు వేసి, ఆపై మెత్తని బంగాళాదుంపలతో కలపండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">కుక్ దోస:  </li></b>
+                <br />
+                <li>  దోసె గ్రిడ్ లేదా నాన్-స్టిక్ పాన్ వేడి చేయండి.</li>
+                <li>   ఒక గరిటె పిండిని పోసి వృత్తాకారంలో వేసి సన్నని దోసెలా తయారుచేయాలి.</li>
+                <li>   అంచుల చుట్టూ నూనె వేసి, క్రిస్పీగా మారే వరకు ఉడికించాలి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">ఫిల్లింగ్ జోడించండి:  </li></b>
+                <br />
+                <li>  దోసెకు ఒక వైపున సిద్ధం చేసుకున్న బంగాళదుంప ఫిల్లింగ్‌ను ఒక చెంచా ఉంచండి.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">మడిచి సర్వ్ చేయండి:  </li></b>
+                <br />
+                <li>   సెమీ సర్కిల్‌గా చేయడానికి లేదా చుట్టడానికి ఫిల్లింగ్‌పై దోసను మడవండి.</li>
+                <li> కొబ్బరి చట్నీ మరియు సాంబార్‌తో వేడిగా వడ్డించండి.</li>
+
+                <h3>మీ ఇంట్లో తయారుచేసిన మసాలా దోసను ఆస్వాదించండి!</h3>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">मसाला डोसा</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/e3/7a/93/e37a930a82579d1a012cf0b95d39d8f9.jpg" alt="masala dosa">
+
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <ul>
+                    <li>बैटर के लिए चावल और उड़द दाल.</li>
+                    <li>भरने के लिए आलू, प्याज और मसाले.</li>
+                    <li> पकाने का तेल.</li>
+                </ul>
+
+
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">सोख: </li></b>
+                <br />
+                <li>चावल और उड़द दाल को अलग-अलग 4-6 घंटे के लिए भिगो दें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">पीस: </li></b>
+                <br />
+                <li> चावल और उड़द दाल को अलग-अलग पीसकर मुलायम घोल बना लें।</li>
+                <li>इन्हें एक साथ मिलाएं, नमक डालें और इसे रात भर किण्वित होने दें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">भरने की तैयारी:</li></b>
+                <br />
+                <li>आलू उबालकर मैश कर लें।</li>
+                <li>प्याज और मसालों को भून लें, फिर मसले हुए आलू के साथ मिलाएं।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">कुक डोसा:  </li></b>
+                <br />
+                <li>डोसा तवा या नॉन-स्टिक पैन गर्म करें।</li>
+                <li> एक कलछी पर बैटर डालें और उसे गोलाकार में फैलाकर पतला डोसा बना लें।</li>
+                <li> किनारों पर तेल छिड़कें और कुरकुरा होने तक पकाएं।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">भराव जोड़ें:  </li></b>
+                <br />
+                <li> डोसे के एक तरफ एक चम्मच तैयार आलू का भरावन रखें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">मोड़ो और परोसो:</li></b>
+                <br />
+                <li> डोसे को भरावन के ऊपर मोड़कर अर्धवृत्त बनाएं या बेल लें।</li>
+                <li>  गर्म-गर्म नारियल की चटनी और सांबर के साथ परोसें।</li>
+                <h3>अपने घर पर बने मसाला डोसा का आनंद लें!</h3>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

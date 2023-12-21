@@ -1,0 +1,11 @@
+﻿@using WebMatrix.Data;
+@{
+    Database db = Database.Open("practisewebsite");
+    var q = "select * from movies";
+    var r = db.Query(q);
+    WebGrid w = new WebGrid(r);
+
+
+}
+@w.GetHtml(
+    columns: (w.Columns(w.Column("id"), w.Column("moviename"), w.Column("directorname"), w.Column("heroname"), w.Column(format:@<a href="~/changes?id=@item.Id">Edit/Delete</a>))))

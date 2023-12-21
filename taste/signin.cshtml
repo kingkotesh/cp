@@ -1,0 +1,87 @@
+﻿@using WebMatrix.Data
+@{
+    Database db = Database.Open("tastedb");
+    if (IsPost)
+    {
+        String us = Request.Form["us"];
+        String ps = Request.Form["ps"];
+        var r = db.QuerySingle("select * from details where username = @0 AND password = @1", us, ps);
+        if (r != null)
+        {
+            Response.Cookies["cook"].Value = Request.Form["us"];
+            Response.Redirect("~/menu.cshtml");
+        }
+        <h4 style="color:red;">Invalid login attempt. Please check your credentials.</h4>
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid yellow;
+            width: 320px;
+        }
+
+        td {
+            width: 100px;
+            color: #ffffff;
+        }
+
+        input [type="text"],
+        input[type="password"] {
+            margin-top: 20px;
+        }
+
+
+        input[type="submit"] {
+            background-color: yellow;
+            color: #000000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 23px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="post" action="">
+        <p style="color:white;font-size:30px;font-weight:bold">Login</p>
+        <table>
+
+            <tr>
+                <td style="padding-top: 20px;"> Username:</td>
+                <td style="padding-top: 20px"><input type="text" id="us" name="us" required /><br /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" id="ps" name="ps" required />
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="btn" name="btn" value="login" /></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

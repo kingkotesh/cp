@@ -1,0 +1,7 @@
+C:\ROMAN REIGNS\CP\kingsql\bin\Debug\kingsql.exe.config
+C:\ROMAN REIGNS\CP\kingsql\bin\Debug\kingsql.exe
+C:\ROMAN REIGNS\CP\kingsql\bin\Debug\kingsql.pdb
+C:\ROMAN REIGNS\CP\kingsql\obj\Debug\kingsql.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\kingsql\obj\Debug\kingsql.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\kingsql\obj\Debug\kingsql.exe
+C:\ROMAN REIGNS\CP\kingsql\obj\Debug\kingsql.pdb

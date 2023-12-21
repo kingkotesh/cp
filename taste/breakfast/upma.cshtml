@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Upma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #FFFFCC;
+        }
+
+        h3 {
+            color: #ce85f2;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; heigth:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue"> Upma</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+
+        <div id="en">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">Upma</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://thumbs.dreamstime.com/b/upma-uppumavu-uppittu-dish-indian-subcontinent-most-common-south-maharashtrian-sri-lankan-tamil-breakfast-119700026.jpg" alt="upma">
+            <h3>Ingredients:</h3>
+            <ul>
+
+                <li> Semolina (also known as rava or suji)
+                <li>Oil or ghee (clarified butter)</li>
+                <li>Mustard seeds</li>
+                <li>Urad dal (black gram lentils)</li>
+                <li>Curry leaves</li>
+                <li>Onions</li>
+                <li>Green chilies</li>
+                <li>Salt</li>
+                <li>Water</li>
+                <li>Chopped cilantro (coriander leaves) for garnish (optional)</li>
+
+
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <li>Heat oil in a pan.</li>
+                <li>Add mustard seeds, urad dal, and curry leaves. Sauté until mustard seeds splutter.</li>
+                <li>Add chopped onions and green chilies. Sauté until onions are translucent.</li>
+                <li>Add semolina (rava) and roast it until it turns light brown.</li>
+                <li>Pour hot water and stir continuously to avoid lumps.</li>
+                <li>Add salt and let it cook on low heat until the upma is dry and fluffy.</li>
+                <li>Garnish with chopped cilantro and serve hot.</li>
+
+                <h3>Enjoy your homemade upma!</h3>
+            </ul>
+        </div>
+        <div id="tel">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">ఉప్మ</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://thumbs.dreamstime.com/b/upma-uppumavu-uppittu-dish-indian-subcontinent-most-common-south-maharashtrian-sri-lankan-tamil-breakfast-119700026.jpg" alt="upma">
+
+            <h3>పదార్థాలు:</h3>
+
+            <ul>
+                <li>సెమోలినా (రవా లేదా సుజీ అని కూడా పిలుస్తారు)</li>
+                <li>నూనె లేదా నెయ్యి (స్పష్టమైన వెన్న)</li>
+                <li>ఆవ గింజలు</li>
+                <li>ఉరద్ పప్పు (నల్ల పప్పు)</li>
+                <li>కరివేపాకు</li>
+                <li>ఉల్లిపాయలు</li>
+                <li>పచ్చి మిరపకాయలు</li>
+                <li>ఉ ప్పు</li>
+                <li>నీటి</li>
+                <li>గార్నిష్ కోసం తరిగిన కొత్తిమీర (కొత్తిమీర ఆకులు) (ఐచ్ఛికం) </li>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li>బాణలిలో నూనె వేడి చేయండి.</li>
+                <li>ఆవాలు, ఉరద్ పప్పు మరియు కరివేపాకు జోడించండి. ఆవాలు చిమ్మే వరకు వేయించాలి.</li>
+                <li>తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి. ఉల్లిపాయలు అపారదర్శకమయ్యే వరకు వేయించాలి.</li>
+                <li>సెమోలినా (రవ్వ) వేసి లేత గోధుమరంగు వచ్చేవరకు వేయించాలి.</li>
+                <li>వేడి నీటిని పోసి ముద్దలు రాకుండా నిరంతరం కదిలించు.</li>
+                <li>ఉప్మా పొడి మరియు మెత్తటి వరకు ఉప్పు వేసి తక్కువ వేడి మీద ఉడికించాలి.</li>
+                <li>తరిగిన కొత్తిమీరతో గార్నిష్ చేసి వేడిగా సర్వ్ చేయాలి.</li>
+                <h3>మీ ఉప్మాను ఆస్వాదించండి!</h3>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">उपमा</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://thumbs.dreamstime.com/b/upma-uppumavu-uppittu-dish-indian-subcontinent-most-common-south-maharashtrian-sri-lankan-tamil-breakfast-119700026.jpg" alt="upma">
+
+            <h3>सामग्री:</h3>
+
+            <ul>
+                <li>सूजी (जिसे रवा या सूजी भी कहा जाता है)</li>
+                <li>तेल या घी (स्पष्ट मक्खन)</li>
+                <li>सरसों के बीज</li>
+                <li>उड़द दाल (काले चने की दाल)</li>
+                <li>करी पत्ते</li>
+                <li>प्याज</li>
+                <li>हरी मिर्च</li>
+                <li>नमक</li>
+                <li>पानी</li>
+                <li>गार्निश के लिए कटा हरा धनिया (वैकल्पिक)</li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li>एक पैन में तेल गर्म करें।</li>
+                <li>सरसों के बीज, उड़द दाल और करी पत्ता डालें। सरसों के दाने फूटने तक भूनिये।</li>
+                <li>कटा हुआ प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+                <li>सूजी (रवा) डालकर हल्का भूरा होने तक भून लीजिए।</li>
+                <li>गर्म पानी डालें और गुठलियां न बनें इसके लिए लगातार हिलाते रहें।</li>
+                <li>नमक डालें और इसे धीमी आंच पर पकने दें जब तक कि उपमा सूखा और फूला न हो जाए।</li>
+                <li>कटे हरे धनिये से सजाकर गरमागरम परोसें।</li>
+                <h3>अपने उपमा का आनंद लें!</h3>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

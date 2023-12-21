@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste and Express - Aloo Tikki Recipe</title>
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #ADFF2F;
+        }
+
+        h3, p {
+            color: orange;
+        }
+
+        Strong {
+            text-decoration: underline;
+            list-style-type: none;
+            color: cyan
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our snack is <span style="color:blue">Aloo Tikki</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" id="lang" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Aloo Tikki</h2>
+
+        <img style="padding-left:250px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8zQ0Ngssnpw42df7EbcIxgo04NPtxKtLkB0wsmV1mv4ctLkyqp4O52CMdeqwpAswNi0c&usqp=CAU" alt="Aloo Tikki">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>4 medium-sized potatoes</li>
+                <li>1 small onion, finely chopped</li>
+                <li>1-2 green chilies, finely chopped (adjust to taste)</li>
+                <li>1 teaspoon ginger-garlic paste</li>
+                <li>1/2 teaspoon red chili powder (adjust to taste)</li>
+                <li>1/2 teaspoon chat masala</li>
+                <li>1/2 teaspoon garam masala</li>
+                <li>1 teaspoon lemon juice</li>
+                <li>Salt to taste</li>
+                <li>Oil for shallow frying</li>
+            </ul>
+            <h3>Process:</h3>
+            <ul>
+                <li><strong>Boil and Mash Potatoes:</strong><br />Boil the potatoes until they are soft. Allow them to cool, peel, and then mash them in a bowl. Make sure there are no lumps.</li>
+                <li><strong>Prepare the Spice Mix:</strong><br />In a small bowl,mix red chili powder, chat masala,lemon juice,garam masala and salt.</li>
+                <li><strong>Cook the Spice Mix:</strong><br />Heat a little oil in a pan and sauté the ginger-garlic paste and green chilies until the raw smell disappears. Add the spice mix and sauté for a minute. Then, add the finely chopped onions and cook until they turn soft and translucent.</li>
+                <li><strong>Combine Ingredients:</strong><br />Add the spice mix to the mashed potatoes, Mix everything well.</li>
+                <li><strong>Form Patties:</strong><br />Take a portion of the mixture and shape it into a round or oval patty. Repeat with the remaining mixture.</li>
+                <li><strong>Shallow Fry:</strong><br />Heat a little oil in a frying pan over medium heat. Place the patties in the pan and cook until they turn golden brown on one side. Flip the patties and cook the other side until it's also golden brown. Add more oil as needed.</li>
+                <li><strong>Serve Hot:</strong><br />Remove the Aloo Tikki from the pan and place them on a paper towel to drain excess oil. Serve hot with chutney or sauce of your choice.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;Enjoy your homemade aloo tikki :)</p>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+                <li>4 మధ్య తరహా బంగాళదుంపలు </li>
+                <li>1 చిన్న ఉల్లిపాయ, చక్కగా తరిగినవి</li>
+                <li>1-2 పచ్చి మిరపకాయలు, సన్నగా తరిగినవి (రుచికి తగ్గట్టుగా)</li>
+                <li>1 టీస్పూన్ అల్లం-వెల్లుల్లి పేస్ట్</li>
+                <li>1/2 టీస్పూన్  కారం (రుచికి అనుకూలంగా)</li>
+                <li>1/2 టీస్పూన్ చాట్ మసాలా</li>
+                <li>1/2 టీస్పూన్ గరం మసాలా</li>
+                <li>ఉప్పు (తగినంత)</li>
+                <li> వేయించడానికి నూనె  </li>
+                <li>1 టీస్పూన్ నిమ్మరసం</li>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li><strong>బంగాళాదుంపలను ఉడకబెట్టి మెత్తగా చేయాలి: </strong><br />బంగాళదుంపలు మెత్తబడే వరకు ఉడకబెట్టండి. అవి చల్లబడే వరకు వేచి ఉండి, పై తొక్క తీసి, ఆపై వాటిని ఒక గిన్నెలో మాష్ చేయండి. ముద్దలు లేకుండా నిర్ధారించుకోండి.</li>
+                <li><strong>మసాలా మిక్స్‌ను సిద్ధం చేయండి:</strong><br />ఒక చిన్న గిన్నెలో,  కారం, చాట్ మసాలా, నిమ్మరసం, గరం మసాలా మరియు ఉప్పు కలపండి.</li>
+                <li><strong>మసాలా మిక్స్‌ను ఉడికించాలి:</strong><br />పాన్‌లో కొద్దిగా నూనె వేసి వేడయ్యాక అల్లం-వెల్లుల్లి పేస్ట్ మరియు పచ్చిమిరపకాయలను పచ్చి వాసన పోయే వరకు వేయించాలి. మసాలా మిక్స్ వేసి ఒక నిమిషం పాటు వేయించాలి.తరువాత, సన్నగా తరిగిన ఉల్లిపాయలు వేసి అవి మెత్తగా మరియు పారదర్శకంగా మారే వరకు ఉడికించాలి.</li>
+                <li><strong>పదార్థాలు కలపండి:</strong><br />బంగాళాదుంపలకు మసాలా మిశ్రమాన్ని జోడించండి . ప్రతిదీ బాగా కలపండి.</li>
+                <li><strong>పట్టీలను తయారు చేయండి: </strong><br />మిశ్రమంలో కొంత భాగాన్ని తీసుకొని దానిని గుండ్రంగా లేదా ఓవల్ పట్టీగా మార్చండి. మిగిలిన మిశ్రమంతో పునరావృతం చేయండి.</li>
+                <li><strong>షాలో ఫ్రై:</strong><br />మీడియం వేడి మీద వేయించడానికి పాన్‌లో కొద్దిగా నూనె వేడి చేయండి. పాన్‌లో పట్టీలను ఉంచండి ,అవి ఒక వైపు బంగారు గోధుమ రంగులోకి వచ్చే వరకు వేయించాలి. పట్టీలను తిప్పండి మరియు బంగారు గోధుమ రంగు వచ్చేవరకు మరొక వైపు ఉడికించాలి. అవసరమైతే మరింత నూనె జోడించండి.</li>
+                <li><strong>వేడిగా సర్వ్ చేయండి:</strong><br />పాన్ నుండి ఆలూ టిక్కీని తీసివేసి, అదనపు నూనెను హరించడానికి వాటిని కాగితపు టవల్ మీద ఉంచండి. మీకు నచ్చిన చట్నీ లేదా సాస్‌తో వేడిగా వడ్డించండి.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;మీ ఇంట్లో తయారుచేసిన ఆలూ టిక్కీని ఆస్వాదించండి  :)</p>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <li>4 मध्यम आकार के आलू </li>
+                <li>1 छोटा प्याज, बारीक कटा हुआ</li>
+                <li>1-2 हरी मिर्च, बारीक कटी हुई (स्वादानुसार) </li>
+                <li>1 चम्मच अदरक-लहसुन का पेस्ट </li>
+                <li>1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार) </li>
+                <li>1/2 चम्मच चाट मसाला </li>
+                <li>1/2 चम्मच गरम मसाला </li>
+                <li>नमक स्वाद अनुसार </li>
+                <li>1 चम्मच नींबू का रस </li>
+                <li>उथले तलने के लिए तेल</li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li><strong>आलू उबालें और मैश करें: </strong><br />आलू को नरम होने तक उबालें। इनके ठंडा होने तक इंतजार करें, छीलें और फिर इन्हें एक कटोरे में मैश कर लें। सुनिश्चित करें कि कोई गांठ न रहे।</li>
+                <li><strong>मसाला मिश्रण तैयार करें:</strong><br />एक छोटे कटोरे में, लाल मिर्च पाउडर, चाट मसाला, नींबू का रस, गरम मसाला और नमक मिलाएं।</li>
+                <li><strong>मसाला मिश्रण पकाएं:</strong><br />एक पैन में थोड़ा सा तेल गर्म करें, अदरक-लहसुन पेस्ट और हरी मिर्च को तब तक भूनें जब तक कि कच्ची गंध गायब न हो जाए। मसाला मिश्रण डालें और एक मिनट तक भूनें। फिर, बारीक कटा हुआ प्याज डालें, नरम और पारदर्शी होने तक पकाएं।</li>
+                <li><strong>सामग्री मिलाएं:</strong><br />मसले हुए आलू में मसाले का मिश्रण मिलाएं और उबले । सभी चीजों को अच्छे से मिला लीजिए|</li>
+                <li><strong>पैटीज़ बनाएं:</strong><br />मिश्रण का एक भाग लें और इसे गोल या अंडाकार पैटी का आकार दें। बचे हुए मिश्रण के साथ दोहराएँ।</li>
+                <li><strong>शैलो फ्राई:</strong><br />मध्यम आंच पर एक फ्राइंग पैन में थोड़ा सा तेल गर्म करें। पैटीज़ को पैन में रखें और एक तरफ से सुनहरा भूरा होने तक पकाएं। पैटीज़ को पलटें और दूसरी तरफ से भी सुनहरा भूरा होने तक पकाएँ। यदि आवश्यकता हो तो और तेल डालें।</li>
+                <li><strong>गरमागरम परोसें:</strong><br />आलू टिक्की को पैन से निकालें और अतिरिक्त तेल निकालने के लिए उन्हें कागज़ के तौलिये पर रखें। अपनी पसंद की चटनी या सॉस के साथ गरमागरम परोसें।.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;अपनी घर पर बनी आलू टिक्की का आनंद लें   :)</p>
+        </div>
+    </section>
+</body>
+</html>

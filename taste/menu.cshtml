@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('https://static6.depositphotos.com/1076560/566/i/450/depositphotos_5669973-stock-photo-dark-brushed-steel-texture.jpg');
+            background-repeat: no-repeat;
+            background-size: 2000px 1500px;
+        }
+
+        h1 {
+            color: aqua;
+            font-family: Rog Fonts;
+        }
+
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: greenyellow;
+            height: 350px;
+            width: 425px;
+            border-radius: 20px;
+            text-align: center;
+            visibility: default;
+            color: rgb(146, 22, 218);
+            font-size: 50px
+        }
+
+        img {
+            border-radius: 20px;
+            height: 350px;
+            width: 425px;
+        }
+
+        a:hover {
+            color: brown;
+        }
+
+        .container:hover .image {
+            visibility: hidden;
+        }
+
+        .container:hover .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family:Monotype Corsiva;text-align:center;color:rgb(235, 13, 168);font-size:35pt">
+        WELCOME To Food World! <span style="color: #ADFF2F">  @Request.Cookies["cook"].Value</span>
+    </h1>
+    <h1 style="font-family:Monotype Corsiva;color:rgb(231, 231, 33)">Popular Varieties of Recipes </h1>
+    <table cellpadding="5px">
+        <tr>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://curlytales.com/wp-content/uploads/2017/07/South-Indian-Breakfast-e1500268866721.jpg" /></a>
+                    <div class="content">
+                        <a href="~/breakfast/dosa.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Masala Dosa</a><br />
+                        <a href="~/breakfast/idly.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Idly</a><br />
+                        <a href="~/breakfast/chapati.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Chapati</a><br />
+                        <a href="~/breakfast/upma.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Upma</a><br />
+                    </div>
+                </div>
+                <br /><h1>BreakFast</h1>
+            </th>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://assets.vogue.in/photos/626be08312fcfd42bba6a1b5/master/w_1600,c_limit/Fresh%20Catch1%20.jpg" /></a>
+                    <div class="content">
+                        <a href="~/sea foods/andhra fish.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Andhra Fish Curry</a><br />
+                        <a href="~/sea foods/fish fry.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Lemon Pepper Fish Fry</a><br />
+                        <a href="~/sea foods/crab curry.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Karnataka Crab Curry</a><br />
+                        <a href="~/sea foods/prawns.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Bengal Prawns Curry</a><br />
+
+                    </div>
+                </div>
+                <br /><h1>Sea Foods</h1>
+            </th>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/intro-1645057933.webp" /></a>
+                    <div class="content">
+                        <a href="~/meals/vegbiryani.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Veg Biryani</a><br />
+                        <a href="~/meals/mushroom.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Mushroom Curry</a><br />
+                        <a href="~/meals/alogobi.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Aloo Gobi</a><br />
+                        <a href="~/meals/chicken.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Chicken Curry</a><br />
+
+                    </div>
+                </div>
+                <br /><h1>Meals</h1>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://c.ndtvimg.com/2022-12/l0i0d5b8_indian-snacks_625x300_19_December_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350" /></a>
+                    <div class="content">
+                        <a href="~/snacks/samosa.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Veg Samosa</a><br />
+                        <a href="~/snacks/onion pakora.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Onion Pakora</a><br />
+                        <a href="~/snacks/aloo tikki.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Aloo Tikki</a><br />
+                        <a href="~/snacks/french fries.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">French Fries</a><br />
+
+                    </div>
+                </div>
+                <br /><h1>Snacks</h1>
+            </th>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://www.rajbhog.com/wp-content/uploads/2021/03/10-Must-Try-Rajbhog-Sweets-870x635.jpg" /></a>
+                    <div class="content">
+                        <a href="~/sweets/laddu.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Bandhar Laddu</a><br />
+                        <a href="~/sweets/kova.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Milk Made Kova</a><br />
+                        <a href="~/sweets/halwa.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Bread Halwa</a><br />
+                        <a href="~/sweets/gulab jamun.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Gulab Jamun</a><br />
+
+                    </div>
+                </div>
+                <br /><h1>Sweets</h1>
+            </th>
+            <th>
+                <div class="container">
+                    <a href="Sample.html"><img src="https://www.allrecipes.com/thmb/XwYhWsME2lVJ_fPdIJWaxKU-YtM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4Smoothies-with-a-Boost-2000-fd3cfdfa1cfc47aaa84e7449b3e883be.jpg" /></a>
+                    <div class="content">
+                        <a href="~/beverages/kitkat.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Kitkat Milkshake</a><br />
+                        <a href="~/beverages/coffee.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Coffee</a><br />
+                        <a href="~/beverages/mojitho.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Virgin Mojito shake</a><br />
+                        <a href="~/beverages/watermelon.cshtml" style="text-decoration:none;font-family:lucida calligraphy;font-size:30px">Watermelon Fruit Juice</a><br />
+
+                    </div>
+                </div>
+                <br /><h1>Beverages</h1>
+            </th>
+        </tr>
+
+    </table>
+</body>
+</html>

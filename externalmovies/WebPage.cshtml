@@ -1,0 +1,49 @@
+﻿@using WebMatrix.Data;
+@{ 
+    Database db = Database.Open("externaldb");
+    var query = "select * from movies";
+    var s = "";
+    if(IsPost && Request.Form["sbtn"] != null)
+    {
+        s = "%" + Request.Form["txt"] +"%";
+        query = "select * from movies where movie like @0";
+    }
+    var mn = Request.Form["txt1"];
+    var dn = Request.Form["txt2"];
+    var hn = Request.Form["txt3"];
+    if(IsPost && Request.Form["adbtn"] != null)
+    {
+        var q = "insert into movies(movie,director,hero) values('" + mn + "','" + dn + "','" + hn + "')";
+        db.Execute(q);
+        Response.Redirect("~/WebPage.cshtml");
+
+    }
+    var r = db.Query(query,s);
+    WebGrid w = new WebGrid(r);
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>search</legend>
+                Enter movie name:<input type="text" id="txt" name="txt"/>
+                <input type="submit" id="sbtn" name="sbtn" value="search"/>
+            </fieldset>
+            <br/><br /><br /><br /><br /><br />
+            <fieldset>
+                <legend>add</legend>
+                Enter movie name:<input type="text" id="txt1" name="txt1"/>
+                Enter director name:<input type="text" id="txt2" name="txt2"/>
+                Enter hero name:<input type="text" id="txt3" name="txt3"/>
+                <input type="submit" id="adbtn" name="adbtn" value="add"/>
+            </fieldset>
+
+        </form>
+    </body>
+</html>
+@w.GetHtml(
+    columns:w.Columns(w.Column("id"),w.Column("movie"),w.Column("director"),w.Column("hero"),w.Column(format:@<a href="~/edit?id=@item.id">Edit/Delete</a>)))

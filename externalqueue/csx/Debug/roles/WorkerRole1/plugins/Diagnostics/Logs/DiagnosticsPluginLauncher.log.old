@@ -1,0 +1,21 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Emulator config file set to C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] DiagnosticsStoreRootPath set to: C:\Users\king\AppData\Local\dftmp\Resources\639f37c3-01b9-4151-a53c-50366d037dfe
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Loading config file: C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Config file to read: C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Emulator config file set to C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Found a MonAgentHost.exe. WadArguments: "C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WebRole1\plugins\Diagnostics\Monitor\x64\MonAgentHost.exe" -LocalPath "C:\Users\king\AppData\Local\dftmp\Resources\ad5cb793-d88a-49e4-8ca4-4194b9a8f8ec\WAD0105"  -ConfigFile "C:\Users\king\AppData\Local\dftmp\Resources\ad5cb793-d88a-49e4-8ca4-4194b9a8f8ec\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-5facad144070480ba18614017d5da055  -TotalShutDownEvent WADDM-TotalShutDown-5facad144070480ba18614017d5da055 -InitializedEvent WADM-StartUp-5facad144070480ba18614017d5da055 -parent 19276 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000.
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Found a DiagnosticsPlugin.exe. WadArguments: "C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WebRole1\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Loading config file: C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Config file to read: C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Found a running wad2 MA not sharing the same local directory
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [18-12-2023 10:45:15] Found a DiagnosticsPlugin.exe. WadArguments: "C:\ROMAN REIGNS\CP\externalqueue\csx\Debug\roles\WebRole1\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.

@@ -1,0 +1,19 @@
+﻿<h1>i love u</h1>
+
+@using WebMatrix.Data
+@{
+    Database db = Database.Open("tastedb");
+    var q = "select * from details";
+    var r = db.Query(q);
+    WebGrid grid = new WebGrid(r);
+}
+@grid.GetHtml(
+    tableStyle: "grid",
+    alternatingRowStyle: "alt",
+    headerStyle: "head",
+    columns: grid.Columns(
+        grid.Column("Id"),
+        grid.Column("username"),
+        grid.Column("password")
+)
+)

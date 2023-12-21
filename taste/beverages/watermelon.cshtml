@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Watermelon Juice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #33FFFF;
+        }
+
+        h3 {
+            color: yellow;
+        }
+    </style>
+    <script>
+        function fun() {
+            let list = document.getElementById("lang");
+
+            var x = list.value;
+            if (x == "English") {
+
+                document.getElementById("en").style.visibility = "visible";
+                document.getElementById("tel").style.visibility = "hidden";
+                document.getElementById("hin").style.visibility = "hidden";
+                document.getElementById("hin").style.display = "none";
+                document.getElementById("tel").style.display = "none";
+                document.getElementById("en").style.display = "block";
+            }
+            else if (x == "Telugu") {
+
+                document.getElementById("tel").style.visibility = "visible";
+                document.getElementById("hin").style.visibility = "hidden";
+                document.getElementById("en").style.visibility = "hidden";
+                document.getElementById("en").style.display = "none";
+                document.getElementById("hin").style.display = "none";
+                document.getElementById("tel").style.display = "block";
+            }
+            else if (x == "Hindi") {
+
+                document.getElementById("hin").style.visibility = "visible";
+                document.getElementById("tel").style.visibility = "hidden";
+                document.getElementById("en").style.visibility = "hidden";
+                document.getElementById("tel").style.display = "none";
+                document.getElementById("en").style.display = "none";
+                document.getElementById("hin").style.display = "block";
+            }
+            else {
+
+                document.getElementById("hin").style.visibility = "hidden";
+                document.getElementById("tel").style.visibility = "hidden";
+                document.getElementById("en").style.visibility = "visible";
+                document.getElementById("hin").style.display = "none";
+                document.getElementById("tel").style.display = "none";
+                document.getElementById("en").style.display = "block";
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0;height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue">WaterMelon Juice</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <div id="en">
+            <h2 style="text-align:center;font-size: 22px;color:red;font-family">Watermelon Juice</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://minnetonkaorchards.com/wp-content/uploads/2022/10/Watermelon-juice-1024x683.jpg" alt="watermelon">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Watermelon - 1 small or half of a large one (about 4 cups of diced watermelon)</li>
+                <li>Sugar (optional) - 1-2 tablespoons (adjust to taste)</li>
+                <li>Lime or lemon juice (optional) - 1-2 tablespoons (adjust to taste)</li>
+                <li>Ice cubes (optional)</li>
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <li>Start by cutting the watermelon into small, manageable pieces, removing the seeds if necessary.
+                <li>Place the diced watermelon into a blender.</li>
+                <li>If you want your juice to be a little sweeter, you can add sugar to taste. This step is optional and depends on the natural sweetness of the watermelon.</li>
+                <li>If you prefer a slightly tangy flavor, you can add fresh lime or lemon juice, which is also optional. Start with a small amount and adjust according to your taste.</li>
+                <li>Blend the watermelon until it becomes a smooth liquid.</li>
+                <li> You can add a few ice cubes if you'd like your juice to be chilled.</li>
+                <li>Once blended, taste the juice and adjust the sweetness or tanginess by adding more sugar or lime/lemon juice if needed. Blend again if you make adjustments.</li>
+                <li>Pour the watermelon juice through a fine mesh strainer or cheesecloth to remove any pulp or leftover seeds.</li>
+                <li>Serve the fresh watermelon juice immediately in a glass with ice cubes or refrigerate it until you're ready to enjoy its refreshing goodness.</li>
+                <li>Fresh watermelon juice is a perfect way to beat the heat and stay hydrated, and it's quick and easy to make!</li>
+            </ul>
+        </div>
+        <div id="tel">
+            <h2 style="text-align:center;font-size: 22px;color:red;font-family">పుచ్చకాయ రసం</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://minnetonkaorchards.com/wp-content/uploads/2022/10/Watermelon-juice-1024x683.jpg" alt="watermelon">
+
+            <h3>పదార్థాలు:</h3>
+            <ul>
+
+                <ul>
+                    <li>పుచ్చకాయ - 1 చిన్నది లేదా పెద్దది (సుమారు 4 కప్పుల పుచ్చకాయ)</li>
+                    <li>చక్కెర (ఐచ్ఛికం) - 1-2 టేబుల్ స్పూన్లు (రుచికి సర్దుబాటు చేయండి)</li>
+                    <li>నిమ్మ లేదా నిమ్మరసం (ఐచ్ఛికం) - 1-2 టేబుల్ స్పూన్లు (రుచికి సర్దుబాటు చేయండి)</li>
+                    <li>ఐస్ క్యూబ్స్ (ఐచ్ఛికం)</li>
+                </ul>
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li>పుచ్చకాయను చిన్న, నిర్వహించదగిన ముక్కలుగా కత్తిరించడం ద్వారా ప్రారంభించండి, అవసరమైతే విత్తనాలను తీసివేయండి.</li>
+                <li>ముక్కలుగా చేసిన పుచ్చకాయను బ్లెండర్‌లో ఉంచండి.</li>
+                <li>మీ రసం కొంచెం తియ్యగా ఉండాలంటే, మీరు రుచికి చక్కెరను జోడించవచ్చు. ఈ దశ ఐచ్ఛికం మరియు పుచ్చకాయ యొక్క సహజ తీపిపై ఆధారపడి ఉంటుంది.</li>
+                <li>మీరు కొంచెం ఘాటైన రుచిని ఇష్టపడితే, మీరు తాజా సున్నం లేదా నిమ్మరసాన్ని జోడించవచ్చు, ఇది కూడా ఐచ్ఛికం. చిన్న మొత్తంతో ప్రారంభించి, మీ అభిరుచికి అనుగుణంగా సర్దుబాటు చేయండి.</li>
+                <li>పుచ్చకాయను మృదువైన ద్రవం అయ్యే వరకు బ్లెండ్ చేయండి.</li>
+                <li>మీరు మీ రసం చల్లగా ఉండాలనుకుంటే కొన్ని ఐస్ క్యూబ్‌లను జోడించవచ్చు.</li>
+                <li>మిశ్రమించిన తర్వాత, రసాన్ని రుచి చూసి, అవసరమైతే మరింత చక్కెర లేదా నిమ్మ/నిమ్మరసాన్ని జోడించడం ద్వారా తీపి లేదా తీపిని సర్దుబాటు చేయండి. మీరు సర్దుబాట్లు చేస్తే మళ్లీ కలపండి.</li>
+                <li>ఏదైనా గుజ్జు లేదా మిగిలిపోయిన విత్తనాలను తొలగించడానికి పుచ్చకాయ రసాన్ని చక్కటి మెష్ స్ట్రైనర్ లేదా చీజ్‌క్లాత్ ద్వారా పోయాలి.</li>
+                <li>తాజా పుచ్చకాయ రసాన్ని వెంటనే ఒక గ్లాసులో ఐస్ క్యూబ్స్‌తో వడ్డించండి లేదా మీరు దాని రిఫ్రెష్ మంచితనాన్ని ఆస్వాదించడానికి సిద్ధంగా ఉన్నంత వరకు ఫ్రిజ్‌లో ఉంచండి.</li>
+                <li>తాజా పుచ్చకాయ రసం వేడిని అధిగమించడానికి మరియు హైడ్రేటెడ్‌గా ఉండటానికి సరైన మార్గం, మరియు దీన్ని త్వరగా మరియు సులభంగా తయారు చేసుకోవచ్చు!</li>
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h2 style="text-align:center;font-size: 22px;color:red;font-family">तरबूज़ का रस</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://minnetonkaorchards.com/wp-content/uploads/2022/10/Watermelon-juice-1024x683.jpg" alt="watermelon">
+
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <ul>
+                    <li>तरबूज - 1 छोटा या आधे बड़े तरबूज का टुकड़ा (लगभग 4 कप कटा हुआ तरबूज)</li>
+                    <li>चीनी (वैकल्पिक) - 1-2 बड़े चम्च (स्वाद के अनुसार समायोजन करें)</li>
+                    <li>नींबू या नींबू का रस (वैकल्पिक) - 1-2 बड़े चम्च (स्वाद के अनुसार समायोजन करें)</li>
+                    <li>बर्फ के टुकड़े (वैकल्पिक)</li>
+                </ul>
+
+
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li>पहले, तरबूज को छोटे टुकड़ों में काट लें, और अगर आवश्यक हो तो बीज हटा दें.</li>
+                <li>कटे हुए तरबूज को ब्लेंडर में डालें.</li>
+                <li>अगर आप चाहते हैं कि जूस मीठा हो, तो आप चीनी का आवश्यकता के हिसाब से डाल सकते हैं. यह कदम वैकल्पिक है और तरबूज की प्राकृतिक मिठास पर निर्भर करता है.</li>
+                <li>अगर आपको थोड़ी सी खटास पसंद है, तो आप ताजा नींबू या नींबू का रस डाल सकते हैं, यह भी वैकल्पिक है. छोटे से मात्र में डालें और अपने स्वाद के हिसाब से समायोजन करें.</li>
+                <li>तरबूज को ब्लेंड करें, ताकती हुई द्रव बनने तक. आप चाहें तो जूस को ठंडा करने के लिए कुछ बर्फ के टुकड़े भी डाल सकते हैं.</li>
+                <li>एक बार ब्लेंड करने के बाद, जूस की मिठास या खटास को चेक करें और आवश्यक होने पर और चीनी या नींबू/नींबू का रस जोड़ें. यदि आप समायोजन करते हैं, तो फिर से ब्लेंड करें.</li>
+                <li>तरबूज का जूस कोई छलन या चीनी के कण्ठ पर छलने के बाद एक गिलास में डालें.</li>
+                <li>ताजा तरबूज का जूस तुरंत गिलास में पैर करें और बर्फ के टुकड़ों के साथ परोसें या जब तक आप इसे आनंद लेने के लिए तैयार नहीं होते, तब तक फ्रिज में रखें.</li>
+                <li>ताजा तरबूज का जूस गर्मियों को दूर करने और हाइड्रेट रहने का एक सुंदर तरीका है, और इसे तैयार करना तेज और आसान है!</li>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

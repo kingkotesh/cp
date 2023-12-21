@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> with a new recepie <span style="color:blue">Veg Biryani</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Veg Briyani</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot.jpg" alt="Veg Briyani">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px"> For Rice:</p>
+            <ul style="list-style-type:circle">
+                <li> 1.5 cups Basmati rice</li>
+                <li> Water for soaking and cooking rice</li>
+                <li> 2-3 green cardamom pods</li>
+                <li> 2-3 cloves</li>
+                <li> 1-inch cinnamon stick</li>
+                <li> 1 bay leaf</li>
+                <li> Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">   For Vegetable Mix:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 cups mixed vegetables (carrots, peas, beans, potatoes, etc.), diced</li>
+                <li> 1 large onion, thinly sliced and 2 tomatoes, chopped</li>
+                <li> 2 green chilies, slit</li>
+                <li> 2 tablespoons cooking oil or ghee (clarified butter) </li>
+                <li> 1 teaspoon cumin seeds, 1 teaspoon ginger-garlic paste</li>
+                <li> 1/2 cup yogurt</li>
+                <li> 1/2 teaspoon turmeric powder, 1 teaspoon red chili powder, 1 teaspoon garam masala powder</li>
+                <li> 1/2 cup fresh coriander leaves,1/2 cup fresh mint leaves, chopped</li>
+                <li> Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">   For Garnish:</p>
+            <ul style="list-style-type:circle">
+                <li> Fried onions </li>
+                <li> Saffron strands soaked in warm milk</li>
+                <li> Ghee </li>
+
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Rinse and Soak Rice:</li><ul>
+                <li> Wash the Basmati rice thoroughly under cold water until the water runs clear.</li>
+                <li> Soak the rice in enough water for about 30 minutes. Drain and set aside.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Cook the Rice:</li><ul>
+                <li> In a large pot, bring water to boil.</li>
+                <li> Add the soaked and drained rice, green cardamom pods, cloves, cinnamon stick, bay leaf, and salt.</li>
+                <li> Cook the rice until it's 70-80% cooked (it should have a slight bite). Drain the rice and set it aside.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Prepare Vegetable Mix:</li><ul>
+                <li> In a large, heavy-bottomed pan or a biryani pot, heat oil or ghee over medium heat.</li>
+                <li> Add cumin seeds and let them splutter. </li>
+                <li> Add sliced onions and sauté until they turn golden brown.</li>
+                <li> Add ginger-garlic paste and green chilies. Sauté for a couple of minutes until the raw smell disappears.</li>
+                <li> Add chopped tomatoes and cook until they become soft and the oil starts to separate.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add Spices:</li><ul>
+                <li> Add turmeric powder, red chili powder, and garam masala powder. Mix well and cook for a few minutes.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Vegetables and Yogurt:</li><ul>
+                <li> Add the diced mixed vegetables and sauté for a few minutes.</li>
+                <li> Add yogurt and mix well. Cook until the vegetables are partially cooked.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Layering:</li><ul>
+                <li> In the same pan, layer the partially cooked rice over the vegetable mixture.</li>
+                <li> Sprinkle chopped coriander leaves and mint leaves over the rice.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Garnish:</li><ul>
+                <li> Garnish with fried onions and saffron-soaked milk.</li>
+                <li> Drizzle a little ghee (clarified butter) on top for added flavor.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Dum Cooking:</li><ul>
+                <li> Cover the pan with a tight-fitting lid or seal with aluminum foil.</li>
+                <li> Cook on low heat (dum cooking) for about 20-25 minutes.</li>
+                <li> This allows the flavors to meld, and the rice and vegetables to fully cook.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. Serve:</li><ul>
+                <li> Gently fluff the Vegetable Biryani with a fork.</li>
+                <li> Serve hot with raita (yogurt with spices), salad, or a side of your choice.</li>
+
+            </ul><p style="color:orange;font-size:20px">  Enjoy your homemade Vegetable Biryani, a fragrant and flavorful Indian rice dish!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px"> బియ్యం కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 1.5 కప్పులు బాస్మతి బియ్యం</li>
+                <li> బియ్యం నానబెట్టడానికి నీరు</li>
+                <li> అన్నం వండడానికి నీరు</li>
+                <li> 2-3 పచ్చి ఏలకులు</li>
+                <li> 2-3 లవంగాలు</li>
+                <li> 1-అంగుళాల దాల్చిన చెక్క</li>
+                <li> 1 బే ఆకు</li>
+                <li> రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">  కూరగాయల మిశ్రమం కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 కప్పుల మిశ్రమ కూరగాయలు (క్యారెట్, బఠానీలు, బీన్స్, బంగాళాదుంపలు మొదలైనవి), ముక్కలు</li>
+                <li> 1 పెద్ద ఉల్లిపాయ, సన్నగా తరిగిన</li>
+                <li> 2 టమోటాలు, తరిగిన</li>
+                <li> 2 పచ్చిమిర్చి, ముక్కలు</li>
+                <li> 2 టేబుల్ స్పూన్లు వంట నూనె లేదా నెయ్యి (స్పష్టమైన వెన్న)</li>
+                <li> 1 టీస్పూన్ జీలకర్ర</li>
+                <li> 1 టీస్పూన్ అల్లం-వెల్లుల్లి పేస్ట్</li>
+                <li> 1/2 కప్పు పెరుగు</li>
+                <li> 1/2 టీస్పూన్ పసుపు పొడి</li>
+                <li> 1 టీస్పూన్ ఎర్ర మిరప పొడి (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> 1 టీస్పూన్ గరం మసాలా పొడి</li>
+                <li> 1/2 కప్పు తాజా కొత్తిమీర, తరిగిన</li>
+                <li> 1/2 కప్పు తాజా పుదీనా ఆకులు, తరిగినవి</li>
+                <li> రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">  అలంకరణ కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> వేయించిన ఉల్లిపాయలు (ఐచ్ఛికం)</li>
+                <li> వెచ్చని పాలలో నానబెట్టిన కుంకుమపువ్వు తంతువులు (రంగు మరియు రుచి కోసం, ఐచ్ఛికం)</li>
+                <li> నెయ్యి (స్పష్టమైన వెన్న, ఐచ్ఛికం)</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> సూచనలు:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 1. బియ్యాన్ని కడిగి నానబెట్టండి:</li><ul>
+                <li> నీరు స్పష్టంగా వచ్చే వరకు బాస్మతి బియ్యాన్ని చల్లటి నీటితో శుభ్రంగా కడగాలి.</li>
+                <li> బియ్యాన్ని తగినంత నీటిలో సుమారు 30 నిమిషాలు నానబెట్టండి. వడపోసి పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 2. అన్నం ఉడికించాలి:</li><ul>
+                <li> ఒక పెద్ద కుండలో, నీటిని మరిగించాలి.</li>
+                <li> నానబెట్టిన మరియు ఎండబెట్టిన బియ్యం, పచ్చి ఏలకులు, లవంగాలు, దాల్చిన చెక్క, బే ఆకు మరియు ఉప్పు జోడించండి.</li>
+                <li> బియ్యం 70-80% ఉడికినంత వరకు ఉడికించాలి (దీనికి కొద్దిగా కాటు ఉండాలి). బియ్యాన్ని వడకట్టి పక్కన పెట్టుకోవాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 3. వెజిటబుల్ మిక్స్ సిద్ధం:</li><ul>
+                <li> పెద్ద, బరువైన బాటమ్ పాన్ లేదా బిర్యానీ కుండలో నూనె లేదా నెయ్యిని మీడియం వేడి మీద వేడి చేయండి.</li>
+                <li> జీలకర్ర వేసి చిలకరించాలి.</li>
+                <li> ఉల్లిపాయ ముక్కలు వేసి బంగారు గోధుమ రంగు వచ్చేవరకు వేయించాలి.</li>
+                <li> అల్లం-వెల్లుల్లి పేస్ట్ మరియు పచ్చిమిర్చి జోడించండి. పచ్చి వాసన మాయమయ్యే వరకు కొన్ని నిమిషాలు వేయించాలి.</li>
+                <li> తరిగిన టొమాటోలు వేసి అవి మెత్తబడే వరకు ఉడికించాలి మరియు నూనె వేరుచేయడం ప్రారంభమవుతుంది.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 4. సుగంధ ద్రవ్యాలు జోడించండి:</li><ul>
+                <li> పసుపు పొడి, ఎర్ర మిరప పొడి, మరియు గరం మసాలా పొడి జోడించండి. బాగా కలపండి మరియు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 5. కూరగాయలు మరియు పెరుగు జోడించండి:</li><ul>
+                <li> ముక్కలు చేసిన మిశ్రమ కూరగాయలను వేసి కొన్ని నిమిషాలు వేయించాలి.</li>
+                <li> పెరుగు వేసి బాగా కలపాలి. కూరగాయలు పాక్షికంగా ఉడికినంత వరకు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 6. లేయరింగ్:</li><ul>
+                <li> అదే పాన్‌లో, కూరగాయల మిశ్రమంపై పాక్షికంగా ఉడికించిన అన్నాన్ని పొరలుగా వేయండి.</li>
+                <li> అన్నంపై తరిగిన కొత్తిమీర తరుగు, పుదీనా ఆకులను చల్లాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 7. అలంకరించు:</li><ul>
+                <li> ఐచ్ఛికంగా, వేయించిన ఉల్లిపాయలు మరియు కుంకుమపువ్వు నానబెట్టిన పాలతో అలంకరించండి.</li>
+                <li> అదనపు రుచి కోసం పైన కొద్దిగా నెయ్యి (స్పష్టమైన వెన్న) వేయండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 8. దమ్ వంట:</li><ul>
+                <li> పాన్‌ను గట్టిగా బిగించే మూతతో కప్పండి లేదా అల్యూమినియం ఫాయిల్‌తో సీల్ చేయండి.</li>
+                <li> సుమారు 20-25 నిమిషాలు తక్కువ వేడి (డమ్ వంట) మీద ఉడికించాలి. </li>
+                <li> ఇది రుచులను కలపడానికి అనుమతిస్తుంది మరియు బియ్యం మరియు కూరగాయలు పూర్తిగా ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 9. అందజేయడం:</li><ul>
+                <li> వెజిటబుల్ బిర్యానీని ఫోర్క్‌తో మెల్లగా ఫ్లఫ్ చేయండి.</li>
+                <li> రైతా (మసాలాలతో పెరుగు), సలాడ్ లేదా మీకు నచ్చిన వైపుతో వేడిగా వడ్డించండి.</li>
+
+            </ul><p style="color:orange;font-size:20px">  మీ ఇంట్లో తయారుచేసిన వెజిటబుల్ బిర్యానీని ఆస్వాదించండి, ఇది సువాసన మరియు సువాసనగల భారతీయ బియ్యం వంటకం!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> सामग्री:</p>
+
+            <p style="color:#22facb;font-size:20px">   चावल के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 1.5 कप बासमती चावल</li>
+                <li> चावल भिगोने के लिए पानी</li>
+                <li> चावल पकाने के लिए पानी</li>
+                <li> 2-3 हरी इलायची की फली</li>
+                <li> 2-3 लौंग</li>
+                <li> 1 इंच दालचीनी की छड़ी</li>
+                <li> 1 तेज पत्ता</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">   सब्जी मिश्रण के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 कप मिश्रित सब्जियां (गाजर, मटर, बीन्स, आलू आदि), टुकड़ों में काट लें</li>
+                <li> 1 बड़ा प्याज, पतला कटा हुआ</li>
+                <li> 2 टमाटर, कटे हुए</li>
+                <li> 2 हरी मिर्च, चीरा हुआ</li>
+                <li> 2 बड़े चम्मच खाना पकाने का तेल या घी (स्पष्ट मक्खन)</li>
+                <li> 1 चम्मच जीरा</li>
+                <li> 1 चम्मच अदरक-लहसुन का पेस्ट</li>
+                <li> 1/2 कप दही</li>
+                <li> 1/2 चम्मच हल्दी पाउडर</li>
+                <li> 1 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                <li> 1 चम्मच गरम मसाला पाउडर</li>
+                <li> 1/2 कप ताजा हरा धनिया, कटा हुआ</li>
+                <li> 1/2 कप ताजी पुदीने की पत्तियां, कटी हुई</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">  गार्निश के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> तले हुए प्याज (वैकल्पिक)</li>
+                <li> गर्म दूध में भिगोए हुए केसर के धागे (रंग और स्वाद के लिए, वैकल्पिक)</li>
+                <li> घी (स्पष्ट मक्खन, वैकल्पिक)</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> निर्देश:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 1. चावल धोकर भिगो दें:</li><ul>
+                <li> बासमती चावल को ठंडे पानी में तब तक अच्छी तरह धोएं जब तक पानी साफ न निकल जाए।</li>
+                <li> चावल को लगभग 30 मिनट के लिए पर्याप्त पानी में भिगो दें. छानकर अलग रख दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 2. चावल पकाएं:</li><ul>
+                <li> एक बड़े बर्तन में पानी उबाल लें.</li>
+                <li> भीगे और छाने हुए चावल, हरी इलायची की फली, लौंग, दालचीनी की छड़ी, तेज पत्ता और नमक डालें।</li>
+                <li> चावल को तब तक पकाएं जब तक वह 70-80% पक न जाए। चावल को निथार कर अलग रख दें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 3. सब्जी मिश्रण तैयार करें:</li><ul>
+                <li> एक बड़े, भारी तले वाले पैन या बिरयानी पॉट में, मध्यम आंच पर तेल या घी गर्म करें।</li>
+                <li> जीरा डालें और तड़कने दें.</li>
+                <li> इसमें कटा हुआ प्याज डालें और सुनहरा भूरा होने तक भूनें.</li>
+                <li> अदरक-लहसुन का पेस्ट और हरी मिर्च डालें. कुछ मिनट के लिए भूनें जब तक कि कच्ची गंध गायब न हो जाए।</li>
+                <li> कटे हुए टमाटर डालकर तब तक पकाएं जब तक वे नरम न हो जाएं और तेल अलग न होने लगें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 4. मसाले डालें:</li><ul>
+                <li> हल्दी पाउडर, लाल मिर्च पाउडर और गरम मसाला पाउडर डालें. अच्छी तरह मिलाएँ और कुछ मिनट तक पकाएँ।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 5. सब्जियाँ और दही डालें:</li><ul>
+                <li> कटी हुई मिश्रित सब्जियां डालें और कुछ मिनट तक भूनें।</li>
+                <li> दही डालकर अच्छी तरह मिला लें. तब तक पकाएं जब तक सब्जियां आंशिक रूप से पक न जाएं।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 6. लेयरिंग:</li><ul>
+                <li> उसी पैन में सब्जी के मिश्रण के ऊपर आंशिक रूप से पके हुए चावल की परत लगाएं.</li>
+                <li> चावल के ऊपर कटी हुई धनिया पत्ती और पुदीना की पत्तियां छिड़कें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 7. गार्निश:</li><ul>
+                <li> चाहें तो तले हुए प्याज और केसर लगे दूध से गार्निश करें.</li>
+                <li> स्वाद बढ़ाने के लिए ऊपर से थोड़ा घी छिड़कें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 8. दम पकाना:</li><ul>
+                <li> पैन को टाइट-फिटिंग ढक्कन से ढक दें या एल्युमिनियम फॉयल से सील कर दें।</li>
+                <li> लगभग 20-25 मिनट तक धीमी आंच (दम कुकिंग) पर पकाएं.</li>
+                <li> इससे स्वाद मिल जाता है और चावल और सब्जियाँ पूरी तरह पक जाती हैं।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb"> 9. सेवा करना:</li><ul>
+                <li> वेजिटेबल बिरयानी को कांटे से धीरे-धीरे फुलाएं.</li>
+                <li> गरमागरम रायता (मसालों के साथ दही), सलाद या अपनी पसंद के किसी भी व्यंजन के साथ परोसें।</li>
+
+            </ul><p style="color:orange;font-size:20px">  अपने घर में बनी वेजिटेबल बिरयानी का आनंद लें, जो एक सुगंधित और स्वादिष्ट भारतीय चावल का व्यंजन है!</p>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

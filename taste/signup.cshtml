@@ -1,0 +1,108 @@
+﻿@using WebMatrix.Data;
+@{
+    Database db = Database.Open("tastedb");
+    var usn = Request.Form["usn"];
+    var psw = Request.Form["psw"];
+    var cpsw = Request.Form["cpsw"];
+
+    if (IsPost)
+    {
+        if (psw == cpsw)
+        {
+            try
+            {
+                var q = "insert into details(username,password) values('" + usn + "','" + psw + "')";
+                db.Execute(q);
+                Response.Redirect("~/signin.cshtml");
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex);
+                <h1 style="color:red">username already exists</h1>
+            }
+        }
+        else
+        {
+            <h4 style="color:red;">Please verify the credentials and try again !</h4>
+        }
+
+    }
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/food-4k-3gsi5u6kjma5zkj0.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        form {
+            margin-left: 10px;
+            border-radius: 2px;
+            width: 300px;
+            border: 3px solid yellow;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 250px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            border: none;
+            border-bottom: 2px solid #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            outline: none;
+        }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus {
+                border-bottom: 1px solid #4CAF50;
+            }
+
+        input[type="submit"] {
+            background-color: yellow;
+            color: #000000;
+            margin-left: 25x;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 23px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h2>Sign Up</h2>
+    <form action="" method="post">
+        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;Username:</label>
+        <input type="text" id="usn" name="usn" minlength="6" maxlength="20" pattern="[a-zA-Z0-9]{6-20}" title="Username must be minimum of 6 characters long and can contain letters, digits." required>
+        <br />
+        <label for="password">&nbsp;&nbsp;&nbsp;&nbsp;Password:</label>
+        <input type="password" id="psw" minlength="8" pattern="[a-zA-Z0-9+-*/#]{8-20}" maxlength="20" name="psw" title="Password may contain uppercase letter,  lowercase letter,  digit, and  special character, and be at least 8 characters long" required>
+        <br/>
+        <label for="confirm_password">&nbsp;&nbsp;&nbsp;&nbsp;Confirm Password:</label>
+        <input type="password" minlength="8" maxlength="20" id="cpsw" name="cpsw" pattern="[a-zA-Z0-9+-*/#]{8-20}" title="Password may contain uppercase letter,  lowercase letter, digit, and  special character, and be at least 8 characters long" required>
+        <br/>
+        <input type="submit" id="nbtn" name="nbtn" value="create" />
+    </form>
+</body>
+</html>

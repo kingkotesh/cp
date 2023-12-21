@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: lawngreen;
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue">Virgin Mojito</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Virgin Mojito</h2>
+
+        <img style="padding-left:250px;width:350px;height:300px" src="https://40aprons.com/wp-content/uploads/2021/04/virgin-mojito-3.jpg" alt="Coffee">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    <li>Fresh lime juice - 1 lime</li>
+                    <li>Fresh mint leaves - 8-10 leaves</li>
+                    <li>Sugar - 2 tablespoons</li>
+                    <li>Soda water - 1 cup</li>
+                    <li>Ice cubes - a handful</li>
+                </ul>
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <li>In a glass, muddle the fresh mint leaves and sugar together to release the mint's flavor.</li>
+                <li>Squeeze the juice of one lime into the glass.</li>
+                <li>Add ice cubes and soda water.</li>
+                <li>Stir well, garnish with a sprig of mint and a lime slice.</li>
+                <li>Enjoy your refreshing Virgin Mojito!</li>
+            </ul>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+
+                <ul>
+                    <li>తాజా నిమ్మ రసం - 1 నిమ్మ</li>
+                    <li>తాజా పుదీనా ఆకులు - 8-10 ఆకులు
+                    <li>షుగర్ - 2 స్పూన్లు</li>
+                    <li>సోడా వాటర్ - 1 కప్</li>
+                    <li>ఐస్ క్యూబ్స్ - ఒక చిట్టని తరుపు</li>
+                </ul>
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li>ఒక గ్లాస్ లో తాజా పుదీనా ఆకులు మరియు షుగర్ కూడా జారి చేయడానికి.</li>
+                <li>ఒక నిమ్మ రసం గ్లాస్ లో దబ్బించండి.</li>
+                <li>ఐస్ క్యూబ్స్ మరియు సోడా వాటర్ ని జోడించండి.</li>
+                <li>అచ్చగా కలిగి, ఒక పుదీనా ఆకు మరియు నిమ్మ స్లైస్ తో సజీవం చేయండి.</li>
+                <li>మీ అద్భుతమైన వర్జిన్ మొహిటో ను ఆనందించండి!</li>
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <ul>
+                    <li>ताजा नींबू रस - 1 नींबू</li>
+                    <li>ताजा पुदीना पत्तियां - 8-10 पत्तियां</li>
+                    <li>चीनी - 2 चम्च</li>
+                    <li>सोडा पानी - 1 कप</li>
+                    <li>बर्फ के टुकड़े - हाथ में थोड़ा</li>
+                </ul>
+
+
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li>एक ग्लास में ताजा पुदीना पत्तियों और चीनी को अच्छी तरह से मिलाएं.</li>
+                <li>एक नींबू का रस ग्लास में निचोड़ें.</li>
+                <li>बर्फ के टुकड़े और सोडा पानी डालें.</li>
+                <li>अच्छी तरह मिलाएं, एक पुदीना पत्ती और नींबू के स्लाइस के साथ सजाएं.</li>
+                <li>अपनी रफ्रेशिंग वर्जिन मोहीटो का आनंद लें!</li>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

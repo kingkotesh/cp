@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "filestorage", "filestorage.ccproj", "{4B423B75-C6ED-48EA-93F7-5307A2EF719C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{788AB47C-F89B-4EC4-B4EB-7ED0F63DE6FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B423B75-C6ED-48EA-93F7-5307A2EF719C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B423B75-C6ED-48EA-93F7-5307A2EF719C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B423B75-C6ED-48EA-93F7-5307A2EF719C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B423B75-C6ED-48EA-93F7-5307A2EF719C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788AB47C-F89B-4EC4-B4EB-7ED0F63DE6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788AB47C-F89B-4EC4-B4EB-7ED0F63DE6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788AB47C-F89B-4EC4-B4EB-7ED0F63DE6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788AB47C-F89B-4EC4-B4EB-7ED0F63DE6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {340F099D-A24C-40F7-90F6-4B96B5D0C5C3}
+	EndGlobalSection
+EndGlobal

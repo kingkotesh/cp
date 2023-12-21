@@ -1,0 +1,50 @@
+﻿@using WebMatrix.Data;
+@{ 
+    Database db = Database.Open("practisewebsite");
+    var q = "select * from movies";
+    var st = "";
+
+    if(IsPost && Request.Form["sbtn"] != null)
+    {
+        st = "%" + Request.Form["stxt"] +"%";
+        q = "select * from movies where moviename like @0";
+    }
+    var m = Request.Form["am"];
+    var d = Request.Form["ad"];
+    var h = Request.Form["ah"];
+
+    if (IsPost && Request.Form["abtn"] != null)
+    {
+
+       /* Validation.RequireField("am", "movie");
+        Validation.RequireField("ad", "director");
+        Validation.RequireField("ah", "hero");
+        if (Validation.IsValid())
+        {*/
+            var iq = "insert into movies(moviename,directorname,heroname) values('"+m+"','"+d+"','"+h+"')";
+            db.Execute(iq);
+            Response.Redirect("~/default.cshtml");
+       // }
+
+    }
+    var r = db.Query(q,st);
+    WebGrid w = new WebGrid(r);
+}
+<form method="post" action="">
+    <fieldset>
+        <legend>search</legend>
+        <input type="text" name="stxt" id="stxt"/>
+        <input type="submit" value="search" name="sbtn" id="sbtn"/>
+    </fieldset>
+    <fieldset>
+        <legend>add</legend>
+        Movie:<input type="text" name="am" id="am"  />
+        Director:<input type="text" name="ad" id="ad"  />
+        Hero:<input type="text" name="ah" id="ah"  />
+        <input type="submit" value="add" name="abtn" id="abtn"/>
+
+    </fieldset>
+</form>
+
+@w.GetHtml(
+    columns:(w.Columns(w.Column("id"), w.Column("moviename"), w.Column("directorname"), w.Column("heroname"))))

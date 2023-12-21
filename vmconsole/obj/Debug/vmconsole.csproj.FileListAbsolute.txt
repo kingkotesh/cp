@@ -1,0 +1,7 @@
+C:\ROMAN REIGNS\CP\vmconsole\bin\Debug\vmconsole.exe.config
+C:\ROMAN REIGNS\CP\vmconsole\bin\Debug\vmconsole.exe
+C:\ROMAN REIGNS\CP\vmconsole\bin\Debug\vmconsole.pdb
+C:\ROMAN REIGNS\CP\vmconsole\obj\Debug\vmconsole.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\vmconsole\obj\Debug\vmconsole.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\vmconsole\obj\Debug\vmconsole.exe
+C:\ROMAN REIGNS\CP\vmconsole\obj\Debug\vmconsole.pdb

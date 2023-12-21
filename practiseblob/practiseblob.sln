@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "practiseblob", "practiseblob\practiseblob.ccproj", "{39FFC7C7-0F2A-4CCF-A988-150309CF24FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{DE6807C7-7A1D-4812-AC96-17211D80F354}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39FFC7C7-0F2A-4CCF-A988-150309CF24FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FFC7C7-0F2A-4CCF-A988-150309CF24FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FFC7C7-0F2A-4CCF-A988-150309CF24FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FFC7C7-0F2A-4CCF-A988-150309CF24FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6807C7-7A1D-4812-AC96-17211D80F354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6807C7-7A1D-4812-AC96-17211D80F354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6807C7-7A1D-4812-AC96-17211D80F354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6807C7-7A1D-4812-AC96-17211D80F354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D95737AA-A84E-4884-BB07-9A98393E568B}
+	EndGlobalSection
+EndGlobal

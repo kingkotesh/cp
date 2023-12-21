@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: lawngreen;
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue">Hot Coffee</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Hot Coffee</h2>
+
+        <img style="padding-left:250px;width:350px;height:300px" src="https://rukminim2.flixcart.com/image/850/1000/kwcfngw0/coffee/h/y/d/1-1000g-filter-coffee-powder-blend-with-chicory-coffee-70-original-imag9fdcxsvfthgh.jpeg?q=90" alt="Coffee">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    <li>Coffee Powder: Coarsely ground coffee beans, typically a blend of coffee and chicory, about 2-3 tablespoons.</li>
+                    <li>Fresh Milk: Whole milk is commonly used, but you can adjust the fat content to your preference.</li>
+                    <li>Sugar: To taste, traditionally it's on the sweeter side. </li>
+                    <li>Water: For brewing the coffee.</li>
+                </ul>
+
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Boil Water:</li></b>
+                <li>Start by boiling water. You'll need it to make the coffee and for mixing with milk.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Prepare Coffee:</li></b>
+                <li>Measure the desired amount of coffee powder into a coffee filter or a cup if you don't have a filter.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Brew Coffee:</li></b>
+                <li>Pour a small amount of boiling water over the coffee powder to make a thick coffee concentrate.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Boil Milk: </li></b>
+                <li>While the coffee concentrate is brewing, boil milk in a separate pot or microwave.</li>
+                <li>Use your preferred ratio of milk to coffee, but a common ratio is 2 parts milk to 1 part coffee concentrate.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Mix Coffee and Milk:</li></b>
+                <li>Once the milk is heated, add the coffee concentrate to it.</li>
+                <li>Adjust the strength of your coffee by adding more or less of the coffee concentrate.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Sweeten:</li></b>
+                <li>Add sugar to taste and stir until the sugar dissolves.</li>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#ce85f2">Serve:</li></b>
+                <li>Pour the prepared coffee into cups or glasses and enjoy.</li>
+            </ul>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+
+                <ul>
+                    <li>కాఫీ పౌడర్: ప్రతి కప్పుకు 1-2 స్పూన్లు కాఫీ పొడి.</li>
+                    <li>నీటిని కూడించుకోండి: కాఫీ తయారుచేడానికి.</li>
+                    <li>పాలు: పూర్తి పాలు లేదా మీ ఇష్టమైన పాలు ప్రకారము ఉపయోగించవచ్చు.</li>
+                    <li>చక్కర: రుచిని ప్రకారం చేయడానికి.</li>
+                </ul>
+
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">నీటి పని: </li></b>
+                <li>మొదటి ప్రణాళికను ప్రైపాన్గా నీటిని వేయండి. ఈ నీటిని కాఫీ తయారుచేయడానికి మరియు పాలును కలిగించడానికి కావాలి.</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">కాఫీ తయారుచేయండి: </li></b>
+                <li>కాఫీ పౌడర్ని కాఫీ ఫిల్టర్ లేదా ఒక కప్పులో కాబట్టి కొట్టండి.</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">పాలు ఉడిచి తయారుచేయండి: </li></b>
+                <li>కాబట్టి కాఫీ తయారుచేయడానికి నీటిని వేయండి.</li>
+                <li> మీ ఇష్టపడిన పాలును ఉపయోగించండి. </li>
+                <li>సామాన్యంగా, కాఫీకు 2 పార్టుల పాలును ఉపయోగిస్తారు.</li>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">కాఫీ మరియు పాలు మిశ్రణము:  </li></b>
+                <li>పాలు కలుగాక, కాఫీ తయారుచేయడానికి ప్రిపేర్ చేసిన కాఫీ పొడిని పేర్గుంచండి</li>
+
+
+
+                </li>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <ul>
+                    <li>कॉफ़ी पाउडर: प्रति कप के लिए 1-2 छोटे चम्च कॉफ़ी पाउडर.</li>
+                    <li>पानी: तैयारी के लिए.</li>
+                    <li>दूध: पूरी दूध या आपके पसंदीदा प्रकार का दूध.</li>
+                    <li>चीनी: स्वाद के हिसाब से.</li>
+                </ul>
+
+
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">पानी उबालें: </li></b>
+                <li>सबसे पहले पानी उबालें। आपको कॉफ़ी तैयारी के लिए और दूध के साथ मिलाने के लिए चाहिए।</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">कॉफ़ी तैयारी: </li></b>
+                <li> कॉफ़ी पाउडर की मात्रा का मापन करें और एक कॉफ़ी फ़िल्टर या कप में डालें.</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">कॉफ़ी बनाएं:</li></b>
+                <li>कॉफ़ी पाउडर पर गरम पानी के थोड़े से स्पृष्ट दिलाएं ताकि एक गाढ़ा कॉफ़ी संरचना बने। इसे एक-दो मिनट तक रुकने दें।</li>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">दूध उबालें:  </li></b>
+                <li>जब कॉफ़ी तैयार हो रही है, तो दूध अलग से उबालें। अपने पसंद के हिसाब से दूध की अनुपात का उपयोग करें, लेकिन सामान्य रूप से 2 हिस्सों वाले दूध के लिए 1 हिस्सा कॉफ़ी पाउडर का उपयोग किया जाता है।.</li>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">चीनी डालें:  </li></b>
+                <li>स्वाद के हिसाब से चीनी डालें और चीनी पिघलने तक उसे चमच से मिलाएं।</li>
+                <b>
+                <li style="text-decoration: underline;color:#ce85f2; list-style-type: none">परोसें:</li></b>
+                <li> तैयार कॉफ़ी को कपों या ग्लासों में डालें और आनंद उठाएं।</li>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

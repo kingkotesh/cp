@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Idly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #FFFFCC;
+        }
+
+        h3 {
+            color: #ce85f2;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue"> Idly</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+
+        <div id="en">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">Idly</h2>
+
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/81/62/ab/8162abad260677b33816d3b47371dcf9.jpg" alt="idly">
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    <li>1 cup of idly rice.</li>
+                    <li> 1/4 cup of urad dal (split black gram).</li>
+                    <li> Salt to taste.</li>
+                </ul>
+
+            </ul>
+
+
+            <h3>Process:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Wash and Soak:</li></b>
+                <br />
+                <li>Wash the rice and urad dal separately under running water until the water runs clear.</li>
+                <li>Soak the rice, urad dal in separate bowls with enough water for 4-6 hours or overnight.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Drain and Grind:</li></b>
+                <br />
+                <li>Drain the soaked urad dal and rice.</li>
+                <li>In a grinder or blender, grind the urad dal with enough water to make a smooth and fluffy batter.</li>
+                <li> It should take about 15-20 minutes of grinding. The consistency should be similar to whipped cream.</li>
+                <li>Transfer the urad dal batter to a large mixing bowl.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Grind Rice:</li></b>
+                <br />
+                <li> Grind the soaked rice with enough water to make a smooth batter.</li>
+                <li> The consistency should be similar to pancake batter.</li>
+                <li>Combine the rice batter with the urad dal batter in the mixing bowl.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Add Salt and Fermentation: </li></b>
+                <br />
+                <li> Add salt to the batter and mix well.</li>
+                <li> Allow the batter to ferment for 6-8 hours or overnight in a warm place. During fermentation, the batter will rise and become slightly airy.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Prepare Idly Molds:</li></b>
+                <br />
+                <li>Grease the idly molds with a little oil or use idly stand liners to prevent sticking.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Fill the Molds:</li></b>
+                <br />
+                <li>Pour the fermented batter into the idly molds, filling each mold about 3/4 full.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Steam Idlys:</li></b>
+                <br />
+                <li>Heat water in the idly steamer or a large steaming pot.</li>
+                <li>Place the filled idly molds in the steamer and steam for about 10-15 minutes or until a toothpick inserted into the center of an idly comes out clean.</li>
+                <br />
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Remove and Serve:</li></b>
+                <br />
+                <li>Once done, remove the idly molds from the steamer and let them cool for a minute.</li>
+                <li>Use a spoon to gently remove the idlys from the molds.</li>
+                <br />
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;list-style-type:none;color:#66CC00">Serve Hot:</li></b>
+                <br />
+                <li>Serve the idlys hot with coconut chutney, sambar, or your favorite accompaniments.</li>
+                <br />
+                <h3>Enjoy your homemade idlys!</h3>
+            </ul>
+        </div>
+        <div id="tel">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">ఇడ్లీ</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/81/62/ab/8162abad260677b33816d3b47371dcf9.jpg" alt="idly">
+
+            <h3>పదార్థాలు:</h3>
+
+
+            <ul>
+                <li>1 కప్పు ఇడ్లీ అన్నం.</li>
+                <li>1/4 కప్పు ఉరద్ పప్పు (విడదీసిన నల్ల పప్పు).</li>
+                <li> రుచికి ఉప్పు  .</li>
+            </ul>
+
+
+
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">వాష్ మరియు సోక్: </li></b>
+                <br />
+                <li>నీరు తేటతెల్లం అయ్యే వరకు బియ్యం మరియు ఉడకబెట్టిన పప్పును నీటి కింద విడివిడిగా కడగాలి.</li>
+                <li>బియ్యం, పప్పును వేర్వేరు గిన్నెలలో తగినంత నీటితో 4-6 గంటలు లేదా రాత్రిపూట నానబెట్టండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">డ్రెయిన్ మరియు గ్రైండ్: </li></b>
+                <br />
+                <li>నానబెట్టిన ఉరద్ పప్పు మరియు బియ్యం వేయండి.</li>
+                <li>ఒక గ్రైండర్ లేదా బ్లెండర్‌లో, మెత్తగా మరియు మెత్తటి పిండిని తయారు చేయడానికి తగినంత నీటితో ఉరడ్ పప్పును రుబ్బుకోవాలి.</li>
+                <li> ఇది గ్రౌండింగ్ గురించి 15-20 నిమిషాలు పడుతుంది. స్థిరత్వం కొరడాతో చేసిన క్రీమ్‌లా ఉండాలి.</li>
+                <li>ఉరాడ్ పప్పు పిండిని పెద్ద మిక్సింగ్ బౌల్‌కి బదిలీ చేయండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">గ్రైండ్ రైస్: </li></b>
+                <br />
+                <li>నానబెట్టిన బియ్యాన్ని తగినంత నీళ్లతో మెత్తగా రుబ్బుకోవాలి.</li>
+                <li>స్థిరత్వం పాన్‌కేక్ పిండిని పోలి ఉండాలి.</li>
+                <li>మిక్సింగ్ గిన్నెలో బియ్యం పిండిని ఉరద్ పప్పు పిండితో కలపండి.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">ఉప్పు మరియు కిణ్వ ప్రక్రియ జోడించండి:  </li></b>
+                <br />
+                <li> పిండిలో ఉప్పు వేసి బాగా కలపాలి.</li>
+                <li> పిండిని 6-8 గంటలు లేదా రాత్రిపూట వెచ్చని ప్రదేశంలో పులియబెట్టడానికి అనుమతించండి. కిణ్వ ప్రక్రియ సమయంలో, పిండి పెరుగుతుంది మరియు కొద్దిగా అవాస్తవికంగా మారుతుంది.</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">ఇడ్లీ మౌల్డ్స్ సిద్ధం:  </li></b>
+                <br />
+                <li>ఇడ్లీ అచ్చులను కొద్దిగా నూనెతో గ్రీజ్ చేయండి లేదా అంటుకోకుండా ఉండటానికి ఇడ్లీ స్టాండ్ లైనర్‌లను ఉపయోగించండి.</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">ఆవిరి ఇడ్లీలు:  </li></b>
+                <br />
+                <li> ఇడ్లీ స్టీమర్ లేదా పెద్ద స్టీమింగ్ పాట్‌లో నీటిని వేడి చేయండి.</li>
+                <li>నిండిన ఇడ్లీ మౌల్డ్‌లను స్టీమర్‌లో ఉంచండి మరియు సుమారు 10-15 నిమిషాలు ఆవిరిలో ఉంచండి లేదా ఇడ్లీ మధ్యలో చొప్పించిన టూత్‌పిక్ శుభ్రంగా బయటకు వచ్చే వరకు.</li>
+
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">తీసివేసి సర్వ్ చేయండి:  </li></b>
+                <br />
+                <li> పూర్తయిన తర్వాత, స్టీమర్ నుండి ఇడ్లీ అచ్చులను తీసివేసి, వాటిని ఒక నిమిషం పాటు చల్లబరచండి.</li>
+                <li> అచ్చుల నుండి ఇడ్లీలను సున్నితంగా తొలగించడానికి ఒక చెంచా ఉపయోగించండి.</li>
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">వేడి వేడిగా వడ్డించండి:  </li></b>
+                <br />
+                <li>కొబ్బరి చట్నీ, సాంబార్ లేదా మీకు ఇష్టమైన అనుబంధాలతో ఇడ్లీలను వేడిగా వడ్డించండి.</li>
+
+                <h3>మీ ఇంట్లో తయారుచేసిన ఇడ్లీలను ఆస్వాదించండి!</h3>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <h2 style="text-align:center;font-size: 22px;color:#00CCCC;font-family">आलस्य में</h2>
+            <img style="padding-left:250px;width:350px;height:300px" src="https://i.pinimg.com/564x/81/62/ab/8162abad260677b33816d3b47371dcf9.jpg" alt="idly">
+
+            <h3>सामग्री:</h3>
+
+            <ul>
+                <li> 1 कप इडली चावल</li>
+                <li> 1/4 कप उड़द दाल (उड़द दाल)</li>
+                <li> नमक स्वादानुसार</li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">धोएं और भिगोएँ:</li></b>
+                <br />
+                <li>चावल और उड़द दाल को अलग-अलग बहते पानी के नीचे तब तक धोएं जब तक पानी साफ न निकल जाए।</li>
+                <li>चावल, उड़द दाल को अलग-अलग कटोरे में पर्याप्त पानी के साथ 4-6 घंटे या रात भर के लिए भिगो दें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">छान लें और पीस लें: </li></b>
+                <br />
+                <li> भीगी हुई उड़द दाल और चावल को छान लें।</li>
+                <li>एक ग्राइंडर या ब्लेंडर में, उड़द दाल को पर्याप्त पानी के साथ पीसकर मुलायम और फूला हुआ घोल बना लें।</li>
+                <li>इसे पीसने में करीब 15-20 मिनट का समय लगना चाहिए. स्थिरता व्हीप्ड क्रीम के समान होनी चाहिए।</li>
+                <li>उड़द दाल के बैटर को एक बड़े मिक्सिंग बाउल में निकाल लें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">चावल पीसें:</li></b>
+                <br />
+                <li>भिगोए हुए चावल को पर्याप्त पानी के साथ पीसकर चिकना घोल बना लें।</li>
+                <li> स्थिरता पैनकेक बैटर के समान होनी चाहिए।</li>
+                <li> मिक्सिंग बाउल में चावल के बैटर को उड़द दाल के बैटर के साथ मिलाएं.।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">नमक डालें और किण्वन करें:  </li></b>
+                <br />
+                <li>बैटर में नमक डालकर अच्छी तरह मिला लें।</li>
+                <li>बैटर को 6-8 घंटे या रात भर के लिए किसी गर्म जगह पर खमीर उठने के लिए रख दें. किण्वन के दौरान, बैटर फूल जाएगा और थोड़ा हवादार हो जाएगा।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">इडली सांचे तैयार करें: </li></b>
+                <br />
+                <li> इडली सांचों को थोड़ा सा तेल लगाकर चिकना कर लें या चिपकने से बचाने के लिए इडली स्टैंड लाइनर का इस्तेमाल करें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">साँचे भरें:</li></br>
+                <br />
+                <li> किण्वित घोल को इडली सांचों में डालें, प्रत्येक साँचे को लगभग 3/4 भर दें।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">स्टीम इडली:</li></br>
+                <br />
+                <li> इडली स्टीमर या बड़े स्टीमिंग पॉट में पानी गर्म करें।</li>
+                <li>भरे हुए इडली सांचों को स्टीमर में रखें और लगभग 10-15 मिनट तक या इडली के बीच में डाली गई टूथपिक के साफ होने तक भाप में पकाएं।</li>
+                <br />
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">निकालें और परोसें:</li></br>
+                <br />
+                <li>एक बार हो जाने के बाद, इडली मोल्ड्स को स्टीमर से हटा दें और उन्हें एक मिनट के लिए ठंडा होने दें।</li>
+                <li> सांचों से इडली को धीरे से निकालने के लिए चम्मच का प्रयोग करें।</li>
+                <br />
+
+                <b>
+                <li style="text-decoration: underline;color:#66CC00; list-style-type: none">गर्मागर्म परोसें:</li></br>
+                <br />
+                <li> गरमागरम इडली को नारियल की चटनी, सांबर या अपने मनपसंद व्यंजन के साथ परोसें।</li>
+
+                <h3>अपने घर में बनी इडली का आनंद लें!</h3>
+            </ul>
+
+
+        </div>
+    </section>
+</body>
+</html>

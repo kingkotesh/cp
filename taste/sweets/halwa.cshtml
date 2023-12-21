@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Bread Halwa Sweet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+            font-weight:bold;
+            }
+
+        li {
+            color: #ADFF2F
+        }
+
+        ul {
+            color: cyan;
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our sweet is <span style="color:blue">Bread Halwa</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Bread Halwa</h2>
+
+        <img style="padding-left:250px" height="200px" width="300px" src="https://i.ytimg.com/vi/71CMGXneVnY/maxresdefault.jpg" alt="Bread Halwa">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <ul>
+                    <li> 5-8 slices of bread (remove the edges)</li>
+                    <li> 2-3 tablespoons of ghee</li>
+                    <li> 1 cup of milk</li>
+                    <li>1/2 cup of sugar (or adjust to your liking)</li>
+                    <li> A handful of chopped nuts (like almonds and cashews)</li>
+                    <li> A pinch of cardamom powder (optional)</li>
+                    <li> A pinch of saffron (optional, for color)</li>
+                    <li> Raisins (optional)</li>
+                </ul>
+            </ul>
+            <h3>Process:</h3>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. Cut the Bread:
+                <li>Cut the bread slices into small pieces.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. Soak Saffron (if using):
+                <li>If you have saffron, soak a pinch in a little warm milk and set it aside.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. Melt Butter:
+                <li>In a pan, melt the butter or ghee over medium flame.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. Fry Bread:
+                <li>Add the bread pieces to the melted butter, Stir them until they turn golden and crispy.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. Add Milk:
+                <li>Pour in the milk slowly while stirring. The bread will soak up the milk.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. Add Sugar:
+                <li>Once the bread is soft and the milk is absorbed, add sugar. Adjust the sugar to your taste.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. Flavor with Cardamom:
+                <li>If you like, add a pinch of cardamom powder for flavor.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. Add Saffron and Nuts:
+                <li>If you soaked saffron, add it now for color and fragrance. Also, add chopped nuts and raisins if you wish.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. Cook and Serve:
+                <li>Cook the mixture for a few more minutes until it thickens to your liking. It should be creamy, not dry.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. Garnish and Serve:
+                <li>Garnish with more nuts and serve the Bread Halwa while it's warm.</li>
+                
+            </ul>
+            <b>
+                <p style="color:#22facb">Bread Halwa is a homemade sweet,comforting dessert that you can make easily with leftover bread. Enjoy!</p>
+            </b>
+            </ul>
+        </div>
+        <div id="tel">
+            <h3>కావలసిన  పదార్థాలు:</h3>
+            <ul>
+                <li>5-8 బ్రెడ్ ముక్కలు (అంచులను తొలగించండి)</li>
+                <li>2-3 టేబుల్ స్పూన్లు నెయ్యి</li>
+                <li> 1 కప్పు పాలు</li>
+                <li>1/2 కప్పు చక్కెర (లేదా మీ ఇష్టానికి సర్దుబాటు చేయండి)</li>
+                <li>కొన్ని తరిగిన గింజలు (బాదం మరియు జీడిపప్పు వంటివి)</li>
+                <li>చిటికెడు యాలకుల పొడి (ఐచ్ఛికం)</li>
+                <li>చిటికెడు కుంకుమపువ్వు (ఐచ్ఛికం, రంగు కోసం)</li>
+                <li>ఎండుద్రాక్ష (ఐచ్ఛికం)</li>
+            </ul>
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. బ్రెడ్ కట్:
+                <li> బ్రెడ్ స్లైసులను చిన్న ముక్కలుగా కట్ చేసుకోవాలి</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2.కుంకుమపువ్వును నానబెట్టండి (ఉపయోగిస్తే):
+                <li> మీకు కుంకుమపువ్వు ఉంటే, కొద్దిగా గోరువెచ్చని పాలలో చిటికెడు నానబెట్టి పక్కన పెట్టండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. కరిగిన వెన్న:
+                <li>  ఒక పాన్‌లో వెన్న లేదా నెయ్యిని మీడియం మంట మీద కరిగించండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. ఫ్రై బ్రెడ్:
+
+                <li>   కరిగించిన వెన్నలో బ్రెడ్ ముక్కలను వేసి, బంగారు రంగులోకి మరియు క్రిస్పీగా మారే వరకు వాటిని కలపండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. పాలు జోడించండి:
+
+                <li>  కలుపుతూ నెమ్మదిగా పాలు పోయాలి. బ్రెడ్ పాలను నానబెడతారు.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. చక్కెర జోడించండి:
+                <li>   రొట్టె మెత్తగా మరియు పాలు పీల్చుకున్న తర్వాత, చక్కెర జోడించండి. మీ రుచికి చక్కెరను సర్దుబాటు చేయండి.</li>
+                
+            </ul>
+
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. ఏలకులతో రుచి:
+                <li>  మీకు కావాలంటే, రుచి కోసం చిటికెడు యాలకుల పొడిని జోడించండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. కుంకుమపువ్వు మరియు గింజలను జోడించండి:
+                <li>  మీరు కుంకుమపువ్వును నానబెట్టినట్లయితే, రంగు మరియు సువాసన కోసం ఇప్పుడే జోడించండి. అలాగే, మీకు కావాలంటే తరిగిన గింజలు మరియు ఎండుద్రాక్ష జోడించండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. ఉడికించి సర్వ్ చేయండి:
+
+                <li>  మిశ్రమాన్ని మీ ఇష్టానుసారం చిక్కబడే వరకు మరికొన్ని నిమిషాలు ఉడికించాలి. ఇది క్రీముగా ఉండాలి, పొడిగా ఉండకూడదు.</li> 
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. గార్నిష్ మరియు సర్వ్:
+                <li>
+                    మరిన్ని గింజలతో అలంకరించండి మరియు బ్రెడ్ హల్వా వెచ్చగా ఉన్నప్పుడు సర్వ్ చేయండి.
+                </li>               
+            </ul>
+            <b><p style="color:#22facb">బ్రెడ్ హల్వా అనేది ఇంట్లో తీపి, సౌకర్యవంతమైన డెజర్ట్, మీరు మిగిలిపోయిన బ్రెడ్‌తో సులభంగా తయారు చేసుకోవచ్చు. ఆనందించండి!</p></b>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <li>ब्रेड के 5-8 स्लाइस (किनारे हटा दें)</li>
+                <li>2-3 बड़े चम्मच घी</li>
+                <li>  1 कप दूध</li>
+                <li>1/2 कप चीनी (या अपनी पसंद के अनुसार समायोजित करें)</li>
+                <li> एक मुट्ठी कटे हुए मेवे (जैसे बादाम और काजू)</li>
+                <li> एक चुटकी इलायची पाउडर (वैकल्पिक)</li>
+                <li> एक चुटकी केसर (वैकल्पिक, रंग के लिए)</li>
+                <li>किशमिश (वैकल्पिक)</li>
+            </ul>
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. ब्रेड को काटें:
+                <li>ब्रेड स्लाइस को छोटे-छोटे टुकड़ों में काट लें.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. केसर भिगोएँ (यदि उपयोग कर रहे हैं):
+                <li>अगर आपके पास केसर है तो एक चुटकी केसर को थोड़े से गर्म दूध में भिगोकर अलग रख लें.</li>
+                </li>
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. मक्खन पिघलाएँ:
+                <li>एक पैन में मध्यम आंच पर मक्खन या घी पिघलाएं.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. फ्राई ब्रेड:
+                <li> पिघले हुए मक्खन में ब्रेड के टुकड़े डालें, इन्हें सुनहरा और कुरकुरा होने तक हिलाएं.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. दूध डालें:
+                <li> दूध को धीरे-धीरे चलाते हुए डालें. ब्रेड दूध सोख लेगी.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. चीनी डालें:
+                <li>जब ब्रेड नरम हो जाए और दूध सोख ले तो इसमें चीनी मिलाएं. चीनी को अपने स्वाद के अनुसार समायोजित करें।</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. इलायची का स्वाद:
+                <li>अगर आप चाहें तो स्वाद के लिए इसमें एक चुटकी इलायची पाउडर मिला लें.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. केसर और मेवे डालें:
+                <li>अगर आपने केसर भिगोया है तो रंग और खुशबू के लिए इसे अभी डालें. साथ ही अगर आप चाहें तो कटे हुए मेवे और किशमिश भी डाल दें.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. पकाएं और परोसें:
+                <li>मिश्रण को कुछ और मिनट तक पकाएं जब तक कि यह आपकी पसंद के अनुसार गाढ़ा न हो जाए। यह मलाईदार होना चाहिए, सूखा नहीं।</li>
+               
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. सजाकर परोसें:
+                <li>ब्रेड हलवे को और मेवों से सजाकर गरम-गरम परोसें.</li>
+                <b><p style="color:#22facb">ब्रेड हलवा एक घर पर बनी मीठी, आरामदायक मिठाई है जिसे आप बची हुई ब्रेड से आसानी से बना सकते हैं। आनंद लेना!</p></b>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@using WebMatrix.Data;
+@{
+    Database db = Database.Open("fooddb");
+    var usn = Request.Form["usn"];
+    var psw = Request.Form["psw"];
+    var cpsw = Request.Form["cpsw"];
+    if (IsPost)
+    {
+        if (psw == cpsw)
+        {
+            var q = "insert into credentials(username,password) values('" + usn + "','" + psw + "')";
+            db.Execute(q);
+            Response.Redirect("~/existinguser.cshtml");
+        }
+        <h4 style="color:red;">Please verify the credentials.....</h4>
+
+    }
+
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p>User name is of length 6-20 which allows alphanumeric</p>
+    <p>Password is of length 8-15 which allows alphanumeric</p>
+
+    <form method="post" action="">
+        Enter username:<input pattern="[a-zA-Z0-9]{6-20}" type="text" name="usn" id="usn" required />
+        Enter password:<input type="password" pattern="[a-zA-z0-9]{8-15}" name="psw" id="psw" required />
+        Confirm password:<input type="password" pattern="[a-zA-z0-9]{8-15}" name="cpsw" id="cpsw" required />
+        <input type="submit" id="nbtn" name="nbtn" value="create" />
+    </form>
+</body>
+</html>

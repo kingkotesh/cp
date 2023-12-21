@@ -1,0 +1,7 @@
+C:\ROMAN REIGNS\CP\vmsql\bin\Debug\vmsql.exe.config
+C:\ROMAN REIGNS\CP\vmsql\bin\Debug\vmsql.exe
+C:\ROMAN REIGNS\CP\vmsql\bin\Debug\vmsql.pdb
+C:\ROMAN REIGNS\CP\vmsql\obj\Debug\vmsql.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\vmsql\obj\Debug\vmsql.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\vmsql\obj\Debug\vmsql.exe
+C:\ROMAN REIGNS\CP\vmsql\obj\Debug\vmsql.pdb

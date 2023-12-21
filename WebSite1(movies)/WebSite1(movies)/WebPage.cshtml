@@ -1,0 +1,19 @@
+﻿@using WebMatrix.Data;
+@{ 
+    Database db = Database.Open("mydb");
+    var q = "select * from mymovies";
+    var r = db.Query(q);
+    WebGrid w = new WebGrid(r);
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>I love u...</h1>
+    </body>
+</html>
+<hr/>
+@w.GetHtml(
+    columns:w.Columns(w.Column("id"),w.Column("moviename"),w.Column("directorname"),w.Column("heroname")))

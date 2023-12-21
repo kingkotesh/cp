@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> with a new recepie <span style="color:blue">Bengal Prawns curry</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Bengal Prawns Curry</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://images.slurrp.com/prod/recipe_images/transcribe/main%20course/Chingri-Malai-Curry.webp?impolicy=slurrp-20210601&width=1200&height=675" alt="Bengal Prawns Curry">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px">For Marinating the Prawns:</p>
+            <ul style="list-style-type:circle">
+                <li>250g large prawns, cleaned and deveined</li>
+                <li>1/2 teaspoon turmeric powder</li>
+                <li>Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">For the Gravy:</p>
+            <ul style="list-style-type:circle">
+                <li>1 cup grated fresh coconut</li>
+                <li>1 cup coconut milk</li>
+                <li>1 teaspoon ginger paste,1 teaspoon garlic paste</li>
+                <li>1 teaspoon cumin powder, 1/2 teaspoon turmeric powder, 1/2 teaspoon red chili powder </li>
+                <li>2 tablespoons vegetable oil</li>
+                <li>1 onion, finely chopped</li>
+                <li>2-3 green chilies, slit</li>
+                <li>Salt to taste, Sugar to taste</li>
+                <li>Fresh coriander leaves for garnish</li>
+            </ul>
+
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Marinate the Prawns:</li><ul>
+                <li>In a bowl, combine the cleaned prawns with turmeric powder and salt.</li>
+                <li>Let them marinate for about 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Prepare the Coconut Paste:</li><ul>
+                <li>In a blender or food processor, blend the grated coconut with a little water to create a smooth paste. Set it aside.</li>
+                <li>In the same blender, blend the coconut milk. Set it aside as well.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Cook the Prawns:</li><ul>
+                <li>Heat oil in a deep pan over medium heat.</li>
+                <li>Add the marinated prawns and sauté until they turn pink and opaque. </li>
+                <li>Remove them from the pan and set aside.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Prepare the Gravy:</li><ul>
+                <li>In the same pan, add more oil if needed.</li>
+                <li>Add finely chopped onions and green chilies. Sauté until the onions become translucent.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Spices:</li><ul>
+                <li>Add ginger paste and garlic paste. Sauté for a few minutes until the raw smell disappears.</li>
+                <li>Add cumin powder, turmeric powder, and red chili powder. Stir well and cook for a couple of minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6.Add Coconut Paste:</li><ul>
+                <li>Pour in the prepared coconut paste and stir to combine.</li>
+                <li>Cook for a few minutes until the oil starts to separate from the mixture.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Add Coconut Milk:</li><ul>
+                <li>Pour in the coconut milk and mix well.</li>
+                <li>Add salt and sugar to taste. Adjust the sugar to balance the flavors.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Add Prawns and Simmer:</li><ul>
+                <li>Return the sautéed prawns to the pan and stir to coat them with the coconut gravy.</li>
+                <li>Let the Prawns Curry simmer over low heat for about 5-7 minutes, allowing the flavors to meld.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. Garnish and Serve:</li><ul>
+                <li>Garnish with fresh coriander leaves.</li>
+                <li>Serve the Prawns Curry hot with steamed rice.</li>
+
+            </ul><p style="color:orange;font-size:20px">Enjoy this creamy and flavorful Bengali prawn curry!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px">రొయ్యలను మెరినేట్ చేయడానికి:</p>
+            <ul style="list-style-type:circle">
+                <li>250 గ్రా పెద్ద రొయ్యలు, శుభ్రం చేసి తయారుచేయడం</li>
+                <li>1/2 టీస్పూన్ పసుపు పొడి</li>
+                <li>రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">గ్రేవీ కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li>1 కప్పు తాజా తురిమిన కొబ్బరి</li>
+                <li>1 కప్పు కొబ్బరి పాలు</li>
+                <li>2 టేబుల్ స్పూన్లు కూరగాయల నూనె</li>
+                <li>1 ఉల్లిపాయ, సన్నగా తరిగిన</li>
+                <li>2-3 పచ్చిమిర్చి, ముక్కలు</li>
+                <li>1 టీస్పూన్ అల్లం పేస్ట్,1 టీస్పూన్ వెల్లుల్లి పేస్ట్</li>
+                <li>1 టీస్పూన్ జీలకర్ర పొడి,1/2 టీస్పూన్ పసుపు పొడి</li>
+                <li>1/2 టీస్పూన్ ఎర్ర మిరప పొడి (రుచికి సర్దుబాటు చేయండి)</li>
+                <li>రుచికి ఉప్పు</li>
+                <li>రుచికి చక్కెర</li>
+                <li>అలంకరించు కోసం తాజా కొత్తిమీర ఆకులు</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. రొయ్యలను మెరినేట్ చేయండి:</li><ul>
+                <li>ఒక గిన్నెలో, శుభ్రం చేసిన రొయ్యలను పసుపు పొడి మరియు ఉప్పుతో కలపండి.</li>
+                <li>వాటిని సుమారు 15-20 నిమిషాలు మెరినేట్ చేయనివ్వండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. కొబ్బరి ముద్దను సిద్ధం చేయండి:</li><ul>
+                <li>బ్లెండర్ లేదా ఫుడ్ ప్రాసెసర్‌లో, తురిమిన కొబ్బరిని కొద్దిగా నీళ్లతో కలిపి మెత్తని పేస్ట్‌ను తయారు చేయండి. </li>
+                <li>దానిని పక్కన పెట్టండి.</li>
+                <li>అదే బ్లెండర్‌లో కొబ్బరి పాలను కలపండి. దాన్ని కూడా పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. రొయ్యలను ఉడికించాలి:</li><ul>
+                <li>మీడియం వేడి మీద లోతైన పాన్‌లో నూనె వేడి చేయండి.</li>
+                <li>మ్యారినేట్ చేసిన రొయ్యలను వేసి అవి పింక్ మరియు అపారదర్శకంగా మారే వరకు వేయించాలి.</li>
+                <li>వాటిని పాన్ నుండి తీసి పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. గ్రేవీని సిద్ధం చేయండి:</li><ul>
+                <li>అదే పాన్‌లో, అవసరమైతే మరింత నూనె వేయండి.</li>
+                <li>సన్నగా తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి. </li>
+                <li>ఉల్లిపాయలు పారదర్శకంగా మారే వరకు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. సుగంధ ద్రవ్యాలు జోడించండి:</li><ul>
+                <li>అల్లం పేస్ట్ మరియు వెల్లుల్లి పేస్ట్ జోడించండి. </li>
+                <li>పచ్చి వాసన మాయమయ్యే వరకు కొన్ని నిమిషాలు వేయించాలి.</li>
+                <li>జీలకర్ర పొడి, పసుపు పొడి, మరియు ఎర్ర కారం జోడించండి.</li>
+                <li>బాగా కదిలించు మరియు రెండు నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. కొబ్బరి పేస్ట్ జోడించండి:</li><ul>
+                <li>సిద్ధం చేసుకున్న కొబ్బరి పేస్ట్‌లో పోసి కలపాలి.</li>
+                <li>మిశ్రమం నుండి నూనె వేరుచేయడం ప్రారంభించే వరకు కొన్ని నిమిషాలు ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. కొబ్బరి పాలు జోడించండి:</li><ul>
+                <li>కొబ్బరి పాలు పోసి బాగా కలపాలి.</li>
+                <li>రుచికి ఉప్పు మరియు చక్కెర జోడించండి. </li>
+                <li>రుచులను సమతుల్యం చేయడానికి చక్కెరను సర్దుబాటు చేయండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. రొయ్యలు వేసి ఉడకబెట్టండి:</li><ul>
+                <li>వేయించిన రొయ్యలను తిరిగి పాన్‌లోకి తీసుకుని, వాటిని కొబ్బరి గ్రేవీతో కోట్ చేయడానికి కదిలించు.</li>
+                <li>రొయ్యల కూరను తక్కువ వేడి మీద సుమారు 5-7 నిమిషాలు ఉడకనివ్వండి, రుచులు కలిసిపోయేలా చేయండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. గార్నిష్ చేసి సర్వ్ చేయండి:</li><ul>
+                <li>తాజా కొత్తిమీర ఆకులతో అలంకరించండి.</li>
+                <li>రొయ్యల కూరను వేడిగా ఉడికించిన అన్నంతో సర్వ్ చేయండి.</li>
+
+            </ul><p style="color:orange;font-size:20px">ఈ క్రీము మరియు సువాసనగల బెంగాలీ రొయ్యల కూరను ఆస్వాదించండి!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">सामग्री:</p>
+
+            <p style="color:#22facb;font-size:20px">झींगे को मैरीनेट करने के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li>250 ग्राम बड़े झींगे, साफ करके निकाले हुए</li>
+                <li>1/2 चम्मच हल्दी पाउडर</li>
+                <li>नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">ग्रेवी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li>1 कप ताज़ा कसा हुआ नारियल</li>
+                <li>1 कप नारियल का दूध</li>
+                <li>2 बड़े चम्मच वनस्पति तेल</li>
+                <li>1 प्याज, बारीक कटा हुआ</li>
+                <li>2-3 हरी मिर्च, कतरी हुई</li>
+                <li>1 चम्मच अदरक का पेस्ट,1 चम्मच लहसुन का पेस्ट</li>
+                <li>1 चम्मच जीरा पाउडर,1/2 चम्मच हल्दी पाउडर</li>
+                <li>1/2 चम्मच लाल मिर्च पाउडर (स्वादानुसार)</li>
+                <li>नमक स्वाद अनुसार</li>
+                <li>स्वाद के लिए चीनी</li>
+                <li>गार्निश के लिए ताजा हरा धनिया</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. झींगे को मैरीनेट करें:</li><ul>
+                <li>एक कटोरे में साफ किए हुए झींगे को हल्दी पाउडर और नमक के साथ मिलाएं.</li>
+                <li>इन्हें लगभग 15-20 मिनट तक मैरीनेट होने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. नारियल का पेस्ट तैयार करें:</li><ul>
+                <li>एक ब्लेंडर या फूड प्रोसेसर में, कसा हुआ नारियल को थोड़े से पानी के साथ मिलाकर एक चिकना पेस्ट बनाएं। </li>
+                <li>इसे एक तरफ रख दें.</li>
+                <li>उसी ब्लेंडर में नारियल के दूध को ब्लेंड कर लें. इसे भी अलग रख दें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. झींगा पकाएं:</li><ul>
+                <li>मध्यम आंच पर एक गहरे पैन में तेल गर्म करें.</li>
+                <li>मैरीनेट किए हुए झींगे डालें और गुलाबी और अपारदर्शी होने तक भूनें।</li>
+                <li>इन्हें पैन से निकालकर अलग रख दें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. ग्रेवी तैयार करें:</li><ul>
+                <li>उसी पैन में अगर जरूरत हो तो और तेल डालें.</li>
+                <li>इसमें बारीक कटा प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. मसाले डालें:</li><ul>
+                &nbsp;-अदरक पेस्ट और लहसुन पेस्ट डालें. </li>
+                <li>कुछ मिनट तक भूनें जब तक कि कच्ची गंध गायब न हो जाए।</li>
+                <li>जीरा पाउडर, हल्दी पाउडर और लाल मिर्च पाउडर डालें.</li>
+                <li>अच्छी तरह हिलाएँ और कुछ मिनट तक पकाएँ।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. नारियल का पेस्ट डालें:</li><ul>
+                <li>इसमें तैयार नारियल का पेस्ट डालें और मिलाने के लिए हिलाएं. </li>
+                <li>कुछ मिनट तक पकाएं जब तक कि मिश्रण से तेल अलग न होने लगे।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. नारियल का दूध डालें:</li><ul>
+                <li>नारियल का दूध डालें और अच्छी तरह मिला लें.</li>
+                <li>स्वादानुसार नमक और चीनी डालें.</li>
+                <li>स्वाद को संतुलित करने के लिए चीनी को समायोजित करें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. झींगा डालें और उबालें:</li><ul>
+                <li>भुने हुए झींगे को पैन में लौटा दें और उन्हें नारियल की ग्रेवी में लपेटने के लिए हिलाएं।</li>
+                <li>प्रॉन्स करी को धीमी आंच पर लगभग 5-7 मिनट तक उबलने दें, जिससे इसका स्वाद घुल जाए।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">9. सजाकर परोसें:</li><ul>
+                <li>ताजी हरी धनिया से गार्निश करें.</li>
+                <li>झींगा करी को उबले हुए चावल के साथ गरमागरम परोसें।</li>
+
+            </ul><p style="color:orange;font-size:20px">इस मलाईदार और स्वादिष्ट बंगाली झींगा करी का आनंद लें!</p>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

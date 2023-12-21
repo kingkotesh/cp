@@ -1,0 +1,31 @@
+﻿@using WebMatrix.Data
+@{
+    Database db = Database.Open("fooddb");
+    if (IsPost)
+    {
+        String us = Request.Form["us"];
+        String ps = Request.Form["ps"];
+        var r = db.QuerySingle("select * from credentials where username = @0 AND password = @1", us, ps);
+        if (r != null)
+        {
+            //<h1>login success</h1>
+            Response.Redirect("~/dummy.cshtml");
+        }
+        <h4 style="color:red;">Invalid login attempt. Please check your credentials.</h4>
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form method="post" action="">
+        Enter username:<input type="text" id="us" name="us" required />
+        Enter password:<input type="password" id="ps" name="ps" required />
+        <input type="submit" id="btn" name="btn" value="login" />
+    </form>
+
+</body>
+</html>

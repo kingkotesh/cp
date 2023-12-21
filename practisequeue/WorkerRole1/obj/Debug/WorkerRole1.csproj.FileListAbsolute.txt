@@ -1,0 +1,17 @@
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\WorkerRole1.dll.config
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\WorkerRole1.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\WorkerRole1.pdb
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\MonAgentListener.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\obj\Debug\WorkerRole1.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\obj\Debug\WorkerRole1.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\obj\Debug\WorkerRole1.csproj.CopyComplete
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\obj\Debug\WorkerRole1.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\obj\Debug\WorkerRole1.pdb
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Newtonsoft.Json.dll
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\ROMAN REIGNS\CP\practisequeue\WorkerRole1\bin\Debug\Newtonsoft.Json.xml

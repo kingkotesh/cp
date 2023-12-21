@@ -1,0 +1,54 @@
+﻿@using WebMatrix.Data;
+@{
+    Database db = Database.Open("fooddb");
+    var usn = Request.Form["usn"];
+    var psw = Request.Form["psw"];
+    var cpsw = Request.Form["cpsw"];
+
+    if (IsPost)
+    {
+        if (psw == cpsw)
+        {
+            try
+            {
+                var q = "insert into credentials(username,password) values('" + usn + "','" + psw + "')";
+                db.Execute(q);
+                Response.Redirect("~/existinguser.cshtml");
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex);
+                <h1>exists</h1>
+            }
+        }
+        else
+        {
+            <h4 style="color:red;">Please verify the credentials.....</h4>
+        }
+
+    }
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h4>Username must be minimum of 6 characters long and can contain letters, digits.</h4>
+    <h4>Password may contain uppercase letter, lowercase letter, digit, and special character, and be at least 8 characters long</h4>
+    <p style="color:red">symbol characters includes #$%^&+=*-?/!</p>
+
+    <form method="post" action="">
+
+        username:<input type="text" id="usn" name="usn" minlength="6" maxlength="16" pattern="[a-zA-Z0-9]+"   title="Username must be minimum of 6 characters long and can contain letters, digits." required>
+
+        password:<input type="password" id="psw" minlength="8" maxlength="20" name="psw" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#$%^&+=*-?/!]).{8,20}$" title="Password may contain uppercase letter,  lowercase letter,  digit, and  special character, and be at least 8 characters long" required>
+
+        confirm password:<input type="password" minlength="8" maxlength="20" id="cpsw" name="cpsw" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#$%^&+=*-?/!]).{8,20}$" title="Password may contain uppercase letter,  lowercase letter, digit, and  special character, and be at least 8 characters long" required>
+
+        <input type="submit" id="nbtn" name="nbtn" value="create" />
+    </form>
+</body>
+</html>

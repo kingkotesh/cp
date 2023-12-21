@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Bandar Laddu Sweet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+            font-weight: bold;
+        }
+
+        li {
+            color: #ADFF2F
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our sweet is <span style="color:blue">Bandar Laddu</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Bandar Laddu</h2>
+
+        <img style="padding-left:250px" height="200px" width="300px" src="https://i.timesnowhindi.com/stories/besan_laddu.jpg" alt="Bandar Laddu">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 cups gram flour (besan)</li>
+                <li>1 cup ghee (clarified butter)</li>
+                <li>1.5 cups powdered sugar</li>
+                <li>1/2 teaspoon cardamom powder</li>
+                <li>Chopped nuts (cashews or almonds) for garnish</li>
+                <li>A pinch of edible camphor (optional, for flavor)</li>
+            </ul>
+            <h3>Process:</h3>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. Roast the Gram Flour:
+
+                <li>Heat a pan on medium flame and melt 1 cup of ghee in it.</li>
+                <li>Add 2 cups of gram flour (besan) to the melted ghee.</li>
+                <li>Stir and roast the besan in the ghee on medium flame for 20 minutes until it turns golden brown.</li>
+                <li>Keep stirring so it doesn't burn.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. Let It Cool and Make Powder:
+
+                <li>Remove the roasted besan from the heat and let it cool down.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3.Add Sugar and Flavorings:
+
+                <li>While it's still warm, add 1.5 cups of powdered sugar and 1/2 teaspoon of cardamom powder.</li>
+                <li>You can also add a tiny pinch of edible camphor for extra flavor (use it sparingly).</li>
+                <li>Mix everything well.</li>
+                <li>The heat will make the sugar melt a bit, and the mixture will become crumbly.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4.Shape into Balls:
+
+                <li>Once the mixture is cool enough to touch.</li>
+                <li>Form it into small round balls (laddus) by rolling it between your palms.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. Decorate:
+
+                <li>If you want, put a chopped nut (like cashew or almond) on top of each laddu.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. Cool and Store:
+
+                <li>Let the laddus cool completely before storing them in an airtight container.</li>
+
+            </ul>
+            <b><p style="color:#22facb">Enjoy your homemade Bandar Laddu! These sweet treats are a special delicacy from South India.</p></b>
+            </ul>
+        </div>
+
+        <div id="tel">
+            <h3>కావలసిన  పదార్థాలు:</h3>
+            <ul>
+
+                <li>2 కప్పుల పప్పు పిండి (బేసన్)</li>
+                <li>వ1 కప్పు నెయ్యి (స్పష్టమైన వెన్న)</li>
+                <li>1.5 కప్పుల పొడి చక్కెర</li>
+                <li>1/2 టీస్పూన్ యాలకుల పొడి</li>
+                <li>అలంకరించు కోసం తరిగిన గింజలు (జీడిపప్పు లేదా బాదం)</li>
+                <li>ఒక చిటికెడు తినదగిన కర్పూరం (ఐచ్ఛికం, రుచి కోసం)</li>
+
+            </ul>
+
+
+            <h3>తయారీ విధానం:</h3>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. శనగపిండిని కాల్చండి:
+
+                <li>మీడియం మంట మీద పాన్ వేడి చేసి అందులో 1 కప్పు నెయ్యి వేసి కరిగించండి.</li>
+                <li>కరిగించిన నెయ్యిలో 2 కప్పుల శనగ పిండి (బేసన్) జోడించండి.</li>
+                <li>బేసన్‌ను నెయ్యిలో వేసి బంగారు గోధుమ రంగు వచ్చేవరకు మీడియం మంటపై 20 నిమిషాలు వేయించాలి.</li>
+                <li>కాలిపోకుండా కలుపుతూ ఉండండి.</li>
+                
+            </ul>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. చల్లబరచండి మరియు పొడిని తయారు చేయండి:
+
+                <li>వేయించిన బేసన్‌ను వేడి నుండి తీసివేసి, చల్లారనివ్వండి.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. చక్కెర మరియు రుచులను జోడించండి:
+
+                <li> ఇది ఇంకా వెచ్చగా ఉన్నప్పుడు, 1.5 కప్పుల పొడి చక్కెర మరియు 1/2 టీస్పూన్ యాలకుల పొడిని జోడించండి.</li>
+                <li>మీరు అదనపు రుచి కోసం ఒక చిన్న చిటికెడు తినదగిన కర్పూరాన్ని కూడా జోడించవచ్చు (తక్కువగా ఉపయోగించండి).</li>
+                <li>ప్రతిదీ బాగా కలపండి.</li>
+                <li>వేడికి చక్కెర కొంచెం కరుగుతుంది మరియు మిశ్రమం మెత్తగా మారుతుంది.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4.బంతుల్లో ఆకారం:
+
+                <li> మిశ్రమం తాకేంత చల్లారిన తర్వాత.</li>
+                <li>మీ అరచేతుల మధ్య తిప్పడం ద్వారా చిన్న గుండ్రని బంతులు (లడ్డూలు)గా రూపొందించండి.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. అలంకరించు:
+
+                <li>మీకు కావాలంటే, ప్రతి లడ్డూ పైన తరిగిన గింజ (జీడిపప్పు లేదా బాదం వంటివి) ఉంచండి.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. కూల్ అండ్ స్టోర్:
+
+                <li>లడ్డూలను గాలి చొరబడని కంటైనర్‌లో నిల్వ చేయడానికి ముందు వాటిని పూర్తిగా చల్లబరచండి.</li>
+
+            </ul>
+            <b>
+                <p style="color:#22facb">మీ ఇంట్లో తయారుచేసిన బందర్ లడ్డూను ఆస్వాదించండి! ఈ స్వీట్ ట్రీట్‌లు దక్షిణ భారతదేశం నుండి ప్రత్యేకమైన రుచికరమైనవి.</p>
+            </b>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+
+                <li> 2 कप बेसन</li>
+                <li>1 कप घी (स्पष्ट मक्खन)</li>
+                <li>1.5 कप पिसी चीनी</li>
+                <li>1/2 चम्मच इलायची पाउडर</li>
+                <li> गार्निश के लिए कटे हुए मेवे (काजू या बादाम)।</li>
+                <li>एक चुटकी खाने योग्य कपूर (वैकल्पिक, स्वाद के लिए)</li>
+
+            </ul>
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. बेसन भून लें:
+                <li>मीडियम आंच पर एक पैन गर्म करें और उसमें 1 कप घी डालकर पिघला लें.</li>
+                <li>पिघले हुए घी में 2 कप बेसन डालें.</li>
+                <li>बेसन को घी में चलाते हुए मध्यम आंच पर 20 मिनट तक सुनहरा भूरा होने तक भून लें.</li>
+                <li>इसे चलाते रहें ताकि यह जले नहीं.</li>
+                </ul>
+
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. इसे ठंडा होने दें और पाउडर बना लें:
+
+                <li> भुने हुए बेसन को आंच से उतार लें और ठंडा होने दें.</li>
+                </ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">3.चीनी और स्वाद जोड़ें:
+
+                <li>जब तक यह गर्म हो, इसमें 1.5 कप पिसी चीनी और 1/2 चम्मच इलायची पाउडर मिलाएं।</li>
+                <li>आप अतिरिक्त स्वाद के लिए एक छोटी चुटकी खाने योग्य कपूर भी मिला सकते हैं (इसे कम से कम इस्तेमाल करें)।</li>
+                <li> सभी चीजों को अच्छे से मिला लीजिए.</li>
+                <li> गर्मी से चीनी थोड़ी पिघल जाएगी और मिश्रण भुरभुरा हो जाएगा.</li>
+                </ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">4.बॉल्स का आकार दें:
+
+                <li>जब मिश्रण छूने लायक ठंडा हो जाए.</li>
+                <li>इसे अपनी हथेलियों के बीच घुमाकर छोटे-छोटे गोल गोले (लड्डू) बना लें.</li>
+                </ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. सजाएं:
+
+                <li>आप चाहें तो हर लड्डू के ऊपर एक कटा हुआ मेवा (जैसे काजू या बादाम) डाल दें.</li>
+                </ul>
+                <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. ठंडा करके स्टोर करें:
+
+                <li>लड्डुओं को एयरटाइट कंटेनर में रखने से पहले पूरी तरह ठंडा होने दें.</li>
+                </ul>
+                <b> <p style="color:#22facb">अपने घर में बने बंदर लड्डू का आनंद लें! ये मीठे व्यंजन दक्षिण भारत का एक विशेष व्यंजन हैं।</p></b>
+
+        </div>
+    </section>
+</body>
+</html> 

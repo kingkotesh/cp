@@ -1,0 +1,7 @@
+C:\ROMAN REIGNS\CP\sql\sql\bin\Debug\sql.exe.config
+C:\ROMAN REIGNS\CP\sql\sql\bin\Debug\sql.exe
+C:\ROMAN REIGNS\CP\sql\sql\bin\Debug\sql.pdb
+C:\ROMAN REIGNS\CP\sql\sql\obj\Debug\sql.csproj.AssemblyReference.cache
+C:\ROMAN REIGNS\CP\sql\sql\obj\Debug\sql.csproj.CoreCompileInputs.cache
+C:\ROMAN REIGNS\CP\sql\sql\obj\Debug\sql.exe
+C:\ROMAN REIGNS\CP\sql\sql\obj\Debug\sql.pdb

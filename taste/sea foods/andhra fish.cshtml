@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our dish is <span style="color:blue">Andhra Fish Curry</span></marquee>
+
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Andhra Fish Curry</h2>
+
+        <img style="padding-left:225px;width:400px;height:400px" src="https://www.desicookingrecipes.com/wp-content/uploads/2021/02/1614016740_maxresdefault-250x250.jpg" alt="Andhra Fish Curry">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px"> For Marinating Fish:</p>
+            <ul style="list-style-type:circle">
+                <li> 4-6 pieces of fish (preferably a firm-fleshed fish like Rohu or Catfish)</li>
+                <li> 1 teaspoon turmeric powder</li>
+                <li> Salt to taste</li>
+            </ul>
+
+            <p style="color:#22facb;font-size:20px">For the Curry:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 tablespoons oil</li>
+                <li> 1 teaspoon mustard seeds,fenugreek seeds,cumin seeds</li>
+                <li> 1 large onion,2 tomatoes</li>
+                <li> 2-3 green chilies, slit, 2-3 dried red chilies</li>
+                <li> 1/2 cup tamarind pulp</li>
+                <li> 1 teaspoon red chili powder,Salt</li>
+                <li> 2 tablespoons coriander powder,1 teaspoon turmeric powder</li>
+                <li> 1 sprig curry leaves, coriander leaves for garnish</li>
+            </ul>
+
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Marinate the Fish:</li><ul>
+                <li> In a bowl, mix the fish pieces with turmeric powder and salt.</li>
+                <li>Allow them to marinate for at least 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Prepare TamarindPulp:</li><ul>
+
+                <li> Soak tamarind in warm water and extract the pulp. Set it aside.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Prepare theCurry:</li><ul>
+                <li> Heat oil in a deep pan over medium-high heat.</li>
+                <li> Add mustard seeds and let them splutter.</li>
+                <li> Add fenugreek seeds and cumin seeds. Sauté briefly until they release their aroma.</li>
+                <li> Add chopped onions and green chilies. Sauté until the onions become translucent.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add theFish:</li><ul>
+                <li> Carefully place the marinated fish pieces into the simmering curry.</li>
+                <li> Cover and cook for about 10-15 minutes or until the fish is fully cooked and flakes easily.</li>
+                <li> Mix well and sauté for a couple of minutes until the raw smell of the spices disappears.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Tomatoes and TamarindPulp:</li><ul>
+                <li> Add the chopped tomatoes and cook until they become soft and the oil starts to separate from the mixture.</li>
+                <li> Pour in the tamarind pulp and mix well. Add salt to taste.</li>
+                <li>Stir and let it simmer for a few minutes to combine the flavors.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. AddWater:</li><ul>
+                <li> Add enough water to achieve your desired consistency for the curry.</li>
+                <li>This will depend on how thick or thin you prefer your fish curry. </li>
+                <li> Cover and cook for about 10-15 minutes or until the fish is fully cooked and flakes easily.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. AddSpices:</li><ul>
+                <li> Add turmeric powder, red chili powder, and coriander powder.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. Garnish andServe:</li><ul>
+                <li> Garnish with fresh curry leaves and coriander leaves.</li>
+                <li> Serve Chepala Pulusu hot with steamed rice. The tangy and spicy flavors make it a delightful dish.</li>
+            </ul><p style="color:#22facb;font-size:20px">Enjoy your homemade Andhra Fish Curry!</p>
+        </div>
+
+
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">కావలసినవి:</p>
+            <p style="color:#22facb;font-size:20px"> చేపలను మెరినేట్ చేయడానికి:</p>
+            <ul style="list-style-type:circle">
+                <li> 4-6 చేప ముక్కలు (ప్రాధాన్యంగా రోహు లేదా క్యాట్‌ఫిష్ వంటి గట్టి కండగల చేప)</li>
+                <li> 1 టీస్పూన్ పసుపు పొడి</li>
+                <li> రుచికి ఉప్పు రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">కూర కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 టేబుల్ స్పూన్లు నూనె</li>
+                <li> 1 టీస్పూన్ ఆవాలు, మెంతులు, జీలకర్ర</li>
+                <li> 1 పెద్ద ఉల్లిపాయ, 2 టమోటాలు</li>
+                <li> 2-3 పచ్చిమిర్చి, చీలిక, 2-3 ఎండు మిరపకాయలు</li>
+                <li> 1/2 కప్పు చింతపండు గుజ్జు</li>
+                <li> 1 టీస్పూన్ ఎర్ర మిరప పొడి, ఉప్పు</li>
+                <li> 2 టేబుల్ స్పూన్లు ధనియాల పొడి, 1 టీస్పూన్ పసుపు పొడి</li>
+                <li> అలంకరించేందుకు 1 రెమ్మ కరివేపాకు, కొత్తిమీర తరుగు</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. చేపల మెరినేట్విధానం:</li><ul>
+                <li> ఒక గిన్నెలో చేప ముక్కలను పసుపు, ఉప్పు వేసి కలపాలి.</li>
+                <li> వాటిని కనీసం 15-20 నిమిషాలు మెరినేట్ చేయడానికి అనుమతించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. చింతపండు గుజ్జును తయారీవిధానం:</li><ul>
+                <li> చింతపండును గోరువెచ్చని నీటిలో నానబెట్టి గుజ్జును తీయండి. దానిని పక్కన పెట్టండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. కూర తయారీవిధానం:</li><ul>
+                <li> మీడియం-అధిక వేడి మీద లోతైన పాన్లో నూనె వేడి చేయండి.</li>
+                <li> ఆవాలు వేయండి</li>
+                <li> మెంతి గింజలు మరియు జీలకర్ర జోడించండి. అవి తమ వాసనను వెదజల్లే వరకు క్లుప్తంగా వేగించండి.</li>
+                <li> తరిగిన ఉల్లిపాయలు మరియు పచ్చిమిర్చి జోడించండి. ఉల్లిపాయలు పారదర్శకంగా మారే వరకు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. చేపలనుజోడించండి:</li><ul>
+                <li> ఉడుకుతున్న కూరలో మెరినేట్ చేసిన చేప ముక్కలను జాగ్రత్తగా ఉంచండి. </li>
+                <li> మూతపెట్టి సుమారు 10-15 నిమిషాలు లేదా చేప పూర్తిగా ఉడికినంత వరకు మరియు తేలికగా రేకులు వచ్చే వరకు ఉడికించాలి.</li>
+                <li> బాగా కలపండి మరియు మసాలాల పచ్చి వాసన మాయమయ్యే వరకు రెండు నిమిషాలు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. టొమాటోలు మరియు చింతపండు గుజ్జుజోడించండి</li><ul>
+                <li> తరిగిన టొమాటోలు వేసి అవి మెత్తబడే వరకు ఉడికించాలి మరియు మిశ్రమం నుండి నూనె వేరుచేయడం ప్రారంభమవుతుంది.</li>
+                <li> చింతపండు గుజ్జులో పోసి బాగా కలపాలి. రుచికి ఉప్పు కలపండి</li>
+                <li> కలపండి మరియు ముక్కలు రుచులను పొందే వరకు వేచి ఉండండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. నీరుజోడించండి:</li><ul>
+                <li> కూర కోసం మీరు కోరుకున్న స్థిరత్వాన్ని సాధించడానికి తగినంత నీటిని జోడించండి. </li>
+                <li> ఇది మీరు మీ చేపల కూరను ఎంత చిక్కగా లేదా పలాచగా ఇష్టపడతారు అనే దానిపై ఆధారపడి ఉంటుంది. </li>
+                <li> సుమారు 10-15 నిమిషాలు లేదా చేప పూర్తిగా ఉడికినంత వరకు మరియు సులభంగా రేకులు వచ్చే వరకు మూతపెట్టి ఉడికించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. సుగంధ ద్రవ్యాలుజోడించండి:</li><ul>
+                <li> పసుపు పొడి, ఎర్ర కారం మరియు ధనియాల పొడి జోడించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. గార్నిష్ మరియుసర్వ్:</li><ul>
+                <li> తాజా కరివేపాకు మరియు కొత్తిమీర ఆకులతో అలంకరించండి.</li>
+                <li> చేపల పులుసును ఉడికించిన అన్నంతో వేడిగా వడ్డించండి.</li>
+                <li> ఘాటైన మరియు కారంగా ఉండే రుచులు దీనిని సంతోషకరమైన వంటకంగా చేస్తాయి.</li>
+            </ul><p style="color:#22facb;font-size:20px">మీ ఇంట్లో తాయారు చేయబడిన ఆంధ్రా ఫిష్ కర్రీని ఆస్వాదించండి!</p>
+        </div>
+
+
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">सामग्री:</p>
+            <p style="color:#22facb;font-size:20px">मछली को मैरीनेट करने के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> मछली के 4-6 टुकड़े (अधिमानतः रोहू या कैटफ़िश जैसी ठोस मांस वाली मछली)</li>
+                <li> 1 चम्मच हल्दी पाउडर</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">करी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 बड़े चम्मच तेल</li>
+                <li> 1 चम्मच राई, मेथी दाना, जीरा</li>
+                <li> 1 बड़ा प्याज, 2 टमाटर</li>
+                <li> 2-3 हरी मिर्च, चीरा हुआ, 2-3 सूखी लाल मिर्च</li>
+                <li> 1/2 कप इमली का गूदा</li>
+                <li> 1 चम्मच लाल मिर्च पाउडर, नमक</li>
+                <li> 2 बड़े चम्मच धनिया पाउडर, 1 चम्मच हल्दी पाउडर</li>
+                <li> गार्निश के लिए 1 टहनी करी पत्ता, हरा धनिया</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. मछली को मैरीनेटकरें:</li><ul>
+                <li> एक कटोरे में मछली के टुकड़ों को हल्दी पाउडर और नमक के साथ मिलाएं।</li>
+                <li> इन्हें कम से कम 15-20 मिनट तक मैरीनेट होने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. इमली का गूदा तैयारकरें:</li><ul>
+                <li> इमली को गर्म पानी में भिगोकर उसका गूदा निकाल लें। इसे एक तरफ रख दें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. करी तैयारकरें:</li><ul>
+                <li> मध्यम-तेज़ आंच पर एक गहरे पैन में तेल गरम करें।</li>
+                <li> राई डालें और उन्हें फूटने दें।</li>
+                <li> मेथी दाना और जीरा डालें. जब तक उनमें से सुगंध न आने लगे तब तक थोड़ी देर भूनते रहें।</li>
+                <li> कटा हुआ प्याज और हरी मिर्च डालें. प्याज के पारदर्शी होने तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. मछलीजोड़ें:</li><ul>
+                <li> उबलती हुई करी में मैरीनेट की हुई मछली के टुकड़े सावधानी से डालें।</li>
+                <li> ढककर लगभग 10-15 मिनट तक पकाएं या जब तक मछली पूरी तरह से पक न जाए और आसानी से परत न बन जाए।</li>
+                <li> अच्छी तरह मिलाएँ और कुछ मिनट तक भूनें जब तक कि मसालों की कच्ची महक ख़त्म न हो जाए।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. टमाटर और इमली का गूदाडालें:</li><ul>
+                <li> कटे हुए टमाटर डालें और तब तक पकाएं जब तक वे नरम न हो जाएं और मिश्रण से तेल अलग न होने लगे.</li>
+                <li> इमली का गूदा डालें और अच्छी तरह मिलाएँ। स्वादानुसार नमक डालें.</li>
+                <li> हिलाएँ और स्वाद मिलाने के लिए इसे कुछ मिनट तक उबलने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. पानीडालिये:</li><ul>
+                <li> करी के लिए अपनी वांछित स्थिरता प्राप्त करने के लिए पर्याप्त पानी डालें।</li>
+                <li> यह इस बात पर निर्भर करेगा कि आप अपनी फिश करी कितनी गाढ़ी या पतली पसंद करते हैं। </li>
+                <li> ढककर लगभग 10-15 मिनट तक पकाएं या जब तक मछली पूरी तरह से पक न जाए और आसानी से परत न बन जाए।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. मसालेडालें:</li><ul>
+                <li> हल्दी पाउडर, लाल मिर्च पाउडर और धनियां पाउडर डालें.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">8. सजाकरपरोसें:</li><ul>
+                <li> ताजी करी पत्ते और धनिये की पत्तियों से सजाइये.</li>
+                <li> चेपला पुलुसु को उबले हुए चावल के साथ गर्मागर्म परोसें। तीखा और मसालेदार स्वाद इसे एक स्वादिष्ट व्यंजन बनाता है।</li>
+            </ul><p style="color:#22facb;font-size:20px">अपने घर में बनी आंध्रा फिश करी का आनंद लें!</p>
+        </div>
+</body>
+</html>

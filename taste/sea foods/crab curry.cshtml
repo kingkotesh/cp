@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our dish is <span style="color:blue">Karnataka Crab curry</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Karnataka Crab Curry</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://anuthefoodiconfood.files.wordpress.com/2021/12/img_20211230_123717.jpg" alt="Karnataka Crab Curry">
+
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+            <p style="color:#22facb;font-size:20px"> For Marinating the Crab:</p>
+            <ul style="list-style-type:circle">
+                <li> 4-6 crab clusters (cleaned and washed)</li>
+                <li> 1 teaspoon turmeric powder</li>
+                <li> Salt to taste</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">For the Masala Paste:</p>
+            <ul style="list-style-type:circle">
+                <li> 1 cup grated fresh coconut</li>
+                <li> 1 teaspoon mustard seeds,1 teaspoon cumin seeds, 4-5 fenugreek seeds</li>
+                <li> 6-8 dried red chilies (adjust to taste)</li>
+                <li> 4-5 peppercorns</li>
+                <li> A small piece of tamarind (soaked in water)</li>
+                <li> 1 onion, finely chopped</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">For the Curry:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 tablespoons oil</li>
+                <li> 1 teaspoon mustard seeds</li>
+                <li> A pinch of asafoetida (hing)</li>
+                <li> Curry leaves</li>
+                <li> Salt to taste</li>
+                <li> Water</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Instructions:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. Marinate the Crab:</li><ul>
+                <li> In a large bowl, mix the crab clusters with turmeric powder and salt.</li>
+                <li>Allow them to marinate for at about 15-20 minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. Prepare Masala Paste:</li><ul>
+                <li>
+                    In a blender or food processor, combine grated coconut, mustard seeds, dried red chilies, cumin seeds,
+                    <br /> fenugreek seeds, peppercorns, and the soaked tamarind piece.<br />
+                <li> Add a little water and blend into a smooth paste.</li>
+                <li> Add the finely chopped onion to the paste and blend briefly to mix.</li>
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. Cook the Crab:</li><ul>
+                <li> Heat oil in a deep pan over medium-high heat.</li>
+                <li> Add mustard seeds and let them splutter.</li>
+                <li> Add a pinch of asafoetida (hing) and curry leaves.</li>
+                <li> Carefully add the marinated crab clusters and sauté for a few minutes.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. Add the Masala Paste:</li><ul>
+                <li> Pour the prepared masala paste over the crab.</li>
+                <li> Mix well to coat the crab evenly with the masala.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. Add Water:</li><ul>
+                <li> Add enough water to cover the crab and achieve your desired curry consistency.</li>
+                <li> Add salt to taste and stir.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. Cook the Curry:</li><ul>
+                <li> Cover the pan and let the crab curry simmer over medium-low heat for about 15-20 minutes,</li>
+                or until the crab is fully cooked and the flavors meld.
+                <br />
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. Serve:</li><ul>
+                <li> Once the crab is cooked and the curry has thickened, remove from heat.</li>
+                <li> Serve the Crab Curry hot with steamed rice.</li>
+
+            </ul><p style="color:orange;font-size:20px">Enjoy the delightful flavors of your homemade crab curry!</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+            <p style="color:#22facb;font-size:20px">పీతను మెరినేట్ చేయడానికి:</p>
+            <ul style="list-style-type:circle">
+                <li> 4-6 పీత సమూహాలు (శుభ్రం చేసి కడిగినవి)</li>
+                <li> 1 టీస్పూన్ పసుపు పొడి</li>
+                <li> రుచికి ఉప్పు</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">మసాలా పేస్ట్ కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 1 కప్పు తురిమిన తాజా కొబ్బరి</li>
+                <li> 1 టీస్పూన్ ఆవాలు</li>
+                <li> 6-8 ఎండిన ఎర్ర మిరపకాయలు (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> 1 టీస్పూన్ జీలకర్ర</li>
+                <li> 4-5 మెంతి గింజలు</li>
+                <li> 4-5 మిరియాలు</li>
+                <li> చింతపండు చిన్న ముక్క (నీళ్లలో నానబెట్టి)</li>
+                <li> 1 ఉల్లిపాయ, సన్నగా తరిగిన</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">కూర కోసం:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 టేబుల్ స్పూన్లు నూనె</li>
+                <li> 1 టీస్పూన్ ఆవాలు</li>
+                <li> చిటికెడు ఇంగువ (హింగ్)</li>
+                <li> కరివేపాకు</li>
+                <li> రుచికి ఉప్పు</li>
+                <li> నీరు</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">సూచనలు:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. పీతని మెరినేట్ విధానం:</li><ul>
+                <li> ఒక పెద్ద గిన్నెలో, పీత సమూహాలను పసుపు పొడి మరియు ఉప్పుతో కలపండి.</li>
+                <li> వాటిని సుమారు 15-20 నిమిషాలు మెరినేట్ చేయడానికి అనుమతించండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. మసాలా పేస్ట్‌ని సిద్ధం చేయు విధానం:</li><ul>
+                <li> బ్లెండర్ లేదా ఫుడ్ ప్రాసెసర్‌లో తురిమిన కొబ్బరి, ఆవాలు, ఎండు మిరపకాయలు, జీలకర్ర, మెంతి గింజలు,</li>
+                <li>  మిరియాలు మరియు నానబెట్టిన చింతపండు ముక్కను కలపండి.</li>
+                <li> కొద్దిగా నీళ్లు పోసి మెత్తని పేస్ట్‌లా కలపాలి.</li>
+                <li> మెత్తగా తరిగిన ఉల్లిపాయను పేస్ట్‌లో వేసి, మిక్స్ చేయడానికి క్లుప్తంగా బ్లెండ్ చేయండి.</li>
+
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. పీతను ఉడికించు విధానం:</li><ul>
+                <li>  మీడియం-అధిక వేడి మీద లోతైన పాన్లో నూనె వేడి చేయండి.</li>
+                <li> ఆవాలు వేసి చిలకరించాలి.</li>
+                <li> చిటికెడు ఇంగువ (హింగ్) మరియు కరివేపాకు జోడించండి.</li>
+                <li> మెరినేట్ చేసిన క్రాబ్ క్లస్టర్‌లను జాగ్రత్తగా వేసి, కొన్ని నిమిషాలు వేయించాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. మసాలా పేస్ట్ జోడించు విధానం:</li><ul>
+                <li> సిద్ధం చేసుకున్న మసాలా పేస్ట్‌ను పీతపై పోయాలి.</li>
+                <li> పీత మసాలాతో సమానంగా కోట్ చేయడానికి బాగా కలపండి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. నీరు కలుపు విధానం:</li><ul>
+                <li> పీతను కప్పి ఉంచడానికి తగినంత నీటిని జోడించండి మరియు మీరు కోరుకున్న కూర స్థిరత్వాన్ని సాధించండి.</li>
+                <li> రుచికి ఉప్పు వేసి కలపాలి.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. కూర ఉడికించు విధానం:</li><ul>
+                <li> పాన్‌ను కవర్ చేసి, పీత కూరను మీడియం-తక్కువ వేడి మీద సుమారు 15-20 నిమిషాల పాటు ఉడకనివ్వండి,</li>
+                &nbsp;  లేదా పీత పూర్తిగా ఉడికినంత వరకు మరియు రుచులు కలిసే వరకు.
+                <br />
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. అందజేయడం:</li><ul>
+                <li> పీత ఉడికిన తర్వాత మరియు కూర చిక్కగా అయిన తర్వాత, వేడి నుండి తీసివేయండి.</li>
+                <li> పీతల కూరను వేడిగా ఉడికించిన అన్నంతో సర్వ్ చేయండి.</li>
+
+
+
+
+
+            </ul><p style="color:orange;font-size:20px">మీ ఇంట్లో తయారుచేసిన పీత కూర యొక్క ఆహ్లాదకరమైన రుచులను ఆస్వాదించండి!</p>
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">सामग्री:</p>
+
+            <p style="color:#22facb;font-size:20px">केकड़े को मैरीनेट करने के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 4-6 केकड़े समूह (साफ और धोए हुए)</li>
+                <li> 1 चम्मच हल्दी पाउडर</li>
+                <li> नमक स्वाद अनुसार</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">मसाला पेस्ट के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 1 कप कसा हुआ ताज़ा नारियल</li>
+                <li> 1 चम्मच सरसों के बीज</li>
+                <li> 6-8 सूखी लाल मिर्च (स्वादानुसार)</li>
+                <li> 1 चम्मच जीरा</li>
+                <li> 4-5 मेथी दाना</li>
+                <li> 4-5 काली मिर्च</li>
+                <li> इमली का एक छोटा टुकड़ा (पानी में भिगोया हुआ)</li>
+                <li> 1 प्याज, बारीक कटा हुआ</li>
+            </ul>
+            <p style="color:#22facb;font-size:20px">करी के लिए:</p>
+            <ul style="list-style-type:circle">
+                <li> 2 बड़े चम्मच तेल</li>
+                <li> 1 चम्मच सरसों के बीज</li>
+                <li> एक चुटकी हींग</li>
+                <li> करी पत्ते</li>
+                <li> नमक स्वाद अनुसार</li>
+                <li> पानी</li>
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">निर्देश:</p>
+            <br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">1. केकड़े को मैरीनेट करें:</li><ul>
+                <li> एक बड़े कटोरे में केकड़े के गुच्छों को हल्दी पाउडर और नमक के साथ मिलाएं.</li>
+                <li> इन्हें लगभग 15-20 मिनट तक मैरिनेट होने दें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">2. मसाला पेस्ट तैयार करें:</li><ul>
+                <li> एक ब्लेंडर या फूड प्रोसेसर में, कसा हुआ नारियल, सरसों के बीज, सूखी लाल मिर्च, जीरा, मेथी के बीज, काली मिर्च </li>
+                &nbsp;  और भिगोए हुए इमली के टुकड़े को मिलाएं।
+                <br />
+                <li> थोड़ा पानी डालें और ब्लेंड करके मुलायम पेस्ट बना लें।</li>
+                <li> पेस्ट में बारीक कटा हुआ प्याज डालें और कुछ देर ब्लेंड करके मिक्स करें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">3. केकड़ा पकाएं:</li><ul>
+                <li> मध्यम-तेज़ आंच पर एक गहरे पैन में तेल गरम करें.</li>
+                <li> इसमें राई डालें और चटकने दें.</li>
+                <li> एक चुटकी हींग और करी पत्ता डालें.</li>
+                <li> सावधानी से मैरीनेट किए हुए केकड़े के गुच्छे डालें और कुछ मिनट तक भूनें।</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">4. मसाला पेस्ट डालें:</li><ul>
+                <li> तैयार मसाला पेस्ट को केकड़े के ऊपर डालें.</li>
+                <li> केकड़े को मसाले में समान रूप से लपेटने के लिए अच्छी तरह मिलाएं.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">5. पानी डालिये:</li><ul>
+                <li> केकड़े को ढकने और अपनी वांछित करी स्थिरता प्राप्त करने के लिए पर्याप्त पानी डालें।</li>
+                <li> स्वादानुसार नमक डालें और हिलाएं.</li>
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">6. करी पकाएं:</li><ul>
+                &nbsp;- पैन को ढक दें और केकड़े करी को मध्यम-धीमी आंच पर लगभग 15-20 मिनट तक,
+                <br />या जब तक केकड़ा पूरी तरह से पक न जाए और उसका स्वाद मिल न जाए, उबलने दें।
+                <br />
+
+            </ul><br /><li style="text-decoration: underline;font-size:18px;list-style-type:none;color:#22facb">7. सेवा करना:</li><ul>
+                <li> एक बार जब केकड़ा पक जाए और करी गाढ़ी हो जाए तो आंच से उतार लें.</li>
+                <li> गरम-गरम क्रैब करी को उबले हुए चावल के साथ परोसें।</li>
+
+            </ul><p style="color:orange;font-size:20px">अपने घर में बने केकड़े करी के स्वादिष्ट स्वाद का आनंद लें!</p>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

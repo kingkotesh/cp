@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #hin {
+            visibility: hidden;
+            display: none;
+        }
+
+        #tel {
+            visibility: hidden;
+            display: none;
+        }
+
+        #en {
+            visibility: visible;
+        }
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+            color: white;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        #c {
+            color: #22facb;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #22facb;
+        }
+    </style>
+    <script>
+            function fun(){
+                var list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Hindi")
+                {
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                }
+
+
+            }
+
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our item is <span style="color:blue">KitKat MilkShake</span></marquee>
+            <select id="lang" style="color:green;float:right;margin-right:60px" onchange="fun()">
+                <option value="none">Select language</option>
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;">Kitkat Milkshake</h2>
+        <img style="padding-left:225px;width:400px;height:400px" src="https://static.wixstatic.com/media/f2b4ae_f9dbb1451edf4211bd2960c438591162~mv2.jpg/v1/fill/w_500,h_750,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f2b4ae_f9dbb1451edf4211bd2960c438591162~mv2.jpg" alt="kitkat">
+        <div id="en">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Ingredients:</p>
+
+            <p style="color:#22facb;font-size:20px"> For Kitkat Milkshake:</p>
+            <ul style="list-style-type:circle">
+                <li> 2-3 KitKat chocolate bars</li>
+                <li>2 cups of milk</li>
+                <li>2-3 scoops of vanilla ice cream (optional)</li>
+                <li>Sugar to taste</li>
+                <li>Ice cubes (optional)</li>
+
+            </ul>
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">Process:</p>
+
+            <ul>
+                <li>Break the KitKat bars into small pieces. </li>
+                <li>In a blender, combine KitKat pieces, milk, and sugar. </li>
+                <li>Blend until smooth. </li>
+                <li>If you like, add vanilla ice cream for a creamier texture and blend again. </li>
+                <li>If you prefer a colder shake, you can add ice cubes. </li>
+                <li>Pour the KitKat milkshake into a glass and serve. Enjoy!</li>
+
+            </ul>
+            <p style="color:#22facb;font-size:20px">Enjoy your homemade Kitkat Milkshake</p>
+        </div>
+        <div id="tel" style="font-size: 16px;">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;">పదార్థాలు:</p>
+
+            <p style="color:#22facb;font-size:20px">కిట్‌కట్ మిల్క్‌షేక్:</p>
+            <ul style="list-style-type:circle">
+                <li>కిట్‌క్యాట్ చాక్లెట్ బార్ - 2 పట్టించండి.</li>
+                <li>పాలు - 2 గ్లాసులు.</li>
+                <li>వనిలా ఐస్ క్రీమ్ - 2 స్కూప్లు.</li>
+                <li>షుగర్ - మీ రుచికి అనుగుణంగా మెరిస్తే చాలు.</li>
+                <li>ఇండ్లూ పౌడర్ - చికిత్స అనుకున్న అవసరంకి అనుకున్నట్లు.</li>
+            </ul>
+            <h3>తయారీ విధానం:</h3>
+            <ul style="list-style-type:circle">
+                <li> మొదట, కిట్‌క్యాట్ చాక్లెట్ బార్లను సరిగ్గా చికిత్సనుసారంగా కడిచికొని, చికిత్సనుసారంగా కుదికించండి.</li>
+                <li> అనంతర, బౌల్ లో పాలు పోయినప్పుడు, అదనంతర వనిలా ఐస్ క్రీమ్లను జోడించండి.</li>
+                <li> శుగర్ ను మీరు కొనసాగేసి, సమానులంగా చికిత్సనుసారంగా ఉంచండి.</li>
+                <li> బౌల్ లో ఈ సారంను మిక్స్ చేయడానికి మిక్సీ లో వేసి, అదనంతర మిక్స్ చేయండి.</li>
+                <li> మిక్సింగ్ పూర్తిగా ఉందని మరిచి, మీ కిట్‌క్యాట్ మిల్క్‌షేక్ సర్వహీనంగా సిరిసృష్టి చేయండి.</li>
+                <li>నిమిషంలో మీ ఆకర్షణీయ కిట్‌క్యాట్ మిల్క్‌షేక్ సవరించడానికి మీ ప్రియమైన గార్నిషింగ్ ఉంచండి</li>
+
+            </ul>
+
+        </div>
+        <div id="hin">
+            <p style="color:#f1860b;font-size:15pt;font-weight:bold;"> सामग्री:</p>
+
+
+            <p style="color:#22facb;font-size:20px">किटकैट मिल्कशेक</p>
+            <ul style="list-style-type:circle">
+                <li>किटकैट चॉकलेट बार - 2 पैक्स</li>
+                <li> दूध - 2 गिलास.</li>
+                <li>वैनिला आइसक्रीम - 2 स्कूप्स.</li>
+                <li> चीनी - आपके स्वाद के हिसाब से.</li>
+                <li>इंस्टेंट कॉफी पाउडर - आवश्यकतानुसार.</li>
+            </ul>
+            <p style="color:#22facb;font-size:15pt;font-weight:bold;">निर्देश:</p>
+
+            <ul>
+                <li>पहले, किटकैट चॉकलेट बार्स को सही तरीके से कट लें और फाइन चूर्ण बना लें.</li>
+                <li>फिर, दूध को एक बाउल में डालें और उसके बाद वैनिला आइसक्रीम को मिलाएं.</li>
+                <li>चीनी को आपके स्वाद के हिसाब से मिलाएं.</li>
+                <li>इंस्टेंट कॉफी पाउडर को आवश्यकतानुसार मिलाएं.</li>
+                <li>इसके बाद, बाउल में इस मिश्रण को मिलाने के लिए ब्लेंडर में डालें और फिर मिलाने के बाद मिक्स करें.</li>
+                <li>मिक्सिंग पूरी तरह से होने पर आपका किटकैट मिल्कशेक तैयार है।</li>
+                <li>अब तुरंत अपने आकर्षक किटकैट मिल्कशेक को सजाने के लिए अपने पसंदीदा गार्निशिंग जैसे कि चॉकलेट सौस, विपरीत दिनों और एक स्ट्रॉ या व्हिप्ड क्रीम का उपयोग करें।</li>
+                <li>आपका किटकैट मिल्कशेक तैयार है, आप इसे आनंद उठा सकते हैं।</li>
+            </ul>
+
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>

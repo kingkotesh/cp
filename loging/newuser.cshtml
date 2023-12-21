@@ -1,0 +1,56 @@
+﻿@using WebMatrix.Data;
+@using System.Data.Common;
+
+
+@{
+    Database db = Database.Open("logindb");
+    var usn = Request.Form["usn"];
+    var psw = Request.Form["psw"];
+    var cpsw = Request.Form["cpsw"];
+
+    if (IsPost)
+    {
+        //var st = Request.Form["usn"];
+        //var r1=db.QuerySingle("select username from details where username = @0",usn);
+
+        if (psw == cpsw)
+        {
+            try
+            {
+                var q = "insert into details(username,password) values('" + usn + "','" + psw + "')";
+                db.Execute(q);
+                Response.Redirect("~/existinguser.cshtml");
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine(ex);
+                <h1>exists</h1>
+            }
+        }
+        else
+        {
+        <h4 style="color:red;">Please verify the credentials.....</h4>
+            }
+        }
+
+    }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p>User name is of length 6-20 which allows alphanumeric</p>
+    <p>Password is of length 8-15 which allows alphanumeric</p>
+
+    <form method="post" action="">
+        Enter username:<input pattern="[a-zA-Z0-9]{6-20}" minlength="6" type="text" name="usn" id="usn" required />
+        Enter password:<input type="password" pattern="[a-zA-Z0-9+-*/#%&^)(?][{6-20}" minlength="8"
+                              name="psw" id="psw" required />
+        Confirm password:<input type="password" pattern="[a-zA-Z0-9+-*/#]{6-20}" minlength="8"
+                                name="cpsw" id="cpsw" required />
+        <input type="submit" id="nbtn" name="nbtn" value="create" />
+    </form>
+</body>
+</html>

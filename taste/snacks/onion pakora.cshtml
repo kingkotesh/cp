@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste and Express - Onion Pakora Recipe</title>
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            font-weight: bold;
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+        }
+
+        li {
+            color: #ADFF2F;
+        }
+
+        h3, p {
+            color: orange;
+        }
+
+        Strong {
+            text-decoration: underline;
+            list-style-type: none;
+            color: cyan;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our snack is <span style="color:blue">Onion Pakora</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" id="lang" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Onion Pakora</h2>
+
+        <img style="padding-left:300px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTc-f6Np-JPYFMqj8gBXLOryHlWk00YN76Qw&usqp=CAU" alt="Onion Pakora">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>4 large onions, thinly sliced</li>
+                <li>2 cups gram flour (besan)</li>
+                <li>1 teaspoon ginger garlic paste</li>
+                <li>1 teaspoon red chili powder (adjust to taste)</li>
+                <li>1/2 coriander powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>A pinch of Turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>Oil for deep frying</li>
+                <li>Water</li>
+            </ul>
+            <h3>Process:</h3>
+            <ul>
+                <li>
+                    <strong>Prepare the Batter:</strong><br />In a mixing bowl,gram flour (besan), ginger garlic paste, red chili powder, coriander powder, garam masala, turmeric powder.<br />
+                    Mix the ingredients together.Add water and mix until you get a thick consistent batter that evenly coats the onions.
+                </li>
+                <li><strong>Add Onions:</strong><br />Add the thinly sliced onions to the bowl. Mix them until they are coated evenly.</li>
+                <li><strong>Heat Oil:</strong><br />Heat oil in a deep frying pan or kadai over medium-high heat. To check if the oil is hot enough, drop a small amount of the batter into the oil; if it sizzles and rises to the surface, the oil is ready.</li>
+                <li><strong>Fry the Pakoras:</strong><br />Carefully drop small portions of the onion mixture into the hot oil using a spoon or your hand.</li>
+                <li><strong>Fry Until Golden Brown:</strong><br />Fry the pakoras until they turn golden brown and crispy. Be sure to flip them occasionally for even cooking. This should take about 4-5 minutes.</li>
+                <li><strong>Drain:</strong><br />Using a slotted spoon, remove the pakoras from the oil and place them on a plate lined with paper towels to drain excess oil.</li>
+                <li><strong>Serve Hot:</strong><br />Serve the hot and crispy onion pakoras immediately. You can enjoy them with green chutney or tamarind chutney and a cup of tea.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;Enjoy your homemade onion pakora :)</p>
+        </div>
+        <div id="tel">
+            <h3>పదార్థాలు:</h3>
+            <ul>
+                <li>4 పెద్ద ఉల్లిపాయలు, సన్నగా తరిగినవి </li>
+                <li>2 కప్పుల శెనగపిండి (బేసన్) </li>
+                <li>1 టీస్పూన్ అల్లం వెల్లుల్లి పేస్ట్ </li>
+                <li>1 టీస్పూన్  కారం (రుచికి అనుకూలంగా)</li>
+                <li>1/2 ధనియాల పొడి</li>
+                <li>1 టీస్పూన్ గరం మసాలా </li>
+                <li>చిటికెడు పసుపు </li>
+                <li>ఉప్పు (తగినంత)</li>
+                <li> డీప్ ఫ్రై కి కావలిసినంత నూనె  </li>
+                <li>నీళ్లు</li>
+
+            </ul>
+
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li>
+                    <strong>పిండిని సిద్ధం చేయడం:</strong> <br />ఒక గిన్నెలో, శెనగపిండి (బేసన్), అల్లం వెల్లుల్లి పేస్ట్, ఎర్ర కారం, ధనియాల పొడి, గరం మసాలా, పసుపు  వేసుకోండి.<br />
+                    మందపాటి, స్థిరమైన పిండి వచ్చేవరకు నీరు వేసి కలపాలి.
+                </li>
+                <li><strong>ఉల్లిపాయలు కలుపుట:</strong><br /> గిన్నెలో సన్నగా తరిగిన ఉల్లిపాయలను వేసుకోండి.పిండిలో సమానంగా మునిగే వరకు వాటిని కలపండి.</li>
+                <li><strong>నూనె ని వేడిచెయ్యడం:</strong> <br />మీడియం-అధిక వేడి మీద డీప్ ఫ్రైయింగ్ పాన్ లేదా కడాయిలో నూనె వేడి చేయండి. నూనె తగినంత వేడిగా ఉందో లేదో తనిఖీ చేయడానికి, కొద్దిగా పిండిని నూనెలో వేయండి; అది సిజ్లింగ్ మరియు ఉపరితలం పైకి లేస్తే, నూనె సిద్ధంగా ఉన్నటు.</li>
+                <li><strong>పకోడీలను వేయించాలి:</strong><br /> చెంచా లేదా మీ చేతిని ఉపయోగించి వేడి నూనెలో ఉల్లిపాయ మిశ్రమం యొక్క చిన్న భాగాలను జాగ్రత్తగా వదలండి.</li>
+                <li><strong>గోల్డెన్ బ్రౌన్ వరకు వేయించాలి:</strong><br /> పకోడీలను బంగారు గోధుమ రంగులోకి మరియు క్రిస్పీగా మారే వరకు వేయించాలి. వాటిని అప్పుడప్పుడు తిప్పుతూ ఉండండి. దీనికి 4-5 నిమిషాలు పడుతుంది.</li>
+                <li><strong>డ్రైన్:</strong><br /> చిల్లుల చెంచా ఉపయోగించి, నూనె నుండి పకోడీలను తీసివేసి, అదనపు నూనెను పోయేలా వాటిని కాగితపు టవల్‌తో కప్పబడిన ప్లేట్‌లో ఉంచండి.</li>
+                <li><strong>వేడిగా వడ్డించడం:</strong><br /> వేడి మరియు క్రిస్పీ ఉల్లిపాయ పకోడీలను వెంటనే సర్వ్ చేయండి. మీరు వాటిని గ్రీన్ చట్నీ లేదా చింతపండు చట్నీ మరియు ఒక కప్పు టీతో ఆస్వాదించవచ్చు.</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;మీ ఇంట్లో ఉల్లి పకోడీని ఆస్వాదించండి  :)</p>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <li>4 बड़े प्याज, पतले कटे हुए </li>
+                <li>2 कप बेसन </li>
+                <li>1 चम्मच अदरक लहसुन का पेस्ट </li>
+                <li>1 चम्मच लाल मिर्च पाउडर (स्वादानुसार) </li>
+                <li>1/2 चम्मच धनिया पाउडर </li>
+                <li>1 चम्मच गरम मसाला </li>
+                <li> एक चुटकी हल्दी </li>
+                <li>नमक स्वाद अनुसार </li>
+                <li>डीप फ्राई करने के लिए तेल </li>
+                <li>पानी </li>
+            </ul>
+
+            <h3>बनाने की प्रक्रिया:</h3>
+            <ul>
+                <li>
+                    <strong>बैटर तैयार करना:</strong><br /> एक कटोरे में बेसन, अदरक लहसुन का पेस्ट, लाल मिर्च पाउडर, धनिया पाउडर, गरम मसाला, हल्दी पाउडर डालें।<br />
+                    सामग्री को एक साथ मिलाएं. पानी डालें और तब तक मिलाएँ जब तक आपको गाढ़ा, एक जैसा बैटर न मिल जाए।
+                </li>
+                <li><strong>प्याज  डालना:</strong><br /> कटोरे में पतले कटे हुए प्याज डालें। उन्हें तब तक मिलाएं जब तक कि वे समान रूप से लेपित न हो जाएं।</li>
+                <li><strong>गर्म तेल:</strong><br /> एक गहरे फ्राइंग पैन या कड़ाही में मध्यम-तेज़ आंच पर तेल गरम करें। यह जांचने के लिए कि तेल पर्याप्त गर्म है या नहीं, बैटर की थोड़ी मात्रा तेल में डालें; अगर यह चटकने लगे और सतह पर आ जाए, तो तेल तैयार है।</li>
+                <li><strong>पकोड़े तलें:</strong><br /> चम्मच या अपने हाथ का उपयोग करके प्याज के मिश्रण के छोटे हिस्से को सावधानी से गर्म तेल में डालें।</li>
+                <li><strong>सुनहरा भूरा होने तक तलें:</strong><br />पकौड़ों को सुनहरा भूरा और कुरकुरा होने तक तलें. उन्हें समय-समय पर पलटना सुनिश्चित करें। इसमें लगभग 4-5 मिनट का समय लगता है|</li>
+                <li><strong>तेल निथार लें:</strong><br />एक छिद्रित चम्मच का उपयोग करके, पकौड़ों को तेल से निकालें और अतिरिक्त तेल निकालने के लिए उन्हें कागज़ के तौलिये से ढकी एक प्लेट पर रखें।</li>
+                <li><strong>गर्म - गर्म परोसें:</strong><br />गरम-गरम कुरकुरे प्याज के पकौड़े तुरंत परोसें। आप इन्हें हरी चटनी या इमली की चटनी और एक कप चाय के साथ आनंद ले सकते हैं।</li>
+            </ul>
+            <p>&nbsp;&nbsp;&nbsp;अपने घर पर बने प्याज के पकौड़े का आनंद लें  :)</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste and Express -Milk Made Kova Sweet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            visibility: hidden;
+            display: none;
+            align: center;
+        }
+
+        #en {
+            visibility: visible;
+            display: block;
+        }
+
+
+        header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select#lang {
+            border-radius: 10px;
+            background: transparent;
+            border: black 2px solid;
+            color: black;
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 5px 4px yellow;
+        }
+
+        body {
+            background-image: url('https://coreldrawdesign.com/resources/previews/preview-old-black-background.-grunge-texture.-dark-wallpaper.-blackboard,-chalkboard,-room-wall.-free-photo-1638192854.jpg');
+            font-weight: bold;
+        }
+
+        li {
+            color: #ADFF2F
+        }
+
+        ul {
+            color: cyan;
+        }
+
+        h3 {
+            color: orange;
+        }
+    </style>
+    <script>
+            function fun(){
+                let list=document.getElementById("lang");
+
+                var x=list.value;
+                if(x=="English")
+                {
+
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+                else if(x=="Telugu")
+                {
+
+                    document.getElementById("tel").style.visibility="visible";
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="block";
+                }
+                else if(x=="Hindi"){
+
+                    document.getElementById("hin").style.visibility="visible";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="hidden";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="none";
+                    document.getElementById("hin").style.display="block";
+                }
+                else{
+
+                    document.getElementById("hin").style.visibility="hidden";
+                    document.getElementById("tel").style.visibility="hidden";
+                    document.getElementById("en").style.visibility="visible";
+                    document.getElementById("hin").style.display="none";
+                    document.getElementById("tel").style.display="none";
+                    document.getElementById("en").style.display="block";
+                }
+
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Taste and Express</h1>
+    </header>
+    <h6 style="background-color:#ffcccb;padding:15px;margin:0; height:45px">
+        <marquee behavior="alternate" direction="left" scrollamount="10" style="font-size:20px">We welcome to our Food world <span style="color:green">Taste and Express</span> and our sweet is <span style="color:blue">Milk Made kova</span></marquee>
+        <select id="lang" style="float:right;margin-right:60px" onchange="fun()">
+            <option value="none">Select language</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+    </h6>
+    <section class="recipe-container">
+        <h2 style="text-align:center;font-size: 22px;color:cyan;font-family">Milk Made Kova</h2>
+
+        <img style="padding-left:250px" height="200px" width="300px" src="https://i.ytimg.com/vi/HC5KVClfXzY/maxresdefault.jpg" alt="Gulab Jamun">
+        <div id="en">
+            <h3>Ingredients:</h3>
+            
+                <ul>
+                    <li>1 cup of khoya (solidified milk or milk powder)</li>
+                    <li>1/2 cup of sugar (adjust to taste)</li>
+                    <li>Chopped nuts for decoration (like almonds or cashews)</li>
+                    <li>1/4 teaspoon of cardamom powder (optional)</li>
+                    <li>A pinch of saffron strands (optional)</li>
+                </ul>
+         
+            <h3>Process:</h3>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. Prepare Khoya:
+                <li>If your khoya is solid, make it crumbly or grate it.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. Cook Khoya:
+
+                <li>Heat a pan on medium-low. Put the khoya in it.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. Stir a Lot:
+                <li>Stir the khoya continuously to make it smooth. It will melt slowly.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. Add Sugar:
+
+                <li>Once the khoya is a bit liquid and releases ghee (clarified butter), add the sugar. Adjust the sugar for sweetness.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. Mix Well:
+
+                <li>Keep stirring as the sugar melts and blends with the khoya. It will thicken and become smooth.</li>
+
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. Add Flavor:
+                <li>If you like, add cardamom powder for flavor and saffron for color and smell.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. Thicken:
+                <li>Continue stirring until it thickens like fudge and doesn't stick to the pan</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. Take Off Heat:
+                <li>When it's the right consistency and leaves the pan's sides, remove it from heat.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. Decorate:
+                <li> Put the kova sweet in a greased plate or tray. Flatten it and decorate with chopped nuts by gently pressing them in</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. Cool and Cut:
+                <li>Let it cool for a few hours until it sets. Then, cut it into shapes you like.</li>
+                
+            </ul>
+            <b>
+                <p style="color:#22facb">Homemade Kova sweet is a yummy dessert perfect for special occasions as a sweet treat. Enjoy the creamy, sweet delight!</p>
+            </b>
+            
+        </div>
+        <div id="tel">
+            <h3>కావలసిన  పదార్థాలు:</h3>
+            <ul>
+                <li> 1 కప్పు ఖోయా (ఘన పాలు లేదా పాల పొడి)</li>
+                <li>1/2 కప్పు చక్కెర (రుచికి సర్దుబాటు చేయండి)</li>
+                <li> అలంకరణ కోసం తరిగిన గింజలు (బాదం లేదా జీడిపప్పు వంటివి)</li>
+                <li> 1/4 టీస్పూన్ యాలకుల పొడి (ఐచ్ఛికం)</li>
+                <li> చిటికెడు కుంకుమపువ్వు (ఐచ్ఛికం)</li>
+            </ul>
+            <h3>తయారీ విధానం:</h3>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. ఖోయా సిద్ధం:
+                <li> మీ ఖోయా దృఢంగా ఉంటే, దానిని మెత్తగా చేయండి లేదా తురుము వేయండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. కుక్ ఖోయా:
+                <li>పాన్‌ను మీడియం-తక్కువపై వేడి చేయండి. అందులో ఖోయా వేయండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. చాలా కదిలించు:
+                <li>ఖోయా మృదువైనదిగా చేయడానికి నిరంతరం కదిలించు. ఇది నెమ్మదిగా కరిగిపోతుంది.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. చక్కెర జోడించండి:
+                <li>ఖోయా కొంచెం ద్రవంగా ఉండి, నెయ్యి (స్పష్టమైన వెన్న) విడుదల చేసిన తర్వాత, చక్కెరను జోడించండి. తీపి కోసం చక్కెరను సర్దుబాటు చేయండి.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. బాగా కలపండి:
+                <li>పంచదార కరిగి, ఖోయాతో కలిసిపోయేటప్పుడు కలుపుతూ ఉండండి. ఇది చిక్కగా మరియు మృదువుగా మారుతుంది.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. రుచిని జోడించండి:
+                <li> మీకు కావాలంటే, రుచి కోసం యాలకుల పొడి మరియు రంగు మరియు వాసన కోసం కుంకుమపువ్వు జోడించండి.</li>
+               
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. చిక్కగా:
+                <li>ఇది ఫడ్జ్ లాగా చిక్కగా మరియు పాన్‌కు అంటుకోకుండా ఉండే వరకు గందరగోళాన్ని కొనసాగించండి.</li>
+              
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. వేడిని తీసివేయండి:
+                <li>ఇది సరైన స్థిరత్వం మరియు పాన్ వైపులా వదిలివేసినప్పుడు, దానిని వేడి నుండి తీసివేయండి.</li>
+             
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. అలంకరించు:
+                <li>కోవా స్వీట్‌ను గ్రీజు చేసిన ప్లేట్ లేదా ట్రేలో ఉంచండి. దానిని చదును చేసి, వాటిని మెత్తగా నొక్కడం ద్వారా తరిగిన గింజలతో అలంకరించండి.</li>
+              
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. కూల్ అండ్ కట్:
+                <li>అది సెట్ అయ్యే వరకు కొన్ని గంటలు చల్లబరచండి. తర్వాత, మీకు నచ్చిన ఆకారాల్లో కట్ చేసుకోండి.</li>
+             
+            </ul>
+            <b><p style="color:#22facb">ఇంట్లో తయారుచేసిన కోవా స్వీట్ అనేది ఒక తీపి వంటకం వలె ప్రత్యేక సందర్భాలలో సరైన రుచికరమైన డెజర్ట్. క్రీము, తీపి ఆనందాన్ని ఆస్వాదించండి!</p></b>
+        </div>
+        <div id="hin">
+            <h3>सामग्री:</h3>
+            <ul>
+                <li>1 कप खोया (ठोस दूध या मिल्क पाउडर)</li>
+                <li>1/2 कप चीनी (स्वादानुसार)</li>
+                <li>सजावट के लिए कटे हुए मेवे (जैसे बादाम या काजू)</li>
+                <li> 1/4 चम्मच इलायची पाउडर (वैकल्पिक)</li>
+                <li> एक चुटकी केसर के धागे (वैकल्पिक)</li>
+
+            </ul>
+            <h3>बनाने की प्रक्रिया:</h3>
+
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">1. खोया तैयार करें:
+                <li>अगर आपका खोया ठोस है तो इसे चूरा कर लें या कद्दूकस कर लें.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">2. खोया पकाएं:
+                <li>एक पैन को मध्यम-धीमी आंच पर गर्म करें. - इसमें खोया डालें.</li>
+               
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">3. खूब हिलाओ:
+                <li>खोया को लगातार चलाते हुए चिकना कर लीजिए. यह धीरे-धीरे पिघलेगा.</li>
+              
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">4. चीनी डालें:
+                <li>जब खोया थोड़ा तरल हो जाए और घी छोड़ने लगे तो चीनी डालें। मिठास के लिए चीनी को समायोजित करें.</li>
+               
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">5. अच्छे से मिलाएं:
+                <li>चीनी के पिघलने और खोया में मिल जाने पर इसे चलाते रहें. यह गाढ़ा हो जाएगा और चिकना हो जाएगा.</li>
+            
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">6. स्वाद जोड़ें:
+                <li>अगर आप चाहें तो स्वाद के लिए इलायची पाउडर और रंग और महक के लिए केसर मिलाएं.</li>
+                
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">7. गाढ़ा करना:
+                <li> इसे तब तक चलाते रहें जब तक यह फज की तरह गाढ़ा न हो जाए और पैन से चिपक न जाए.</li>
+               
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">8. गर्मी दूर करें:
+                <li>जब यह सही स्थिरता का हो जाए और पैन के किनारे छोड़ दे तो इसे आंच से उतार लें।</li>
+           
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">9. सजाएँ:
+                <li>कोवा मिठाई को चिकनाई लगी प्लेट या ट्रे में रखें. इसे चपटा करें और हल्के हाथों से दबाते हुए कटे हुए मेवों से सजाएं।</li>
+             
+            </ul>
+            <ul>
+                <li style="list-style-type:none;color:#ce85f2">10. ठंडा करें और काटें:
+                <li>इसे सेट होने तक कुछ घंटों के लिए ठंडा होने दें। फिर, इसे अपने पसंदीदा आकार में काट लें।</li>
+            
+            </ul>
+
+            <b><p style="color:#22facb">घर पर बनी कोवा मिठाई एक स्वादिष्ट मिठाई है जो विशेष अवसरों के लिए मीठे व्यंजन के रूप में उपयुक्त है। मलाईदार, मीठे आनंद का आनंद लें!</p></b>
+        </div>
+    </section>
+</body>
+</html>
